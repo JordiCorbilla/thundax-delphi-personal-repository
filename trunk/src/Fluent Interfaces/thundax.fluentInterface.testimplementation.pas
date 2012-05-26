@@ -128,7 +128,6 @@ begin
             result := (Pos('A', i) > 0);
           end).Distinct.List do
     result.add(item);
-
 end;
 
 end.
