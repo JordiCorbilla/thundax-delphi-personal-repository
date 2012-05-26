@@ -25,7 +25,7 @@
 //  ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
 //  POSSIBILITY OF SUCH DAMAGE.
 
-program thundax.MockTest;
+program thundax.CustomAttributesTest;
 {
 
   Delphi DUnit Test Project
@@ -46,11 +46,11 @@ uses
   TestFramework,
   GUITestRunner,
   TextTestRunner,
-  thundax.mock in '..\..\src\Mock\thundax.mock.pas',
-  thundax.mock.example in '..\..\src\Mock\thundax.mock.example.pas',
-  TestThundax.mock in 'TestThundax.mock.pas';
+  thundax.customAttributes.Framework in '..\..\src\Custom Attributes\thundax.customAttributes.Framework.pas',
+  thundax.customAttributes.Example in '..\..\src\Custom Attributes\thundax.customAttributes.Example.pas',
+  TestThundax.customAttributes in 'TestThundax.customAttributes.pas';
 
-{R *.RES}
+  {R *.RES}
 
 begin
   Application.Initialize;

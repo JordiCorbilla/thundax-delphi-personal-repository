@@ -1,0 +1,48 @@
+﻿	<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+		<PropertyGroup>
+			<ProjectGuid>{0B88DC7B-E5C9-4CE1-972D-CFF4C1FB7E98}</ProjectGuid>
+		</PropertyGroup>
+		<ItemGroup>
+			<Projects Include="DUnit\Mock\thundax.MockTest.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="DUnit\Custom Attributes\thundax.CustomAttributesTest.dproj">
+				<Dependencies/>
+			</Projects>
+		</ItemGroup>
+		<ProjectExtensions>
+			<Borland.Personality>Default.Personality.12</Borland.Personality>
+			<Borland.ProjectType/>
+			<BorlandProject>
+				<Default.Personality/>
+			</BorlandProject>
+		</ProjectExtensions>
+		<Target Name="thundax_MockTest">
+			<MSBuild Projects="DUnit\Mock\thundax.MockTest.dproj"/>
+		</Target>
+		<Target Name="thundax_MockTest:Clean">
+			<MSBuild Targets="Clean" Projects="DUnit\Mock\thundax.MockTest.dproj"/>
+		</Target>
+		<Target Name="thundax_MockTest:Make">
+			<MSBuild Targets="Make" Projects="DUnit\Mock\thundax.MockTest.dproj"/>
+		</Target>
+		<Target Name="thundax_CustomAttributesTest">
+			<MSBuild Projects="DUnit\Custom Attributes\thundax.CustomAttributesTest.dproj"/>
+		</Target>
+		<Target Name="thundax_CustomAttributesTest:Clean">
+			<MSBuild Targets="Clean" Projects="DUnit\Custom Attributes\thundax.CustomAttributesTest.dproj"/>
+		</Target>
+		<Target Name="thundax_CustomAttributesTest:Make">
+			<MSBuild Targets="Make" Projects="DUnit\Custom Attributes\thundax.CustomAttributesTest.dproj"/>
+		</Target>
+		<Target Name="Build">
+			<CallTarget Targets="thundax_MockTest;thundax_CustomAttributesTest"/>
+		</Target>
+		<Target Name="Clean">
+			<CallTarget Targets="thundax_MockTest:Clean;thundax_CustomAttributesTest:Clean"/>
+		</Target>
+		<Target Name="Make">
+			<CallTarget Targets="thundax_MockTest:Make;thundax_CustomAttributesTest:Make"/>
+		</Target>
+		<Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+	</Project>

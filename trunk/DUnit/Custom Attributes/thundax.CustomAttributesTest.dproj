@@ -1,10 +1,10 @@
 ﻿	<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
 		<PropertyGroup>
-			<ProjectGuid>{75856F16-DC27-40BD-9EA5-BFF93B23094E}</ProjectGuid>
+			<ProjectGuid>{F7511157-6D48-491D-A3AF-C262318176B1}</ProjectGuid>
 			<ProjectVersion>12.0</ProjectVersion>
 			<Config Condition="'$(Config)'==''">Debug</Config>
 			<DCC_DCCCompiler>DCC32</DCC_DCCCompiler>
-			<MainSource>thundax.MockTest.dpr</MainSource>
+			<MainSource>thundax.CustomAttributesTest.dpr</MainSource>
 		</PropertyGroup>
 		<PropertyGroup Condition="'$(Config)'=='Base' or '$(Base)'!=''">
 			<Base>true</Base>
@@ -24,7 +24,7 @@
 			<DCC_Define>_CONSOLE_TESTRUNNER;$(DCC_Define)</DCC_Define>
 			<DCC_UnitAlias>WinTypes=Windows;WinProcs=Windows;DbiTypes=BDE;DbiProcs=BDE;DbiErrs=BDE;$(DCC_UnitAlias)</DCC_UnitAlias>
 			<DCC_DcuOutput>dcu\</DCC_DcuOutput>
-			<DCC_DependencyCheckOutputName>thundax.MockTest.exe</DCC_DependencyCheckOutputName>
+			<DCC_DependencyCheckOutputName>thundax.CustomAttributesTest.exe</DCC_DependencyCheckOutputName>
 			<DCC_ImageBase>00400000</DCC_ImageBase>
 			<DCC_Platform>x86</DCC_Platform>
 		</PropertyGroup>
@@ -38,12 +38,12 @@
 			<DCC_Define>DEBUG;$(DCC_Define)</DCC_Define>
 		</PropertyGroup>
 		<ItemGroup>
-			<DelphiCompile Include="thundax.MockTest.dpr">
+			<DelphiCompile Include="thundax.CustomAttributesTest.dpr">
 				<MainSource>MainSource</MainSource>
 			</DelphiCompile>
-			<DCCReference Include="..\..\src\Mock\thundax.mock.pas"/>
-			<DCCReference Include="..\..\src\Mock\thundax.mock.example.pas"/>
-			<DCCReference Include="TestThundax.mock.pas"/>
+			<DCCReference Include="..\..\src\Custom Attributes\thundax.customAttributes.Framework.pas"/>
+			<DCCReference Include="..\..\src\Custom Attributes\thundax.customAttributes.Example.pas"/>
+			<DCCReference Include="TestThundax.customAttributes.pas"/>
 			<BuildConfiguration Include="Base">
 				<Key>Base</Key>
 			</BuildConfiguration>
@@ -95,7 +95,7 @@
 						<VersionInfoKeys Name="Comments"/>
 					</VersionInfoKeys>
 					<Source>
-						<Source Name="MainSource">thundax.MockTest.dpr</Source>
+						<Source Name="MainSource">thundax.CustomAttributesTest.dpr</Source>
 					</Source>
 				</Delphi.Personality>
 				<UnitTesting>
