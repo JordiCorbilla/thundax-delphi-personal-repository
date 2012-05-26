@@ -53,10 +53,18 @@ type
     procedure TearDown; override;
   published
     procedure TestGetIntegerListQueryValues;
+    procedure TestGetIntegerListQueryValuesException;
     procedure TestGetStringListQueryValues;
+    procedure TestGetStringListQueryValuesException;
   end;
 
+var
+  FLogItem : TList<String>;
+
 implementation
+
+uses
+  SysUtils;
 
 procedure TestTQueryImplementation.SetUp;
 begin
@@ -64,7 +72,12 @@ begin
 end;
 
 procedure TestTQueryImplementation.TearDown;
+var
+  item : string;
 begin
+  for item in FLogItem do
+    Status(item);
+
   FQueryImplementation.Free;
   FQueryImplementation := nil;
 end;
@@ -75,11 +88,32 @@ var
   item: Integer;
 begin
   ReturnValue := FQueryImplementation.GetIntegerListQueryValues;
-  for item in ReturnValue do
-  begin
-    Assert((item > 50) and (item < 75), 'Wrong Values!');
+  try
+    for item in ReturnValue do
+    begin
+      FLogItem.Add('Item: ' + IntToStr(item));
+      Assert((item > 50) and (item < 75), 'Wrong Values, Expected > 50 and < 75 but found: ' + IntToStr(item));
+    end;
+  finally
+    ReturnValue.Free;
   end;
-  ReturnValue.Free;
+end;
+
+procedure TestTQueryImplementation.TestGetIntegerListQueryValuesException;
+var
+  ReturnValue: TList<Integer>;
+  item: Integer;
+begin
+  ReturnValue := FQueryImplementation.GetIntegerListQueryValues;
+  try
+    for item in ReturnValue do
+    begin
+      Status(IntToStr(item));
+      Assert((item > 50) and (item < 60), 'Wrong Values, Expected > 50 and < 60 but found: ' + IntToStr(item));
+    end;
+  finally
+    ReturnValue.Free;
+  end;
 end;
 
 procedure TestTQueryImplementation.TestGetStringListQueryValues;
@@ -88,16 +122,42 @@ var
   item: String;
 begin
   ReturnValue := FQueryImplementation.GetStringListQueryValues;
-  for item in ReturnValue do
-  begin
-    Assert(Pos('A', item) > 0, 'Wrong Values!');
+  try
+    for item in ReturnValue do
+    begin
+      FLogItem.Add('Item: ' + item);
+      Assert(Pos('A', item) > 0, 'Wrong Values, Expected Item containing ''A'' but found: ' + item);
+    end;
+  finally
+    ReturnValue.Free;
   end;
-  ReturnValue.Free;
+end;
+
+procedure TestTQueryImplementation.TestGetStringListQueryValuesException;
+var
+  ReturnValue: TList<String>;
+  item: String;
+begin
+  ReturnValue := FQueryImplementation.GetStringListQueryValues;
+  try
+    for item in ReturnValue do
+    begin
+      FLogItem.Add('Item: ' + item);
+      Assert(Pos('B', item) > 0, 'Wrong Values, Expected Item containing ''B'' but found: ' + item);
+    end;
+  finally
+    ReturnValue.Free;
+  end;
 end;
 
 initialization
   // Register any test cases with the test runner
   ReportMemoryLeaksOnShutdown := true;
+  FLogItem := TList<string>.Create;
   RegisterTest(TestTQueryImplementation.Suite);
+
+finalization
+  FLogItem.Free;
+  FLogItem := nil;
 end.
 
