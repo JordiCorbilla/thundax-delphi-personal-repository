@@ -63,7 +63,7 @@ begin
   FProtocolServer := TProtocolServer.Create(Server);
   try
     ReturnValue := FProtocolServer.Communicate;
-    Assert(ReturnValue, 'Communication with the Server Failed');
+    CheckTrue(ReturnValue, 'Communication with the Server Failed');
   finally
     FProtocolServer.Free;
     FProtocolServer := nil;
@@ -96,7 +96,7 @@ begin
   FProtocolServer := TProtocolServer.Create(mock.SetUp());
   try
     ReturnValue := FProtocolServer.Communicate;
-    Assert(ReturnValue, 'Communication with the Server Failed');
+    CheckTrue(ReturnValue, 'Communication with the Server Failed');
   finally
     Server := nil;
     mock.Free;

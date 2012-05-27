@@ -88,7 +88,7 @@ begin
           aUserName := TUserPasswordAttribute(CustomAttr).UserName;
           aPassword := TUserPasswordAttribute(CustomAttr).Password;
           aResponse := TUserPasswordAttribute(CustomAttr).Response;
-          Assert(FLogin.UserLogin(aUserName, aPassword)=aResponse, 'Incorrect user ' + aUserName);
+          CheckTrue(FLogin.UserLogin(aUserName, aPassword)=aResponse, 'Incorrect user ' + aUserName);
         end;
     end);
 end;
@@ -106,7 +106,7 @@ begin
           aUserName := TUserAgeAttribute(CustomAttr).UserName;
           aAge := TUserAgeAttribute(CustomAttr).Age;
           aResponse := TUserAgeAttribute(CustomAttr).Response;
-          Assert(aResponse=(FLogin.fetchDatauser(aUserName)=aAge), 'Incorrect value ' + aUserName);
+          CheckTrue(aResponse=(FLogin.fetchDatauser(aUserName)=aAge), 'Incorrect value ' + aUserName);
         end;
     end);
 end;
