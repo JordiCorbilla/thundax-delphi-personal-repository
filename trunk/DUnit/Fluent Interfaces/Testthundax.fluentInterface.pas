@@ -58,9 +58,6 @@ type
     procedure TestGetStringListQueryValuesException;
   end;
 
-var
-  FLogItem : TList<String>;
-
 implementation
 
 uses
@@ -72,12 +69,7 @@ begin
 end;
 
 procedure TestTQueryImplementation.TearDown;
-var
-  item : string;
 begin
-  for item in FLogItem do
-    Status(item);
-
   FQueryImplementation.Free;
   FQueryImplementation := nil;
 end;
@@ -91,8 +83,8 @@ begin
   try
     for item in ReturnValue do
     begin
-      FLogItem.Add('Item: ' + IntToStr(item));
-      Assert((item > 50) and (item < 75), 'Wrong Values, Expected > 50 and < 75 but found: ' + IntToStr(item));
+      Status('Value Processed: ' + IntToStr(item));
+      CheckTrue((item > 50) and (item < 75), 'Wrong Value, Expected > 50 and < 75 but found: ' + IntToStr(item));
     end;
   finally
     ReturnValue.Free;
@@ -108,8 +100,8 @@ begin
   try
     for item in ReturnValue do
     begin
-      Status(IntToStr(item));
-      Assert((item > 50) and (item < 60), 'Wrong Values, Expected > 50 and < 60 but found: ' + IntToStr(item));
+      Status('Value Processed: ' + IntToStr(item));
+      CheckTrue((item > 50) and (item < 60), 'Wrong Value, Expected > 50 and < 60 but found: ' + IntToStr(item));
     end;
   finally
     ReturnValue.Free;
@@ -125,8 +117,8 @@ begin
   try
     for item in ReturnValue do
     begin
-      FLogItem.Add('Item: ' + item);
-      Assert(Pos('A', item) > 0, 'Wrong Values, Expected Item containing ''A'' but found: ' + item);
+      Status('Value Processed: ' + item);
+      CheckTrue(Pos('A', item) > 0, 'Wrong Value, Expected Item containing ''A'' but found: ' + item);
     end;
   finally
     ReturnValue.Free;
@@ -142,8 +134,8 @@ begin
   try
     for item in ReturnValue do
     begin
-      FLogItem.Add('Item: ' + item);
-      Assert(Pos('B', item) > 0, 'Wrong Values, Expected Item containing ''B'' but found: ' + item);
+      Status('Value Processed: ' + item);
+      CheckTrue(Pos('B', item) > 0, 'Wrong Value, Expected Item containing ''B'' but found: ' + item);
     end;
   finally
     ReturnValue.Free;
@@ -153,11 +145,7 @@ end;
 initialization
   // Register any test cases with the test runner
   ReportMemoryLeaksOnShutdown := true;
-  FLogItem := TList<string>.Create;
   RegisterTest(TestTQueryImplementation.Suite);
 
-finalization
-  FLogItem.Free;
-  FLogItem := nil;
 end.
 
