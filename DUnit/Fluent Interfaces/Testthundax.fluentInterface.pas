@@ -40,11 +40,10 @@ interface
 
 uses
   TestFramework, Generics.Defaults, Generics.collections,
-  thundax.fluentInterface.testimplementation;
+  thundax.fluentInterface.testimplementation, GUITestRunner;
 
 type
   // Test methods for class TQueryImplementation
-
   TestTQueryImplementation = class(TTestCase)
   strict private
     FQueryImplementation: TQueryImplementation;
@@ -84,6 +83,7 @@ begin
     for item in ReturnValue do
     begin
       Status('Value Processed: ' + IntToStr(item));
+
       CheckTrue((item > 50) and (item < 75), 'Wrong Value, Expected > 50 and < 75 but found: ' + IntToStr(item));
     end;
   finally
