@@ -25,41 +25,60 @@
 //  ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
 //  POSSIBILITY OF SUCH DAMAGE.
 
-unit thundax.customAttributes.Framework;
+unit thundax.logging;
 
 interface
 
-uses
-  Rtti, TestFramework;
-
 type
-  TAttributeProc = reference to procedure(CustomAttr: TCustomAttribute);
-
-  TFrameworkTestCase = class(TTestCase)
+  TLog = class(TObject)
+  private
+    FLogTextFile : TextFile;
   public
-    procedure TestAttributesMethod(CustomProc: TAttributeProc);
+    constructor Create(logFileName : string);
+    destructor Destroy(); override;
+    class function Start(logFileName : string): TLog;
+    procedure Print(msg : string);
+    procedure ConsoleOutput(msg : string);
+    procedure OutputDebug(msg : string);
   end;
 
 implementation
 
-{ TFrameworkTestCase }
+uses
+  Windows;
 
-procedure TFrameworkTestCase.TestAttributesMethod(CustomProc: TAttributeProc);
-var
-  ContextRtti: TRttiContext;
-  RttiType: TRttiType;
-  RttiMethod: TRttiMethod;
-  CustomAttr: TCustomAttribute;
+{ TLog }
+
+procedure TLog.ConsoleOutput(msg: string);
 begin
-  ContextRtti := TRttiContext.Create;
-  try
-    RttiType := ContextRtti.GetType(Self.ClassType);
-    for RttiMethod in RttiType.GetMethods do
-      for CustomAttr in RttiMethod.GetAttributes do
-        CustomProc(CustomAttr);
-  finally
-    ContextRtti.Free;
-  end;
+  WriteLn(Output, msg);
+end;
+
+constructor TLog.Create(logFileName: string);
+begin
+  AssignFile(FLogTextFile, logFileName);
+  ReWrite(FLogTextFile);
+end;
+
+destructor TLog.Destroy;
+begin
+  CloseFile(FLogTextFile);
+  inherited;
+end;
+
+procedure TLog.OutputDebug(msg: string);
+begin
+  OutputDebugString(PChar(Msg));
+end;
+
+procedure TLog.Print(msg: string);
+begin
+  Write(FLogTextFile, msg);
+end;
+
+class function TLog.Start(logFileName: string): TLog;
+begin
+  result := Create(logFileName);
 end;
 
 end.
