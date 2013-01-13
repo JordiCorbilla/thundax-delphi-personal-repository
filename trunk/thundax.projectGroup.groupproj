@@ -15,6 +15,9 @@
 			<Projects Include="DUnit\UML\thundax.UMLDiagramsTest.dproj">
 				<Dependencies/>
 			</Projects>
+			<Projects Include="DUnit\Logging\thundax.LoggingTest.dproj">
+				<Dependencies/>
+			</Projects>
 		</ItemGroup>
 		<ProjectExtensions>
 			<Borland.Personality>Default.Personality.12</Borland.Personality>
@@ -59,14 +62,23 @@
 		<Target Name="thundax_UMLDiagramsTest:Make">
 			<MSBuild Projects="DUnit\UML\thundax.UMLDiagramsTest.dproj" Targets="Make"/>
 		</Target>
+		<Target Name="thundax_LoggingTest">
+			<MSBuild Projects="DUnit\Logging\thundax.LoggingTest.dproj"/>
+		</Target>
+		<Target Name="thundax_LoggingTest:Clean">
+			<MSBuild Projects="DUnit\Logging\thundax.LoggingTest.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="thundax_LoggingTest:Make">
+			<MSBuild Projects="DUnit\Logging\thundax.LoggingTest.dproj" Targets="Make"/>
+		</Target>
 		<Target Name="Build">
-			<CallTarget Targets="thundax_MockTest;thundax_CustomAttributesTest;thundax_FluentInterfacesTest;thundax_UMLDiagramsTest"/>
+			<CallTarget Targets="thundax_MockTest;thundax_CustomAttributesTest;thundax_FluentInterfacesTest;thundax_UMLDiagramsTest;thundax_LoggingTest"/>
 		</Target>
 		<Target Name="Clean">
-			<CallTarget Targets="thundax_MockTest:Clean;thundax_CustomAttributesTest:Clean;thundax_FluentInterfacesTest:Clean;thundax_UMLDiagramsTest:Clean"/>
+			<CallTarget Targets="thundax_MockTest:Clean;thundax_CustomAttributesTest:Clean;thundax_FluentInterfacesTest:Clean;thundax_UMLDiagramsTest:Clean;thundax_LoggingTest:Clean"/>
 		</Target>
 		<Target Name="Make">
-			<CallTarget Targets="thundax_MockTest:Make;thundax_CustomAttributesTest:Make;thundax_FluentInterfacesTest:Make;thundax_UMLDiagramsTest:Make"/>
+			<CallTarget Targets="thundax_MockTest:Make;thundax_CustomAttributesTest:Make;thundax_FluentInterfacesTest:Make;thundax_UMLDiagramsTest:Make;thundax_LoggingTest:Make"/>
 		</Target>
 		<Import Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')" Project="$(BDS)\Bin\CodeGear.Group.Targets"/>
 	</Project>
