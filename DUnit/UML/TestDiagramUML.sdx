@@ -3,8 +3,22 @@ Proxy:TProxy
 Client1:TClient
 Client2:TClient
 Client3:TClient
+Client4:TClient
+Client5:TClient
+Client6:TClient
+Client7:TClient
+Client8:TClient
 
 Server:Proxy.start()
-Proxy:STARTED=Client1.start()
-Proxy:STARTED=Client2.start()
-Proxy:STARTED=Client3.start()
+Proxy:STARTED=Client1.start(200)
+Proxy:STARTED=Client2.start(200)
+Proxy:DOWN=Client3.start(200)
+Proxy:STARTED=Client4.start(200)
+Proxy:STARTED=Client5.start(200)
+Proxy:STARTED=Client6.start(200)
+Proxy:DOWN=Client7.start(200)
+Proxy:DOWN=Client8.start(200)
+Proxy:Proxy.RemoveDown()
+Proxy:DETACHED=Client3.Detach()
+Proxy:DETACHED=Client7.Detach()
+Proxy:DETACHED=Client8.Detach()
