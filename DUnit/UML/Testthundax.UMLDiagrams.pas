@@ -25,7 +25,7 @@
 //  ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
 //  POSSIBILITY OF SUCH DAMAGE.
 
-unit Testthundax.logging;
+unit Testthundax.UMLDiagrams;
 {
 
   Delphi DUnit Test Case
@@ -39,52 +39,66 @@ unit Testthundax.logging;
 interface
 
 uses
-  TestFramework, thundax.logging;
+  TestFramework, thundax.UML, thundax.logging;
 
 type
-  // Test methods for class TLog
+  // Test methods for class TUML
 
-  TestTLog = class(TTestCase)
+  TestTUML = class(TTestCase)
   strict private
-    FLog: TLog;
+    FUML: TUML;
+    FUmlFileName: string;
   public
     procedure SetUp; override;
     procedure TearDown; override;
   published
-    procedure TestPrint;
+    procedure TestUMLDiagram;
   end;
-
-const
-  Path = 'logTestFile.txt';
 
 implementation
 
 uses
   SysUtils, Windows;
 
-procedure TestTLog.SetUp;
+procedure TestTUML.SetUp;
 begin
-  if fileExists(Path) then
-    DeleteFile(PChar(Path));
-  FLog := TLog.Start(Path, true);
+  FUmlFileName := 'TestDiagramUML';
+  FUML := TUML.Start(FUmlFileName);
 end;
 
-procedure TestTLog.TearDown;
+procedure TestTUML.TearDown;
 begin
-  FLog.Free;
-  FLog := nil;
+  FUML.Free;
+  FUML := nil;
 end;
 
-procedure TestTLog.TestPrint;
-var
-  msg: string;
+procedure TestTUML.TestUMLDiagram;
 begin
-  msg := 'Log this!';
-  FLog.Print(msg);
-  CheckTrue(FileExists(Path), 'Error, File was not created');
+  //Example Calling different imaginary methods
+  if fileExists(FUmlFileName + '.sdx') then
+    DeleteFile(PChar(FUmlFileName + '.sdx'));
+
+  if fileExists(FUmlFileName + '.jpg') then
+    DeleteFile(PChar(FUmlFileName + '.jpg'));
+
+  FUML.Define('Server', 'TServer');
+  FUML.Define('Proxy', 'TProxy');
+  FUML.Define('Client1', 'TClient');
+  FUML.Define('Client2', 'TClient');
+  FUML.Define('Client3', 'TClient');
+  FUML.Define();
+
+  FUML.Call('Server','Proxy','start','');
+  FUML.Call('Proxy','Client1','start','', 'STARTED');
+  FUML.Call('Proxy','Client2','start','', 'STARTED');
+  FUML.Call('Proxy','Client3','start','', 'STARTED');
+  //Generating the diagram
+  FUML.Convert;
+  Sleep(2000); //give time the file to be generated
+  CheckTrue(FileExists(FUmlFileName + '.jpg'), 'Error, File was not created');
 end;
 
 initialization
-  RegisterTest(TestTLog.Suite);
+  RegisterTest(TestTUML.Suite);
 end.
 

@@ -33,10 +33,13 @@ type
   TLog = class(TObject)
   private
     FLogTextFile : TextFile;
+    FlogFileName : string;
+    FWithDate : Boolean;
+    function isFileAssigned() : Boolean;
   public
-    constructor Create(logFileName : string);
+    constructor Create(logFileName : string; withDate : Boolean = false);
     destructor Destroy(); override;
-    class function Start(logFileName : string): TLog;
+    class function Start(logFileName : string; withDate : Boolean = false): TLog;
     procedure Print(msg : string);
     procedure ConsoleOutput(msg : string);
     procedure OutputDebug(msg : string);
@@ -45,7 +48,7 @@ type
 implementation
 
 uses
-  Windows;
+  Windows, SysUtils;
 
 { TLog }
 
@@ -54,16 +57,27 @@ begin
   WriteLn(Output, msg);
 end;
 
-constructor TLog.Create(logFileName: string);
+constructor TLog.Create(logFileName: string; withDate : Boolean = false);
 begin
-  AssignFile(FLogTextFile, logFileName);
-  ReWrite(FLogTextFile);
+  FlogFileName := logFileName;
+  FWithDate := withDate;
 end;
 
 destructor TLog.Destroy;
 begin
-  CloseFile(FLogTextFile);
+  if isFileAssigned() then
+    CloseFile(FLogTextFile);
   inherited;
+end;
+
+function TLog.isFileAssigned: Boolean;
+begin
+  Result := True;
+  try
+    Append(FLogTextFile);
+  except
+    Result := False;
+  end;
 end;
 
 procedure TLog.OutputDebug(msg: string);
@@ -72,13 +86,27 @@ begin
 end;
 
 procedure TLog.Print(msg: string);
+var
+  outputString : string;
 begin
-  Write(FLogTextFile, msg);
+  AssignFile(FLogTextFile, FlogFileName);
+  try
+    if FileExists(FlogFileName) then
+        Append(FLogTextFile) // If existing file
+    else
+        Rewrite(FLogTextFile); // Create if new
+    outputString := msg;
+    if FWithDate then
+      outputString := formatDateTime('dd/mm/yy hh:nn:ss ', Now) + msg;
+    WriteLn(FLogTextFile, outputString);
+    CloseFile(FLogTextFile);
+  except
+  end;
 end;
 
-class function TLog.Start(logFileName: string): TLog;
+class function TLog.Start(logFileName: string; withDate : Boolean = false): TLog;
 begin
-  result := Create(logFileName);
+  result := Create(logFileName, withDate);
 end;
 
 end.
