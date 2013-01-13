@@ -53,6 +53,7 @@ type
     procedure TearDown; override;
   published
     procedure TestUMLDiagram;
+    procedure TestUMLDiagramExtended;
   end;
 
 implementation
@@ -92,6 +93,47 @@ begin
   FUML.Call('Proxy','Client1','start','', 'STARTED');
   FUML.Call('Proxy','Client2','start','', 'STARTED');
   FUML.Call('Proxy','Client3','start','', 'STARTED');
+  //Generating the diagram
+  FUML.Convert;
+  Sleep(2000); //give time the file to be generated
+  CheckTrue(FileExists(FUmlFileName + '.jpg'), 'Error, File was not created');
+end;
+
+procedure TestTUML.TestUMLDiagramExtended;
+begin
+  //Example Calling different imaginary methods
+  if fileExists(FUmlFileName + '.sdx') then
+    DeleteFile(PChar(FUmlFileName + '.sdx'));
+
+  if fileExists(FUmlFileName + '.jpg') then
+    DeleteFile(PChar(FUmlFileName + '.jpg'));
+
+  FUML.Define('Server', 'TServer');
+  FUML.Define('Proxy', 'TProxy');
+  FUML.Define('Client1', 'TClient');
+  FUML.Define('Client2', 'TClient');
+  FUML.Define('Client3', 'TClient');
+  FUML.Define('Client4', 'TClient');
+  FUML.Define('Client5', 'TClient');
+  FUML.Define('Client6', 'TClient');
+  FUML.Define('Client7', 'TClient');
+  FUML.Define('Client8', 'TClient');
+  FUML.Define();
+
+  FUML.Call('Server','Proxy','start','');
+  FUML.Call('Proxy','Client1','start','200', 'STARTED');
+  FUML.Call('Proxy','Client2','start','200', 'STARTED');
+  FUML.Call('Proxy','Client3','start','200', 'DOWN');
+  FUML.Call('Proxy','Client4','start','200', 'STARTED');
+  FUML.Call('Proxy','Client5','start','200', 'STARTED');
+  FUML.Call('Proxy','Client6','start','200', 'STARTED');
+  FUML.Call('Proxy','Client7','start','200', 'DOWN');
+  FUML.Call('Proxy','Client8','start','200', 'DOWN');
+
+  FUML.Call('Proxy','Proxy','RemoveDown','');
+  FUML.Call('Proxy','Client3','Detach', '', 'DETACHED');
+  FUML.Call('Proxy','Client7','Detach', '', 'DETACHED');
+  FUML.Call('Proxy','Client8','Detach', '', 'DETACHED');
   //Generating the diagram
   FUML.Convert;
   Sleep(2000); //give time the file to be generated
