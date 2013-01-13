@@ -1,0 +1,10 @@
+Server:TServer
+Proxy:TProxy
+Client1:TClient
+Client2:TClient
+Client3:TClient
+
+Server:Proxy.start()
+Proxy:STARTED=Client1.start()
+Proxy:STARTED=Client2.start()
+Proxy:STARTED=Client3.start()

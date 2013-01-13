@@ -19,7 +19,8 @@ uses
   TestFramework,
   GUITestRunner,
   TextTestRunner,
-  thundax.UML in '..\..\src\UML\thundax.UML.pas';
+  thundax.UML in '..\..\src\UML\thundax.UML.pas',
+  Testthundax.UMLDiagrams in 'Testthundax.UMLDiagrams.pas';
 
 {$R *.RES}
 
