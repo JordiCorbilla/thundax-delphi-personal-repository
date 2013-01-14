@@ -54,12 +54,13 @@ type
   published
     procedure TestUMLDiagram;
     procedure TestUMLDiagramExtended;
+    procedure TestUMLDiagramAsynchronous;
   end;
 
 implementation
 
 uses
-  SysUtils, Windows;
+  SysUtils, Windows, SyncObjs, Classes, Diagnostics;
 
 procedure TestTUML.SetUp;
 begin
@@ -93,6 +94,117 @@ begin
   FUML.Call('Proxy','Client1','start','', 'STARTED');
   FUML.Call('Proxy','Client2','start','', 'STARTED');
   FUML.Call('Proxy','Client3','start','', 'STARTED');
+  //Generating the diagram
+  FUML.Convert;
+  Sleep(2000); //give time the file to be generated
+  CheckTrue(FileExists(FUmlFileName + '.jpg'), 'Error, File was not created');
+end;
+
+procedure TestTUML.TestUMLDiagramAsynchronous;
+var
+  lock: TCriticalSection;
+  thread1, thread2, thread3: TThread;
+  sw : TStopWatch;
+begin
+  //Example Calling different imaginary methods
+  if fileExists(FUmlFileName + '.sdx') then
+    DeleteFile(PChar(FUmlFileName + '.sdx'));
+
+  if fileExists(FUmlFileName + '.jpg') then
+    DeleteFile(PChar(FUmlFileName + '.jpg'));
+
+  lock := TCriticalSection.Create;
+  FUML.Define('Application', 'TApplication');
+  FUML.Define('MainThread', 'TThread');
+  FUML.Define('thread1', 'TThread');
+  FUML.Define('thread2', 'TThread');
+  FUML.Define('thread3', 'TThread');
+  FUML.Define();
+
+  FUML.Call('Application','MainThread','Start','');
+
+  thread1 := TThread.CreateAnonymousThread( procedure
+  var
+    b : Boolean;
+    i : integer;
+    j : Integer;
+  begin
+    thread1.NameThreadForDebugging('thread1a');
+    b := True;
+    i := 0;
+    lock.Acquire;
+    sw := TStopWatch.StartNew;
+    j := 10 + Random(300);
+    while b do
+    begin
+      inc(i);
+      b:= (i < j);
+      sleep(10);
+    end;
+    FUML.Call('MainThread','thread1','CreateAnonymousThread',IntToStr(j), 'DONE(' + IntToStr(sw.ElapsedMilliseconds) + 'ms)');
+    lock.Release;
+  end);
+  thread1.FreeOnTerminate := false;
+  thread1.Start;
+
+  thread2 := TThread.CreateAnonymousThread( procedure
+  var
+    b : Boolean;
+    i : integer;
+    j : Integer;
+  begin
+    thread2.NameThreadForDebugging('thread2a');
+    b := True;
+    i := 0;
+    lock.Acquire;
+    sw := TStopWatch.StartNew;
+    j := 10 + Random(300);
+    while b do
+    begin
+      inc(i);
+      b:= (i < j);
+      sleep(10);
+    end;
+    FUML.Call('MainThread','thread2','CreateAnonymousThread',IntToStr(j), 'DONE(' + IntToStr(sw.ElapsedMilliseconds) + 'ms)');
+    lock.Release;
+  end);
+  thread2.FreeOnTerminate := false;
+  thread2.Start;
+
+  thread3 := TThread.CreateAnonymousThread( procedure
+  var
+    b : Boolean;
+    i : integer;
+    j : Integer;
+  begin
+    thread3.NameThreadForDebugging('thread3a');
+    b := True;
+    i := 0;
+    lock.Acquire;
+    sw := TStopWatch.StartNew;
+    j := 10 + Random(300);
+    while b do
+    begin
+      inc(i);
+      b:= (i < j);
+      sleep(10);
+    end;
+    FUML.Call('MainThread','thread3','CreateAnonymousThread',IntToStr(j), 'DONE(' + IntToStr(sw.ElapsedMilliseconds) + 'ms)');
+    lock.Release;
+  end);
+
+  thread3.FreeOnTerminate := false;
+  thread3.Start;
+
+  thread1.WaitFor;
+  thread2.WaitFor;
+  thread3.WaitFor;
+  thread1.Terminate;
+  thread1.Free;
+  thread2.Terminate;
+  thread2.Free;
+  thread3.Terminate;
+  thread3.Free;
   //Generating the diagram
   FUML.Convert;
   Sleep(2000); //give time the file to be generated
