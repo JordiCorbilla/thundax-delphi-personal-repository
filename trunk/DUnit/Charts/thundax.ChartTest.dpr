@@ -25,7 +25,7 @@
 //  ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
 //  POSSIBILITY OF SUCH DAMAGE.
 
-program thundax.LoggingTest;
+program thundax.ChartTest;
 {
 
   Delphi DUnit Test Project
@@ -45,11 +45,9 @@ uses
   Forms,
   TestFramework,
   GUITestRunner,
-  TextTestRunner,
-  thundax.logging in '..\..\src\Logging\thundax.logging.pas',
-  Testthundax.logging in 'Testthundax.logging.pas';
+  TextTestRunner;
 
-{R *.RES}
+{$R *.RES}
 
 begin
   Application.Initialize;

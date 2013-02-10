@@ -1,7 +1,7 @@
 ﻿	<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
 		<PropertyGroup>
-			<ProjectGuid>{BA321C58-89D7-4ED8-930F-0DF0335B2502}</ProjectGuid>
-			<MainSource>thundax.LoggingTest.dpr</MainSource>
+			<ProjectGuid>{356DB67F-CC60-4C43-9147-71C734907A6B}</ProjectGuid>
+			<MainSource>thundax.MultiThreadingTest.dpr</MainSource>
 			<ProjectVersion>12.2</ProjectVersion>
 			<Base>True</Base>
 			<Config Condition="'$(Config)'==''">Debug</Config>
@@ -39,6 +39,7 @@
 		<PropertyGroup Condition="'$(Cfg_1)'!=''">
 			<DCC_Optimize>false</DCC_Optimize>
 			<DCC_Define>DEBUG;$(DCC_Define)</DCC_Define>
+			<DCC_ExeOutput>.</DCC_ExeOutput>
 			<DCC_DcuOutput>dcu\</DCC_DcuOutput>
 			<DCC_GenerateStackFrames>true</DCC_GenerateStackFrames>
 		</PropertyGroup>
@@ -49,11 +50,9 @@
 			<DCC_DebugInformation>false</DCC_DebugInformation>
 		</PropertyGroup>
 		<ItemGroup>
-			<DelphiCompile Include="thundax.LoggingTest.dpr">
+			<DelphiCompile Include="thundax.MultiThreadingTest.dpr">
 				<MainSource>MainSource</MainSource>
 			</DelphiCompile>
-			<DCCReference Include="..\..\src\Logging\thundax.logging.pas"/>
-			<DCCReference Include="Testthundax.logging.pas"/>
 			<BuildConfiguration Include="Release">
 				<Key>Cfg_2</Key>
 				<CfgParent>Base</CfgParent>
@@ -101,12 +100,15 @@
 						<VersionInfoKeys Name="Comments"/>
 					</VersionInfoKeys>
 					<Source>
-						<Source Name="MainSource">thundax.LoggingTest.dpr</Source>
+						<Source Name="MainSource">thundax.MultiThreadingTest.dpr</Source>
 					</Source>
 				</Delphi.Personality>
 				<Platforms>
 					<Platform value="Win32">True</Platform>
 				</Platforms>
+				<UnitTesting>
+					<TestProjectName>C:\Desk\OpenSource Projects\ThundaxDelphiRepository\thundax-delphi-personal-repository\DUnit\Charts\thundax.ChartTest.dproj</TestProjectName>
+				</UnitTesting>
 			</BorlandProject>
 			<ProjectFileVersion>12</ProjectFileVersion>
 		</ProjectExtensions>
