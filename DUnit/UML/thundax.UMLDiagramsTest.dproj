@@ -113,6 +113,7 @@
 					<SourceProjectName>C:\Desk\OpenSource Projects\ThundaxDelphiRepository\thundax-delphi-personal-repository\DUnit\Mock\thundax.MockTest.dproj</SourceProjectName>
 					<TestFramework>DUnit / Delphi Win32</TestFramework>
 					<TestRunner>GUI</TestRunner>
+					<TestProjectName/>
 				</UnitTesting>
 			</BorlandProject>
 			<ProjectFileVersion>12</ProjectFileVersion>
