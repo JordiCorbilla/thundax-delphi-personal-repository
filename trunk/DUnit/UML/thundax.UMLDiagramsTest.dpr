@@ -47,7 +47,9 @@ uses
   GUITestRunner,
   TextTestRunner,
   thundax.UML in '..\..\src\UML\thundax.UML.pas',
-  Testthundax.UMLDiagrams in 'Testthundax.UMLDiagrams.pas';
+  Testthundax.UMLDiagrams in 'Testthundax.UMLDiagrams.pas',
+  Testthundax.RegularExpressions in '..\Regular Expressions\Testthundax.RegularExpressions.pas',
+  thundax.stringHelper in '..\..\src\Regular Expressions\thundax.stringHelper.pas';
 
 {$R *.RES}
 

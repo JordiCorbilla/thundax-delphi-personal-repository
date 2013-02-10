@@ -25,39 +25,21 @@
 //  ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
 //  POSSIBILITY OF SUCH DAMAGE.
 
-program thundax.RegularExpressionsTest;
-{
+unit thundax.stringHelper.contract;
 
-  Delphi DUnit Test Project
-  -------------------------
-  This project contains the DUnit test framework and the GUI/Console test runners.
-  Add "CONSOLE_TESTRUNNER" to the conditional defines entry in the project options
-  to use the console test runner.  Otherwise the GUI test runner will be used by
-  default.
+interface
 
-}
+type
+  IStringHelper = interface
+    function GetText : string;
+    procedure SetText(const Value : string);
+    property Text : string read GetText write SetText;
+    function Left(numChars : Integer) : IStringHelper;
+    function Right(numChars : Integer) : IStringHelper;
+    function isMatch(regEx : string) : Boolean;
+    function ToString() : string;
+  end;
 
-{$IFDEF CONSOLE_TESTRUNNER}
-{$APPTYPE CONSOLE}
-{$ENDIF}
+implementation
 
-uses
-  Forms,
-  TestFramework,
-  GUITestRunner,
-  TextTestRunner,
-  thundax.stringHelper in '..\..\src\Regular Expressions\thundax.stringHelper.pas',
-  Testthundax.RegularExpressions in 'Testthundax.RegularExpressions.pas',
-  thundax.stringHelper.contract in '..\..\src\Regular Expressions\thundax.stringHelper.contract.pas';
-
-{$R *.RES}
-
-begin
-  Application.Initialize;
-  if IsConsole then
-    with TextTestRunner.RunRegisteredTests do
-      Free
-  else
-    GUITestRunner.RunRegisteredTests;
 end.
-
