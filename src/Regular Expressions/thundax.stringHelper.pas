@@ -70,16 +70,16 @@ function TStringHelper.isMatch(regEx: string): Boolean;
 var
   expression: TRegEx;
 begin
-  expression := TRegEx.Create(UTF8String(regEx));
-  result := expression.IsMatch(UTF8String(GetText));
+  expression := TRegEx.Create(regEx);
+  result := expression.IsMatch(GetText);
 end;
 
 function TStringHelper.MatchGroups(regEx: string): TGroupCollection;
 var
   expression: TRegEx;
 begin
-  expression := TRegEx.Create(UTF8String(regEx));
-  result := expression.Match(UTF8String(GetText)).Groups;
+  expression := TRegEx.Create(regEx);
+  result := expression.Match(GetText).Groups;
 end;
 
 function TStringHelper.Left(numChars: Integer): IStringHelper;
