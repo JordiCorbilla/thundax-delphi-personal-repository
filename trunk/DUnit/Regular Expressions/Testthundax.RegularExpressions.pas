@@ -49,9 +49,13 @@ type
   published
     procedure TestLeftRightString;
     procedure TestIsMatchRegularExpression;
+    procedure TestGroupsRegularExpression;
   end;
 
 implementation
+
+uses
+  RegularExpressions;
 
 procedure TestTStringHelper.SetUp;
 begin
@@ -61,6 +65,19 @@ end;
 procedure TestTStringHelper.TearDown;
 begin
 //
+end;
+
+procedure TestTStringHelper.TestGroupsRegularExpression;
+var
+  ReturnValue: Integer;
+  text: string;
+  group : TGroup;
+begin
+  text := 'ABABABGHIJKL';
+  ReturnValue := 0;
+  for group in  TStringHelper.New(text).Left(6).Right(4).MatchGroups('(AB)') do
+    inc(ReturnValue);
+  CheckTrue(ReturnValue=2, 'ReturnValue does not match');
 end;
 
 procedure TestTStringHelper.TestIsMatchRegularExpression;

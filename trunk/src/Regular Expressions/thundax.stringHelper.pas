@@ -30,7 +30,7 @@ unit thundax.stringHelper;
 interface
 
 uses
-  thundax.stringHelper.contract;
+  thundax.stringHelper.contract, RegularExpressions;
 
 type
   TStringHelper = class(TInterfacedObject, IStringHelper)
@@ -45,13 +45,14 @@ type
     function Left(numChars : Integer) : IStringHelper;
     function Right(numChars : Integer) : IStringHelper;
     function isMatch(regEx : string) : Boolean;
+    function MatchGroups(regEx: string): TGroupCollection;
     function ToString() : string; override;
   end;
 
 implementation
 
 uses
-  AnsiStrings, StrUtils, RegularExpressions;
+  AnsiStrings, StrUtils;
 
 { TStringHelper }
 
@@ -71,6 +72,14 @@ var
 begin
   expression := TRegEx.Create(UTF8String(regEx));
   result := expression.IsMatch(UTF8String(GetText));
+end;
+
+function TStringHelper.MatchGroups(regEx: string): TGroupCollection;
+var
+  expression: TRegEx;
+begin
+  expression := TRegEx.Create(UTF8String(regEx));
+  result := expression.Match(UTF8String(GetText)).Groups;
 end;
 
 function TStringHelper.Left(numChars: Integer): IStringHelper;
