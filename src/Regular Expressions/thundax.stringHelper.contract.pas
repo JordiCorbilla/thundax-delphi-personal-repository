@@ -29,6 +29,9 @@ unit thundax.stringHelper.contract;
 
 interface
 
+uses
+  RegularExpressions;
+
 type
   IStringHelper = interface
     function GetText : string;
@@ -37,6 +40,7 @@ type
     function Left(numChars : Integer) : IStringHelper;
     function Right(numChars : Integer) : IStringHelper;
     function isMatch(regEx : string) : Boolean;
+    function MatchGroups(regEx: string): TGroupCollection;
     function ToString() : string;
   end;
 
