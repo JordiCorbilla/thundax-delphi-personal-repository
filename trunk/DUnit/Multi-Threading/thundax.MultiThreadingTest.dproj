@@ -53,6 +53,8 @@
 			<DelphiCompile Include="thundax.MultiThreadingTest.dpr">
 				<MainSource>MainSource</MainSource>
 			</DelphiCompile>
+			<DCCReference Include="..\..\src\Multi-Threading\thundax.Multithreading.example.pas"/>
+			<DCCReference Include="Testthundax.Multithreading.pas"/>
 			<BuildConfiguration Include="Release">
 				<Key>Cfg_2</Key>
 				<CfgParent>Base</CfgParent>
