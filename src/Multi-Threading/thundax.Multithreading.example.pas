@@ -42,12 +42,12 @@ type
     FSolve : String;
     FSubChar : String;
     function GetNumberProcessors() : integer;
-    function md5(const text: string): string;
   public
     constructor Create(hash : string);
     class function new(hash : string) : TBruteForceThreading;
     function Solve() : string;
     destructor Destroy(); override;
+    class function md5(const text: string): string;
   end;
 
   TThreadList = TObjectList<TThread>;
@@ -58,7 +58,7 @@ const
 implementation
 
 uses
-  IdHashMessageDigest, SysUtils, Windows, AnsiStrings;
+  IdHashMessageDigest, SysUtils, Windows, AnsiStrings, thundax.stringHelper;
 
 { TBruteForceThreading }
 
@@ -90,10 +90,10 @@ begin
   while (num <= Length(chars)) and (FSolve = '') do
   begin
     if Length(charsTemp) >= GetNumberProcessors() then
-      subChar := string(AnsiLeftStr(AnsiString(charsTemp), FNumberOfProcessors))
+      subChar := TStringHelper.New(charsTemp).Left(FNumberOfProcessors).ToString()
     else
-      subChar := string(AnsiLeftStr(AnsiString(charsTemp), Length(charsTemp)));
-    charsTemp := string(AnsiRightStr(AnsiString(charsTemp), Length(charsTemp)-Length(subChar)));
+      subChar := TStringHelper.New(charsTemp).Left(Length(charsTemp)).ToString();
+    charsTemp := TStringHelper.New(charsTemp).Right(Length(charsTemp)-Length(subChar)).ToString();
 
     threadList := TThreadList.Create;
     for i := 1 to Length(subChar) do
@@ -110,9 +110,11 @@ begin
         m := 1;
         while (m <= Length(chars)) and (not found) do
         begin
+          found := (FSolve <> '');
           n := 1;
           while (n <= Length(chars)) and (not found) do
           begin
+            found := (FSolve <> '');
             o := 1;
             while (o <= Length(chars)) and (not found) do
             begin
@@ -121,7 +123,10 @@ begin
               md5Hash := md5(hashWord);
               found := (md5Hash = FHash);
               if found then
+              begin
                 FSolve := hashWord;
+                OutputdebugString(PWideChar('Found by :' + Inttostr(thread1.ThreadID)));
+              end;
               inc(o);
               FCriticalSection.Release;
             end;
@@ -132,7 +137,9 @@ begin
       end
       );
       threadList.Add(thread1);
+      thread1.NameThreadForDebugging(AnsiString('Thread ' + IntToStr(threadList.count)));
       thread1.FreeOnTerminate := false;
+      OutputdebugString(PWideChar('Starting :' + Inttostr(thread1.ThreadID) + ' Char: ' + subChar));
       thread1.Start;
     end;
 
@@ -164,16 +171,15 @@ begin
   result := MySystem.dwNumberOfProcessors;
 end;
 
-function TBruteForceThreading.md5(const text: string) : string;
+class function TBruteForceThreading.md5(const text: string) : string;
 var
   md5 : TIdHashMessageDigest5;
 begin
   try
-    md5    := TIdHashMessageDigest5.Create;
+    md5 := TIdHashMessageDigest5.Create;
     Result := LowerCase(md5.HashStringAsHex(text, TEncoding.Default));
     md5.Free;
   except
-
   end;
 end;
 
