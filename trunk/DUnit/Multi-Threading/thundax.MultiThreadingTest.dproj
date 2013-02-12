@@ -37,6 +37,7 @@
 			<DCC_F>false</DCC_F>
 		</PropertyGroup>
 		<PropertyGroup Condition="'$(Cfg_1)'!=''">
+			<DCC_UnitSearchPath>C:\Desk\OpenSource Projects\ThundaxDelphiRepository\thundax-delphi-personal-repository\src\Regular Expressions;$(DCC_UnitSearchPath)</DCC_UnitSearchPath>
 			<DCC_Optimize>false</DCC_Optimize>
 			<DCC_Define>DEBUG;$(DCC_Define)</DCC_Define>
 			<DCC_ExeOutput>.</DCC_ExeOutput>
