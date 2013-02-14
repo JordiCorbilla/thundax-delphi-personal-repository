@@ -53,6 +53,8 @@
 			<DelphiCompile Include="thundax.DesignPatternsTest.dpr">
 				<MainSource>MainSource</MainSource>
 			</DelphiCompile>
+			<DCCReference Include="..\..\src\Design Patterns\Prototype\thundax.Prototype.pas"/>
+			<DCCReference Include="Testthundax.DesignPatterns.pas"/>
 			<BuildConfiguration Include="Release">
 				<Key>Cfg_2</Key>
 				<CfgParent>Base</CfgParent>
@@ -110,6 +112,7 @@
 					<SourceProjectName>C:\Desk\OpenSource Projects\ThundaxDelphiRepository\thundax-delphi-personal-repository\DUnit\Regular Expressions\thundax.RegularExpressionsTest.dproj</SourceProjectName>
 					<TestFramework>DUnit / Delphi Win32</TestFramework>
 					<TestRunner>GUI</TestRunner>
+					<TestProjectName/>
 				</UnitTesting>
 			</BorlandProject>
 			<ProjectFileVersion>12</ProjectFileVersion>
