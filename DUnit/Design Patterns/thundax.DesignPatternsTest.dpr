@@ -45,7 +45,9 @@ uses
   Forms,
   TestFramework,
   GUITestRunner,
-  TextTestRunner;
+  TextTestRunner,
+  thundax.Prototype in '..\..\src\Design Patterns\Prototype\thundax.Prototype.pas',
+  Testthundax.DesignPatterns in 'Testthundax.DesignPatterns.pas';
 
 {$R *.RES}
 
