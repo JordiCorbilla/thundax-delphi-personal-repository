@@ -47,12 +47,14 @@ uses
   GUITestRunner,
   TextTestRunner,
   thundax.Prototype in '..\..\src\Design Patterns\Prototype\thundax.Prototype.pas',
-  Testthundax.DesignPatterns in 'Testthundax.DesignPatterns.pas';
+  Testthundax.DesignPatterns in 'Testthundax.DesignPatterns.pas',
+  thundax.AbstractFactory in '..\..\src\Design Patterns\AbstractFactory\thundax.AbstractFactory.pas';
 
 {$R *.RES}
 
 begin
   Application.Initialize;
+  ReportMemoryLeaksOnShutdown := True;
   if IsConsole then
     with TextTestRunner.RunRegisteredTests do
       Free

@@ -41,6 +41,7 @@ type
   public
     property Format: string read FFormat write FFormat;
     constructor Create(umlFileName: string);
+    destructor Destroy(); override;
     class function Start(umlFileName: string): TUML;
     procedure Define(name : String; kind : String); overload;
     procedure Define(); overload;
@@ -92,6 +93,12 @@ end;
 procedure TUML.Define;
 begin
   FOutFile.print('');
+end;
+
+destructor TUML.Destroy;
+begin
+  FOutFile.Free;
+  inherited;
 end;
 
 procedure TUML.Define(name, kind: String);

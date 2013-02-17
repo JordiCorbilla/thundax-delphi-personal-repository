@@ -209,6 +209,7 @@ begin
   FUML.Convert;
   Sleep(2000); //give time the file to be generated
   CheckTrue(FileExists(FUmlFileName + '.jpg'), 'Error, File was not created');
+  lock.Free;
 end;
 
 procedure TestTUML.TestUMLDiagramExtended;

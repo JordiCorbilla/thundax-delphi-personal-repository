@@ -33,7 +33,11 @@ uses
   SyncObjs, Contnrs, Generics.Collections, Classes;
 
 type
-  TBruteForceThreading = class(TObject)
+  IBruteForce = interface
+    function Solve() : string;
+  end;
+
+  TBruteForceThreading = class(TInterfacedObject, IBruteForce)
   private
     FCriticalSection: TCriticalSection;
     FCountDown: TCountdownEvent;
@@ -95,71 +99,78 @@ begin
       subChar := TStringHelper.New(charsTemp).Left(Length(charsTemp)).ToString();
     charsTemp := TStringHelper.New(charsTemp).Right(Length(charsTemp)-Length(subChar)).ToString();
 
-    threadList := TThreadList.Create;
-    for i := 1 to Length(subChar) do
-    begin
-      FSubChar := subChar[i];
-      thread1 := TThread.CreateAnonymousThread(procedure
-      var
-        m, n, o: integer;
-        md5Hash : string;
-        hashWord : string;
-        found : Boolean;
+    threadList := TThreadList.Create(false);
+    try
+      for i := 1 to Length(subChar) do
       begin
-        found := (FSolve <> '');
-        m := 1;
-        while (m <= Length(chars)) and (not found) do
+        FSubChar := subChar[i];
+        thread1 := TThread.CreateAnonymousThread(procedure
+        var
+          m, n, o: integer;
+          md5Hash : string;
+          hashWord : string;
+          found : Boolean;
         begin
           found := (FSolve <> '');
-          n := 1;
-          while (n <= Length(chars)) and (not found) do
+          m := 1;
+          while (m <= Length(chars)) and (not found) do
           begin
             found := (FSolve <> '');
-            o := 1;
-            while (o <= Length(chars)) and (not found) do
+            n := 1;
+            while (n <= Length(chars)) and (not found) do
             begin
-              FCriticalSection.Acquire;
-              hashWord := FSubChar+chars[m]+chars[n]+chars[o];
-              md5Hash := md5(hashWord);
-              found := (md5Hash = FHash);
-              if found then
+              found := (FSolve <> '');
+              o := 1;
+              while (o <= Length(chars)) and (not found) do
               begin
-                FSolve := hashWord;
-                OutputdebugString(PWideChar('Found by :' + Inttostr(thread1.ThreadID)));
+                FCriticalSection.Acquire;
+                hashWord := FSubChar+chars[m]+chars[n]+chars[o];
+                md5Hash := md5(hashWord);
+                found := (md5Hash = FHash);
+                if found then
+                begin
+                  FSolve := hashWord;
+                  OutputdebugString(PWideChar('Found by :' + Inttostr(thread1.ThreadID)));
+                end;
+                inc(o);
+                FCriticalSection.Release;
               end;
-              inc(o);
-              FCriticalSection.Release;
+              inc(n);
             end;
-            inc(n);
+            inc(m);
           end;
-          inc(m);
-        end;
-      end
-      );
-      threadList.Add(thread1);
-      thread1.NameThreadForDebugging(AnsiString('Thread ' + IntToStr(threadList.count)));
-      thread1.FreeOnTerminate := false;
-      OutputdebugString(PWideChar('Starting :' + Inttostr(thread1.ThreadID) + ' Char: ' + subChar));
-      thread1.Start;
-    end;
+        end
+        );
+        threadList.Add(thread1);
+        thread1.NameThreadForDebugging(AnsiString('Thread ' + IntToStr(threadList.count)));
+        thread1.FreeOnTerminate := false;
+        OutputdebugString(PWideChar('Starting :' + Inttostr(thread1.ThreadID) + ' Char: ' + subChar));
+        thread1.Start;
+      end;
 
-    for threads in threadList do
-      threads.WaitFor;
+      for threads in threadList do
+        threads.WaitFor;
 
-    for threads in threadList do
-    begin
-      threads.Terminate;
-      threads.Free;
+      for threads in threadList do
+      begin
+        threads.Terminate;
+        threads.Free;
+      end;
+      num := num + Length(subChar);
+    finally
+      threadList.Free;
     end;
-    num := num + Length(subChar);
   end;
+
   result := FSolve;
 end;
 
 destructor TBruteForceThreading.Destroy;
 begin
-  FreeAndNil(FCriticalSection);
-  FreeAndNil(FCountDown);
+  if Assigned(FCriticalSection) then
+    FreeAndNil(FCriticalSection);
+  if Assigned(FCountDown) then
+    FreeAndNil(FCountDown);
   inherited;
 end;
 
