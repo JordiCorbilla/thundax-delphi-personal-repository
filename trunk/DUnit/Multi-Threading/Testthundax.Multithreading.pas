@@ -68,14 +68,19 @@ procedure TestTBruteForceThreading.TestSolve;
 var
   ReturnValue: string;
   Hash : string;
+  BruteForce : TBruteForceThreading;
 begin
   Hash := TBruteForceThreading.md5('deal');
-  ReturnValue := TBruteForceThreading.new(Hash).solve;
+  BruteForce := TBruteForceThreading.new(Hash);
+  ReturnValue := BruteForce.solve;
   CheckTrue(ReturnValue = 'deal', 'Word has not been found');
+  BruteForce.Free;
 
   Hash := TBruteForceThreading.md5('zzzz');
-  ReturnValue := TBruteForceThreading.new(Hash).solve;
+  BruteForce := TBruteForceThreading.new(Hash);
+  ReturnValue := BruteForce.solve;
   CheckTrue(ReturnValue = 'zzzz', 'Word has not been found');
+  BruteForce.Free;
 end;
 
 initialization

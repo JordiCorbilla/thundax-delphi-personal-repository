@@ -5,6 +5,6 @@ thread2:TThread
 thread3:TThread
 
 Application:MainThread.Start()
-MainThread:DONE(2923ms)=thread1.CreateAnonymousThread(289)
-MainThread:DONE(1952ms)=thread3.CreateAnonymousThread(194)
-MainThread:DONE(1410ms)=thread2.CreateAnonymousThread(140)
+MainThread:DONE(385ms)=thread1.CreateAnonymousThread(37)
+MainThread:DONE(799ms)=thread2.CreateAnonymousThread(79)
+MainThread:DONE(2923ms)=thread3.CreateAnonymousThread(288)

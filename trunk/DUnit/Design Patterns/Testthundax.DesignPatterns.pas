@@ -39,35 +39,55 @@ unit Testthundax.DesignPatterns;
 interface
 
 uses
-  TestFramework, Generics.Collections, Contnrs, thundax.Prototype;
+  TestFramework, Generics.Collections, Contnrs, thundax.Prototype, thundax.AbstractFactory;
 
 type
   // Test methods for class TPrototypeFactory
 
-  TestTPrototypeFactory = class(TTestCase)
+  TestDesignPatterns = class(TTestCase)
   strict private
     FPrototypeFactory: TPrototypeFactory;
+    FVehicleFactory: TVehicleFactory;
   public
     procedure SetUp; override;
     procedure TearDown; override;
   published
     procedure TestMakeObject;
+    procedure TestFactory;
   end;
 
 implementation
 
-procedure TestTPrototypeFactory.SetUp;
+uses
+  SysUtils;
+
+procedure TestDesignPatterns.SetUp;
 begin
   FPrototypeFactory := TPrototypeFactory.Create;
+  FVehicleFactory:= TVehicleFactory.Create;
 end;
 
-procedure TestTPrototypeFactory.TearDown;
+procedure TestDesignPatterns.TearDown;
 begin
-  FPrototypeFactory.Free;
-  FPrototypeFactory := nil;
+  FreeAndNil(FPrototypeFactory);
+  FreeAndNil(FVehicleFactory);
 end;
 
-procedure TestTPrototypeFactory.TestMakeObject;
+procedure TestDesignPatterns.TestFactory;
+var
+  vehicle : IAbstractVehicle;
+begin
+  vehicle := FVehicleFactory.CreateCar;
+  CheckTrue(vehicle.ToString() = 'Car', 'Instance is not correct');
+  vehicle := FVehicleFactory.CreateTruck;
+  CheckTrue(vehicle.ToString() = 'Truck', 'Instance is not correct');
+  vehicle := FVehicleFactory.CreateBus;
+  CheckTrue(vehicle.ToString() = 'Bus', 'Instance is not correct');
+  vehicle := FVehicleFactory.CreateVan;
+  CheckTrue(vehicle.ToString() = 'Van', 'Instance is not correct');
+end;
+
+procedure TestDesignPatterns.TestMakeObject;
 var
   ReturnValue: IVehicle;
   Vehicle: string;
@@ -88,6 +108,6 @@ end;
 
 initialization
   // Register any test cases with the test runner
-  RegisterTest(TestTPrototypeFactory.Suite);
+  RegisterTest(TestDesignPatterns.Suite);
 end.
 
