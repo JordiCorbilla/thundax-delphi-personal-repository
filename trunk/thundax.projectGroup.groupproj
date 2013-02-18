@@ -33,6 +33,12 @@
 			<Projects Include="DUnit\Profiler\thundax.ProfilerTest.dproj">
 				<Dependencies/>
 			</Projects>
+			<Projects Include="src\COM\thundax.COMLib.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="DUnit\COM\thundax.COMTest.dproj">
+				<Dependencies/>
+			</Projects>
 		</ItemGroup>
 		<ProjectExtensions>
 			<Borland.Personality>Default.Personality.12</Borland.Personality>
@@ -131,14 +137,32 @@
 		<Target Name="thundax_ProfilerTest:Make">
 			<MSBuild Projects="DUnit\Profiler\thundax.ProfilerTest.dproj" Targets="Make"/>
 		</Target>
+		<Target Name="thundax_COMLib">
+			<MSBuild Projects="src\COM\thundax.COMLib.dproj"/>
+		</Target>
+		<Target Name="thundax_COMLib:Clean">
+			<MSBuild Projects="src\COM\thundax.COMLib.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="thundax_COMLib:Make">
+			<MSBuild Projects="src\COM\thundax.COMLib.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="thundax_COMTest">
+			<MSBuild Projects="DUnit\COM\thundax.COMTest.dproj"/>
+		</Target>
+		<Target Name="thundax_COMTest:Clean">
+			<MSBuild Projects="DUnit\COM\thundax.COMTest.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="thundax_COMTest:Make">
+			<MSBuild Projects="DUnit\COM\thundax.COMTest.dproj" Targets="Make"/>
+		</Target>
 		<Target Name="Build">
-			<CallTarget Targets="thundax_MockTest;thundax_CustomAttributesTest;thundax_FluentInterfacesTest;thundax_UMLDiagramsTest;thundax_LoggingTest;thundax_RegularExpressionsTest;thundax_DesignPatternsTest;thundax_MultiThreadingTest;thundax_ChartTest;thundax_ProfilerTest"/>
+			<CallTarget Targets="thundax_MockTest;thundax_CustomAttributesTest;thundax_FluentInterfacesTest;thundax_UMLDiagramsTest;thundax_LoggingTest;thundax_RegularExpressionsTest;thundax_DesignPatternsTest;thundax_MultiThreadingTest;thundax_ChartTest;thundax_ProfilerTest;thundax_COMLib;thundax_COMTest"/>
 		</Target>
 		<Target Name="Clean">
-			<CallTarget Targets="thundax_MockTest:Clean;thundax_CustomAttributesTest:Clean;thundax_FluentInterfacesTest:Clean;thundax_UMLDiagramsTest:Clean;thundax_LoggingTest:Clean;thundax_RegularExpressionsTest:Clean;thundax_DesignPatternsTest:Clean;thundax_MultiThreadingTest:Clean;thundax_ChartTest:Clean;thundax_ProfilerTest:Clean"/>
+			<CallTarget Targets="thundax_MockTest:Clean;thundax_CustomAttributesTest:Clean;thundax_FluentInterfacesTest:Clean;thundax_UMLDiagramsTest:Clean;thundax_LoggingTest:Clean;thundax_RegularExpressionsTest:Clean;thundax_DesignPatternsTest:Clean;thundax_MultiThreadingTest:Clean;thundax_ChartTest:Clean;thundax_ProfilerTest:Clean;thundax_COMLib:Clean;thundax_COMTest:Clean"/>
 		</Target>
 		<Target Name="Make">
-			<CallTarget Targets="thundax_MockTest:Make;thundax_CustomAttributesTest:Make;thundax_FluentInterfacesTest:Make;thundax_UMLDiagramsTest:Make;thundax_LoggingTest:Make;thundax_RegularExpressionsTest:Make;thundax_DesignPatternsTest:Make;thundax_MultiThreadingTest:Make;thundax_ChartTest:Make;thundax_ProfilerTest:Make"/>
+			<CallTarget Targets="thundax_MockTest:Make;thundax_CustomAttributesTest:Make;thundax_FluentInterfacesTest:Make;thundax_UMLDiagramsTest:Make;thundax_LoggingTest:Make;thundax_RegularExpressionsTest:Make;thundax_DesignPatternsTest:Make;thundax_MultiThreadingTest:Make;thundax_ChartTest:Make;thundax_ProfilerTest:Make;thundax_COMLib:Make;thundax_COMTest:Make"/>
 		</Target>
 		<Import Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')" Project="$(BDS)\Bin\CodeGear.Group.Targets"/>
 	</Project>
