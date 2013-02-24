@@ -1,152 +1,351 @@
 Trying to start thundax.DesignPatternsTest.exe with the Parameters :
-Create Process:12408 name:thundax.DesignPatternsTest.exe
+Create Process:8000 name:thundax.DesignPatternsTest.exe
 Adding breakpoints for module:thundax.DesignPatternsTest.exe
 Module name "GUITestRunner" did not match module from address name "TextTestRunner" at address:0010A480
+Setting BreakPoint for module: thundax.Prototype unit ..\..\src\Design Patterns\Prototype\thundax.Prototype.pas addr:2211
+Adding bkpt for thundax.Prototype.TBus.Clone in ..\..\src\Design Patterns\Prototype\thundax.Prototype.pas
+TBreakPoint.Activate:
+Activate ..\..\src\Design Patterns\Prototype\thundax.Prototype.pas line 78 BreakPoint at:0050F12C
+Setting BreakPoint for module: thundax.Prototype unit ..\..\src\Design Patterns\Prototype\thundax.Prototype.pas addr:2212
+Adding bkpt for thundax.Prototype.TBus.Clone in ..\..\src\Design Patterns\Prototype\thundax.Prototype.pas
+TBreakPoint.Activate:
+Activate ..\..\src\Design Patterns\Prototype\thundax.Prototype.pas line 79 BreakPoint at:0050F138
+Setting BreakPoint for module: thundax.Prototype unit ..\..\src\Design Patterns\Prototype\thundax.Prototype.pas addr:2213
+Adding bkpt for thundax.Prototype.TBus.Clone in ..\..\src\Design Patterns\Prototype\thundax.Prototype.pas
+TBreakPoint.Activate:
+Activate ..\..\src\Design Patterns\Prototype\thundax.Prototype.pas line 80 BreakPoint at:0050F155
+Setting BreakPoint for module: thundax.Prototype unit ..\..\src\Design Patterns\Prototype\thundax.Prototype.pas addr:2214
+Adding bkpt for thundax.Prototype.TBus.ToString in ..\..\src\Design Patterns\Prototype\thundax.Prototype.pas
+TBreakPoint.Activate:
+Activate ..\..\src\Design Patterns\Prototype\thundax.Prototype.pas line 83 BreakPoint at:0050F15C
+Setting BreakPoint for module: thundax.Prototype unit ..\..\src\Design Patterns\Prototype\thundax.Prototype.pas addr:2215
+Adding bkpt for thundax.Prototype.TBus.ToString in ..\..\src\Design Patterns\Prototype\thundax.Prototype.pas
+TBreakPoint.Activate:
+Activate ..\..\src\Design Patterns\Prototype\thundax.Prototype.pas line 84 BreakPoint at:0050F168
+Setting BreakPoint for module: thundax.Prototype unit ..\..\src\Design Patterns\Prototype\thundax.Prototype.pas addr:2216
+Adding bkpt for thundax.Prototype.TBus.ToString in ..\..\src\Design Patterns\Prototype\thundax.Prototype.pas
+TBreakPoint.Activate:
+Activate ..\..\src\Design Patterns\Prototype\thundax.Prototype.pas line 85 BreakPoint at:0050F175
+Setting BreakPoint for module: thundax.Prototype unit ..\..\src\Design Patterns\Prototype\thundax.Prototype.pas addr:2217
+Adding bkpt for thundax.Prototype.TTruck.Clone in ..\..\src\Design Patterns\Prototype\thundax.Prototype.pas
+TBreakPoint.Activate:
+Activate ..\..\src\Design Patterns\Prototype\thundax.Prototype.pas line 90 BreakPoint at:0050F190
+Setting BreakPoint for module: thundax.Prototype unit ..\..\src\Design Patterns\Prototype\thundax.Prototype.pas addr:2218
+Adding bkpt for thundax.Prototype.TTruck.Clone in ..\..\src\Design Patterns\Prototype\thundax.Prototype.pas
+TBreakPoint.Activate:
+Activate ..\..\src\Design Patterns\Prototype\thundax.Prototype.pas line 91 BreakPoint at:0050F19C
+Setting BreakPoint for module: thundax.Prototype unit ..\..\src\Design Patterns\Prototype\thundax.Prototype.pas addr:2219
+Adding bkpt for thundax.Prototype.TTruck.Clone in ..\..\src\Design Patterns\Prototype\thundax.Prototype.pas
+TBreakPoint.Activate:
+Activate ..\..\src\Design Patterns\Prototype\thundax.Prototype.pas line 92 BreakPoint at:0050F1B9
+Setting BreakPoint for module: thundax.Prototype unit ..\..\src\Design Patterns\Prototype\thundax.Prototype.pas addr:2220
+Adding bkpt for thundax.Prototype.TTruck.ToString in ..\..\src\Design Patterns\Prototype\thundax.Prototype.pas
+TBreakPoint.Activate:
+Activate ..\..\src\Design Patterns\Prototype\thundax.Prototype.pas line 95 BreakPoint at:0050F1C0
+Setting BreakPoint for module: thundax.Prototype unit ..\..\src\Design Patterns\Prototype\thundax.Prototype.pas addr:2221
+Adding bkpt for thundax.Prototype.TTruck.ToString in ..\..\src\Design Patterns\Prototype\thundax.Prototype.pas
+TBreakPoint.Activate:
+Activate ..\..\src\Design Patterns\Prototype\thundax.Prototype.pas line 96 BreakPoint at:0050F1CC
+Setting BreakPoint for module: thundax.Prototype unit ..\..\src\Design Patterns\Prototype\thundax.Prototype.pas addr:2222
+Adding bkpt for thundax.Prototype.TTruck.ToString in ..\..\src\Design Patterns\Prototype\thundax.Prototype.pas
+TBreakPoint.Activate:
+Activate ..\..\src\Design Patterns\Prototype\thundax.Prototype.pas line 97 BreakPoint at:0050F1D9
+Setting BreakPoint for module: thundax.Prototype unit ..\..\src\Design Patterns\Prototype\thundax.Prototype.pas addr:2223
+Adding bkpt for thundax.Prototype.TCar.Clone in ..\..\src\Design Patterns\Prototype\thundax.Prototype.pas
+TBreakPoint.Activate:
+Activate ..\..\src\Design Patterns\Prototype\thundax.Prototype.pas line 102 BreakPoint at:0050F1F8
+Setting BreakPoint for module: thundax.Prototype unit ..\..\src\Design Patterns\Prototype\thundax.Prototype.pas addr:2224
+Adding bkpt for thundax.Prototype.TCar.Clone in ..\..\src\Design Patterns\Prototype\thundax.Prototype.pas
+TBreakPoint.Activate:
+Activate ..\..\src\Design Patterns\Prototype\thundax.Prototype.pas line 103 BreakPoint at:0050F204
+Setting BreakPoint for module: thundax.Prototype unit ..\..\src\Design Patterns\Prototype\thundax.Prototype.pas addr:2225
+Adding bkpt for thundax.Prototype.TCar.Clone in ..\..\src\Design Patterns\Prototype\thundax.Prototype.pas
+TBreakPoint.Activate:
+Activate ..\..\src\Design Patterns\Prototype\thundax.Prototype.pas line 104 BreakPoint at:0050F221
+Setting BreakPoint for module: thundax.Prototype unit ..\..\src\Design Patterns\Prototype\thundax.Prototype.pas addr:2226
+Adding bkpt for thundax.Prototype.TCar.ToString in ..\..\src\Design Patterns\Prototype\thundax.Prototype.pas
+TBreakPoint.Activate:
+Activate ..\..\src\Design Patterns\Prototype\thundax.Prototype.pas line 107 BreakPoint at:0050F228
+Setting BreakPoint for module: thundax.Prototype unit ..\..\src\Design Patterns\Prototype\thundax.Prototype.pas addr:2227
+Adding bkpt for thundax.Prototype.TCar.ToString in ..\..\src\Design Patterns\Prototype\thundax.Prototype.pas
+TBreakPoint.Activate:
+Activate ..\..\src\Design Patterns\Prototype\thundax.Prototype.pas line 108 BreakPoint at:0050F234
+Setting BreakPoint for module: thundax.Prototype unit ..\..\src\Design Patterns\Prototype\thundax.Prototype.pas addr:2228
+Adding bkpt for thundax.Prototype.TCar.ToString in ..\..\src\Design Patterns\Prototype\thundax.Prototype.pas
+TBreakPoint.Activate:
+Activate ..\..\src\Design Patterns\Prototype\thundax.Prototype.pas line 109 BreakPoint at:0050F241
+Setting BreakPoint for module: thundax.Prototype unit ..\..\src\Design Patterns\Prototype\thundax.Prototype.pas addr:2229
+Adding bkpt for thundax.Prototype.TPrototypeFactory.Create in ..\..\src\Design Patterns\Prototype\thundax.Prototype.pas
+TBreakPoint.Activate:
+Activate ..\..\src\Design Patterns\Prototype\thundax.Prototype.pas line 114 BreakPoint at:0050F25C
+Setting BreakPoint for module: thundax.Prototype unit ..\..\src\Design Patterns\Prototype\thundax.Prototype.pas addr:2230
+Adding bkpt for thundax.Prototype.TPrototypeFactory.Create in ..\..\src\Design Patterns\Prototype\thundax.Prototype.pas
+TBreakPoint.Activate:
+Activate ..\..\src\Design Patterns\Prototype\thundax.Prototype.pas line 115 BreakPoint at:0050F274
+Setting BreakPoint for module: thundax.Prototype unit ..\..\src\Design Patterns\Prototype\thundax.Prototype.pas addr:2231
+Adding bkpt for thundax.Prototype.TPrototypeFactory.Create in ..\..\src\Design Patterns\Prototype\thundax.Prototype.pas
+TBreakPoint.Activate:
+Activate ..\..\src\Design Patterns\Prototype\thundax.Prototype.pas line 116 BreakPoint at:0050F288
+Setting BreakPoint for module: thundax.Prototype unit ..\..\src\Design Patterns\Prototype\thundax.Prototype.pas addr:2232
+Adding bkpt for thundax.Prototype.TPrototypeFactory.Create in ..\..\src\Design Patterns\Prototype\thundax.Prototype.pas
+TBreakPoint.Activate:
+Activate ..\..\src\Design Patterns\Prototype\thundax.Prototype.pas line 117 BreakPoint at:0050F2AD
+Setting BreakPoint for module: thundax.Prototype unit ..\..\src\Design Patterns\Prototype\thundax.Prototype.pas addr:2233
+Adding bkpt for thundax.Prototype.TPrototypeFactory.Create in ..\..\src\Design Patterns\Prototype\thundax.Prototype.pas
+TBreakPoint.Activate:
+Activate ..\..\src\Design Patterns\Prototype\thundax.Prototype.pas line 118 BreakPoint at:0050F2D2
+Setting BreakPoint for module: thundax.Prototype unit ..\..\src\Design Patterns\Prototype\thundax.Prototype.pas addr:2234
+Adding bkpt for thundax.Prototype.TPrototypeFactory.Create in ..\..\src\Design Patterns\Prototype\thundax.Prototype.pas
+TBreakPoint.Activate:
+Activate ..\..\src\Design Patterns\Prototype\thundax.Prototype.pas line 119 BreakPoint at:0050F2F7
+Setting BreakPoint for module: thundax.Prototype unit ..\..\src\Design Patterns\Prototype\thundax.Prototype.pas addr:2235
+Adding bkpt for thundax.Prototype.TPrototypeFactory.Create in ..\..\src\Design Patterns\Prototype\thundax.Prototype.pas
+TBreakPoint.Activate:
+Activate ..\..\src\Design Patterns\Prototype\thundax.Prototype.pas line 120 BreakPoint at:0050F31C
+Setting BreakPoint for module: thundax.Prototype unit ..\..\src\Design Patterns\Prototype\thundax.Prototype.pas addr:2236
+Adding bkpt for thundax.Prototype.TPrototypeFactory.Destroy in ..\..\src\Design Patterns\Prototype\thundax.Prototype.pas
+TBreakPoint.Activate:
+Activate ..\..\src\Design Patterns\Prototype\thundax.Prototype.pas line 123 BreakPoint at:0050F390
+Setting BreakPoint for module: thundax.Prototype unit ..\..\src\Design Patterns\Prototype\thundax.Prototype.pas addr:2237
+Adding bkpt for thundax.Prototype.TPrototypeFactory.Destroy in ..\..\src\Design Patterns\Prototype\thundax.Prototype.pas
+TBreakPoint.Activate:
+Activate ..\..\src\Design Patterns\Prototype\thundax.Prototype.pas line 124 BreakPoint at:0050F3A1
+Setting BreakPoint for module: thundax.Prototype unit ..\..\src\Design Patterns\Prototype\thundax.Prototype.pas addr:2238
+Adding bkpt for thundax.Prototype.TPrototypeFactory.Destroy in ..\..\src\Design Patterns\Prototype\thundax.Prototype.pas
+TBreakPoint.Activate:
+Activate ..\..\src\Design Patterns\Prototype\thundax.Prototype.pas line 125 BreakPoint at:0050F3C1
+Setting BreakPoint for module: thundax.Prototype unit ..\..\src\Design Patterns\Prototype\thundax.Prototype.pas addr:2239
+Adding bkpt for thundax.Prototype.TPrototypeFactory.Destroy in ..\..\src\Design Patterns\Prototype\thundax.Prototype.pas
+TBreakPoint.Activate:
+Activate ..\..\src\Design Patterns\Prototype\thundax.Prototype.pas line 126 BreakPoint at:0050F3CF
+Setting BreakPoint for module: thundax.Prototype unit ..\..\src\Design Patterns\Prototype\thundax.Prototype.pas addr:2240
+Adding bkpt for thundax.Prototype.TPrototypeFactory.MakeObject in ..\..\src\Design Patterns\Prototype\thundax.Prototype.pas
+TBreakPoint.Activate:
+Activate ..\..\src\Design Patterns\Prototype\thundax.Prototype.pas line 131 BreakPoint at:0050F3E4
+Setting BreakPoint for module: thundax.Prototype unit ..\..\src\Design Patterns\Prototype\thundax.Prototype.pas addr:2241
+Adding bkpt for thundax.Prototype.TPrototypeFactory.MakeObject in ..\..\src\Design Patterns\Prototype\thundax.Prototype.pas
+TBreakPoint.Activate:
+Activate ..\..\src\Design Patterns\Prototype\thundax.Prototype.pas line 132 BreakPoint at:0050F40F
+Setting BreakPoint for module: thundax.Prototype unit ..\..\src\Design Patterns\Prototype\thundax.Prototype.pas addr:2242
+Adding bkpt for thundax.Prototype.TPrototypeFactory.MakeObject in ..\..\src\Design Patterns\Prototype\thundax.Prototype.pas
+TBreakPoint.Activate:
+Activate ..\..\src\Design Patterns\Prototype\thundax.Prototype.pas line 133 BreakPoint at:0050F427
+Setting BreakPoint for module: thundax.Prototype unit ..\..\src\Design Patterns\Prototype\thundax.Prototype.pas addr:2243
+Adding bkpt for thundax.Prototype.TPrototypeFactory.MakeObject in ..\..\src\Design Patterns\Prototype\thundax.Prototype.pas
+TBreakPoint.Activate:
+Activate ..\..\src\Design Patterns\Prototype\thundax.Prototype.pas line 134 BreakPoint at:0050F432
+Setting BreakPoint for module: thundax.Prototype unit ..\..\src\Design Patterns\Prototype\thundax.Prototype.pas addr:2244
+Adding bkpt for thundax.Prototype.TVan.Clone in ..\..\src\Design Patterns\Prototype\thundax.Prototype.pas
+TBreakPoint.Activate:
+Activate ..\..\src\Design Patterns\Prototype\thundax.Prototype.pas line 139 BreakPoint at:0050F45C
+Setting BreakPoint for module: thundax.Prototype unit ..\..\src\Design Patterns\Prototype\thundax.Prototype.pas addr:2245
+Adding bkpt for thundax.Prototype.TVan.Clone in ..\..\src\Design Patterns\Prototype\thundax.Prototype.pas
+TBreakPoint.Activate:
+Activate ..\..\src\Design Patterns\Prototype\thundax.Prototype.pas line 140 BreakPoint at:0050F468
+Setting BreakPoint for module: thundax.Prototype unit ..\..\src\Design Patterns\Prototype\thundax.Prototype.pas addr:2246
+Adding bkpt for thundax.Prototype.TVan.Clone in ..\..\src\Design Patterns\Prototype\thundax.Prototype.pas
+TBreakPoint.Activate:
+Activate ..\..\src\Design Patterns\Prototype\thundax.Prototype.pas line 141 BreakPoint at:0050F485
+Setting BreakPoint for module: thundax.Prototype unit ..\..\src\Design Patterns\Prototype\thundax.Prototype.pas addr:2247
+Adding bkpt for thundax.Prototype.TVan.ToString in ..\..\src\Design Patterns\Prototype\thundax.Prototype.pas
+TBreakPoint.Activate:
+Activate ..\..\src\Design Patterns\Prototype\thundax.Prototype.pas line 144 BreakPoint at:0050F48C
+Setting BreakPoint for module: thundax.Prototype unit ..\..\src\Design Patterns\Prototype\thundax.Prototype.pas addr:2248
+Adding bkpt for thundax.Prototype.TVan.ToString in ..\..\src\Design Patterns\Prototype\thundax.Prototype.pas
+TBreakPoint.Activate:
+Activate ..\..\src\Design Patterns\Prototype\thundax.Prototype.pas line 145 BreakPoint at:0050F498
+Setting BreakPoint for module: thundax.Prototype unit ..\..\src\Design Patterns\Prototype\thundax.Prototype.pas addr:2249
+Adding bkpt for thundax.Prototype.TVan.ToString in ..\..\src\Design Patterns\Prototype\thundax.Prototype.pas
+TBreakPoint.Activate:
+Activate ..\..\src\Design Patterns\Prototype\thundax.Prototype.pas line 146 BreakPoint at:0050F4A5
+Setting BreakPoint for module: thundax.AbstractFactory unit ..\..\src\Design Patterns\AbstractFactory\thundax.AbstractFactory.pas addr:2250
+Adding bkpt for thundax.AbstractFactory.TAbstractFactory.CreateCar in ..\..\src\Design Patterns\AbstractFactory\thundax.AbstractFactory.pas
+TBreakPoint.Activate:
+Activate ..\..\src\Design Patterns\AbstractFactory\thundax.AbstractFactory.pas line 34 BreakPoint at:00518BF0
+Setting BreakPoint for module: thundax.AbstractFactory unit ..\..\src\Design Patterns\AbstractFactory\thundax.AbstractFactory.pas addr:2251
+Adding bkpt for thundax.AbstractFactory.TAbstractFactory.CreateTruck in ..\..\src\Design Patterns\AbstractFactory\thundax.AbstractFactory.pas
+TBreakPoint.Activate:
+Activate ..\..\src\Design Patterns\AbstractFactory\thundax.AbstractFactory.pas line 35 BreakPoint at:00518BF8
+Setting BreakPoint for module: thundax.AbstractFactory unit ..\..\src\Design Patterns\AbstractFactory\thundax.AbstractFactory.pas addr:2252
+Adding bkpt for thundax.AbstractFactory.TAbstractFactory.CreateBus in ..\..\src\Design Patterns\AbstractFactory\thundax.AbstractFactory.pas
+TBreakPoint.Activate:
+Activate ..\..\src\Design Patterns\AbstractFactory\thundax.AbstractFactory.pas line 36 BreakPoint at:00518C00
+Setting BreakPoint for module: thundax.AbstractFactory unit ..\..\src\Design Patterns\AbstractFactory\thundax.AbstractFactory.pas addr:2253
+Adding bkpt for thundax.AbstractFactory.TAbstractFactory.CreateVan in ..\..\src\Design Patterns\AbstractFactory\thundax.AbstractFactory.pas
+TBreakPoint.Activate:
+Activate ..\..\src\Design Patterns\AbstractFactory\thundax.AbstractFactory.pas line 37 BreakPoint at:00518C08
+Setting BreakPoint for module: thundax.AbstractFactory unit ..\..\src\Design Patterns\AbstractFactory\thundax.AbstractFactory.pas addr:2254
+Adding bkpt for thundax.AbstractFactory.TCar.Run in ..\..\src\Design Patterns\AbstractFactory\thundax.AbstractFactory.pas
+TBreakPoint.Activate:
+Activate ..\..\src\Design Patterns\AbstractFactory\thundax.AbstractFactory.pas line 54 BreakPoint at:00518E1C
+Setting BreakPoint for module: thundax.AbstractFactory unit ..\..\src\Design Patterns\AbstractFactory\thundax.AbstractFactory.pas addr:2255
+Adding bkpt for thundax.AbstractFactory.TCar.Run in ..\..\src\Design Patterns\AbstractFactory\thundax.AbstractFactory.pas
+TBreakPoint.Activate:
+Activate ..\..\src\Design Patterns\AbstractFactory\thundax.AbstractFactory.pas line 56 BreakPoint at:00518E23
+Setting BreakPoint for module: thundax.AbstractFactory unit ..\..\src\Design Patterns\AbstractFactory\thundax.AbstractFactory.pas addr:2256
+Adding bkpt for thundax.AbstractFactory.TCar.ToString in ..\..\src\Design Patterns\AbstractFactory\thundax.AbstractFactory.pas
+TBreakPoint.Activate:
+Activate ..\..\src\Design Patterns\AbstractFactory\thundax.AbstractFactory.pas line 59 BreakPoint at:00518E28
+Setting BreakPoint for module: thundax.AbstractFactory unit ..\..\src\Design Patterns\AbstractFactory\thundax.AbstractFactory.pas addr:2257
+Adding bkpt for thundax.AbstractFactory.TCar.ToString in ..\..\src\Design Patterns\AbstractFactory\thundax.AbstractFactory.pas
+TBreakPoint.Activate:
+Activate ..\..\src\Design Patterns\AbstractFactory\thundax.AbstractFactory.pas line 60 BreakPoint at:00518E34
+Setting BreakPoint for module: thundax.AbstractFactory unit ..\..\src\Design Patterns\AbstractFactory\thundax.AbstractFactory.pas addr:2258
+Adding bkpt for thundax.AbstractFactory.TCar.ToString in ..\..\src\Design Patterns\AbstractFactory\thundax.AbstractFactory.pas
+TBreakPoint.Activate:
+Activate ..\..\src\Design Patterns\AbstractFactory\thundax.AbstractFactory.pas line 61 BreakPoint at:00518E41
+Setting BreakPoint for module: thundax.AbstractFactory unit ..\..\src\Design Patterns\AbstractFactory\thundax.AbstractFactory.pas addr:2259
+Adding bkpt for thundax.AbstractFactory.TTruck.Run in ..\..\src\Design Patterns\AbstractFactory\thundax.AbstractFactory.pas
+TBreakPoint.Activate:
+Activate ..\..\src\Design Patterns\AbstractFactory\thundax.AbstractFactory.pas line 66 BreakPoint at:00518E5C
+Setting BreakPoint for module: thundax.AbstractFactory unit ..\..\src\Design Patterns\AbstractFactory\thundax.AbstractFactory.pas addr:2260
+Adding bkpt for thundax.AbstractFactory.TTruck.Run in ..\..\src\Design Patterns\AbstractFactory\thundax.AbstractFactory.pas
+TBreakPoint.Activate:
+Activate ..\..\src\Design Patterns\AbstractFactory\thundax.AbstractFactory.pas line 68 BreakPoint at:00518E63
+Setting BreakPoint for module: thundax.AbstractFactory unit ..\..\src\Design Patterns\AbstractFactory\thundax.AbstractFactory.pas addr:2261
+Adding bkpt for thundax.AbstractFactory.TTruck.ToString in ..\..\src\Design Patterns\AbstractFactory\thundax.AbstractFactory.pas
+TBreakPoint.Activate:
+Activate ..\..\src\Design Patterns\AbstractFactory\thundax.AbstractFactory.pas line 71 BreakPoint at:00518E68
+Setting BreakPoint for module: thundax.AbstractFactory unit ..\..\src\Design Patterns\AbstractFactory\thundax.AbstractFactory.pas addr:2262
+Adding bkpt for thundax.AbstractFactory.TTruck.ToString in ..\..\src\Design Patterns\AbstractFactory\thundax.AbstractFactory.pas
+TBreakPoint.Activate:
+Activate ..\..\src\Design Patterns\AbstractFactory\thundax.AbstractFactory.pas line 72 BreakPoint at:00518E74
+Setting BreakPoint for module: thundax.AbstractFactory unit ..\..\src\Design Patterns\AbstractFactory\thundax.AbstractFactory.pas addr:2263
+Adding bkpt for thundax.AbstractFactory.TTruck.ToString in ..\..\src\Design Patterns\AbstractFactory\thundax.AbstractFactory.pas
+TBreakPoint.Activate:
+Activate ..\..\src\Design Patterns\AbstractFactory\thundax.AbstractFactory.pas line 73 BreakPoint at:00518E81
+Setting BreakPoint for module: thundax.AbstractFactory unit ..\..\src\Design Patterns\AbstractFactory\thundax.AbstractFactory.pas addr:2264
+Adding bkpt for thundax.AbstractFactory.TBus.Run in ..\..\src\Design Patterns\AbstractFactory\thundax.AbstractFactory.pas
+TBreakPoint.Activate:
+Activate ..\..\src\Design Patterns\AbstractFactory\thundax.AbstractFactory.pas line 78 BreakPoint at:00518EA0
+Setting BreakPoint for module: thundax.AbstractFactory unit ..\..\src\Design Patterns\AbstractFactory\thundax.AbstractFactory.pas addr:2265
+Adding bkpt for thundax.AbstractFactory.TBus.Run in ..\..\src\Design Patterns\AbstractFactory\thundax.AbstractFactory.pas
+TBreakPoint.Activate:
+Activate ..\..\src\Design Patterns\AbstractFactory\thundax.AbstractFactory.pas line 80 BreakPoint at:00518EA7
+Setting BreakPoint for module: thundax.AbstractFactory unit ..\..\src\Design Patterns\AbstractFactory\thundax.AbstractFactory.pas addr:2266
+Adding bkpt for thundax.AbstractFactory.TBus.ToString in ..\..\src\Design Patterns\AbstractFactory\thundax.AbstractFactory.pas
+TBreakPoint.Activate:
+Activate ..\..\src\Design Patterns\AbstractFactory\thundax.AbstractFactory.pas line 83 BreakPoint at:00518EAC
+Setting BreakPoint for module: thundax.AbstractFactory unit ..\..\src\Design Patterns\AbstractFactory\thundax.AbstractFactory.pas addr:2267
+Adding bkpt for thundax.AbstractFactory.TBus.ToString in ..\..\src\Design Patterns\AbstractFactory\thundax.AbstractFactory.pas
+TBreakPoint.Activate:
+Activate ..\..\src\Design Patterns\AbstractFactory\thundax.AbstractFactory.pas line 84 BreakPoint at:00518EB8
+Setting BreakPoint for module: thundax.AbstractFactory unit ..\..\src\Design Patterns\AbstractFactory\thundax.AbstractFactory.pas addr:2268
+Adding bkpt for thundax.AbstractFactory.TBus.ToString in ..\..\src\Design Patterns\AbstractFactory\thundax.AbstractFactory.pas
+TBreakPoint.Activate:
+Activate ..\..\src\Design Patterns\AbstractFactory\thundax.AbstractFactory.pas line 85 BreakPoint at:00518EC5
+Setting BreakPoint for module: thundax.AbstractFactory unit ..\..\src\Design Patterns\AbstractFactory\thundax.AbstractFactory.pas addr:2269
+Adding bkpt for thundax.AbstractFactory.TVan.Run in ..\..\src\Design Patterns\AbstractFactory\thundax.AbstractFactory.pas
+TBreakPoint.Activate:
+Activate ..\..\src\Design Patterns\AbstractFactory\thundax.AbstractFactory.pas line 90 BreakPoint at:00518EE0
+Setting BreakPoint for module: thundax.AbstractFactory unit ..\..\src\Design Patterns\AbstractFactory\thundax.AbstractFactory.pas addr:2270
+Adding bkpt for thundax.AbstractFactory.TVan.Run in ..\..\src\Design Patterns\AbstractFactory\thundax.AbstractFactory.pas
+TBreakPoint.Activate:
+Activate ..\..\src\Design Patterns\AbstractFactory\thundax.AbstractFactory.pas line 92 BreakPoint at:00518EE7
+Setting BreakPoint for module: thundax.AbstractFactory unit ..\..\src\Design Patterns\AbstractFactory\thundax.AbstractFactory.pas addr:2271
+Adding bkpt for thundax.AbstractFactory.TVan.ToString in ..\..\src\Design Patterns\AbstractFactory\thundax.AbstractFactory.pas
+TBreakPoint.Activate:
+Activate ..\..\src\Design Patterns\AbstractFactory\thundax.AbstractFactory.pas line 95 BreakPoint at:00518EEC
+Setting BreakPoint for module: thundax.AbstractFactory unit ..\..\src\Design Patterns\AbstractFactory\thundax.AbstractFactory.pas addr:2272
+Adding bkpt for thundax.AbstractFactory.TVan.ToString in ..\..\src\Design Patterns\AbstractFactory\thundax.AbstractFactory.pas
+TBreakPoint.Activate:
+Activate ..\..\src\Design Patterns\AbstractFactory\thundax.AbstractFactory.pas line 96 BreakPoint at:00518EF8
+Setting BreakPoint for module: thundax.AbstractFactory unit ..\..\src\Design Patterns\AbstractFactory\thundax.AbstractFactory.pas addr:2273
+Adding bkpt for thundax.AbstractFactory.TVan.ToString in ..\..\src\Design Patterns\AbstractFactory\thundax.AbstractFactory.pas
+TBreakPoint.Activate:
+Activate ..\..\src\Design Patterns\AbstractFactory\thundax.AbstractFactory.pas line 97 BreakPoint at:00518F05
+Setting BreakPoint for module: thundax.AbstractFactory unit ..\..\src\Design Patterns\AbstractFactory\thundax.AbstractFactory.pas addr:2274
+Adding bkpt for thundax.AbstractFactory.TAbstractFactory.Create in ..\..\src\Design Patterns\AbstractFactory\thundax.AbstractFactory.pas
+TBreakPoint.Activate:
+Activate ..\..\src\Design Patterns\AbstractFactory\thundax.AbstractFactory.pas line 102 BreakPoint at:00518F20
+Setting BreakPoint for module: thundax.AbstractFactory unit ..\..\src\Design Patterns\AbstractFactory\thundax.AbstractFactory.pas addr:2275
+Adding bkpt for thundax.AbstractFactory.TAbstractFactory.Create in ..\..\src\Design Patterns\AbstractFactory\thundax.AbstractFactory.pas
+TBreakPoint.Activate:
+Activate ..\..\src\Design Patterns\AbstractFactory\thundax.AbstractFactory.pas line 104 BreakPoint at:00518F38
+Setting BreakPoint for module: thundax.AbstractFactory unit ..\..\src\Design Patterns\AbstractFactory\thundax.AbstractFactory.pas addr:2276
+Adding bkpt for thundax.AbstractFactory.TAbstractFactory.Destroy in ..\..\src\Design Patterns\AbstractFactory\thundax.AbstractFactory.pas
+TBreakPoint.Activate:
+Activate ..\..\src\Design Patterns\AbstractFactory\thundax.AbstractFactory.pas line 107 BreakPoint at:00518F58
+Setting BreakPoint for module: thundax.AbstractFactory unit ..\..\src\Design Patterns\AbstractFactory\thundax.AbstractFactory.pas addr:2277
+Adding bkpt for thundax.AbstractFactory.TAbstractFactory.Destroy in ..\..\src\Design Patterns\AbstractFactory\thundax.AbstractFactory.pas
+TBreakPoint.Activate:
+Activate ..\..\src\Design Patterns\AbstractFactory\thundax.AbstractFactory.pas line 109 BreakPoint at:00518F69
+Setting BreakPoint for module: thundax.AbstractFactory unit ..\..\src\Design Patterns\AbstractFactory\thundax.AbstractFactory.pas addr:2278
+Adding bkpt for thundax.AbstractFactory.TAbstractFactory.Destroy in ..\..\src\Design Patterns\AbstractFactory\thundax.AbstractFactory.pas
+TBreakPoint.Activate:
+Activate ..\..\src\Design Patterns\AbstractFactory\thundax.AbstractFactory.pas line 110 BreakPoint at:00518F77
+Setting BreakPoint for module: thundax.AbstractFactory unit ..\..\src\Design Patterns\AbstractFactory\thundax.AbstractFactory.pas addr:2279
+Adding bkpt for thundax.AbstractFactory.TVehicleFactory.Create in ..\..\src\Design Patterns\AbstractFactory\thundax.AbstractFactory.pas
+TBreakPoint.Activate:
+Activate ..\..\src\Design Patterns\AbstractFactory\thundax.AbstractFactory.pas line 115 BreakPoint at:00518F8C
+Setting BreakPoint for module: thundax.AbstractFactory unit ..\..\src\Design Patterns\AbstractFactory\thundax.AbstractFactory.pas addr:2280
+Adding bkpt for thundax.AbstractFactory.TVehicleFactory.Create in ..\..\src\Design Patterns\AbstractFactory\thundax.AbstractFactory.pas
+TBreakPoint.Activate:
+Activate ..\..\src\Design Patterns\AbstractFactory\thundax.AbstractFactory.pas line 117 BreakPoint at:00518FA4
+Setting BreakPoint for module: thundax.AbstractFactory unit ..\..\src\Design Patterns\AbstractFactory\thundax.AbstractFactory.pas addr:2281
+Adding bkpt for thundax.AbstractFactory.TVehicleFactory.CreateBus in ..\..\src\Design Patterns\AbstractFactory\thundax.AbstractFactory.pas
+TBreakPoint.Activate:
+Activate ..\..\src\Design Patterns\AbstractFactory\thundax.AbstractFactory.pas line 120 BreakPoint at:00518FC4
+Setting BreakPoint for module: thundax.AbstractFactory unit ..\..\src\Design Patterns\AbstractFactory\thundax.AbstractFactory.pas addr:2282
+Adding bkpt for thundax.AbstractFactory.TVehicleFactory.CreateBus in ..\..\src\Design Patterns\AbstractFactory\thundax.AbstractFactory.pas
+TBreakPoint.Activate:
+Activate ..\..\src\Design Patterns\AbstractFactory\thundax.AbstractFactory.pas line 121 BreakPoint at:00518FD0
+Setting BreakPoint for module: thundax.AbstractFactory unit ..\..\src\Design Patterns\AbstractFactory\thundax.AbstractFactory.pas addr:2283
+Adding bkpt for thundax.AbstractFactory.TVehicleFactory.CreateBus in ..\..\src\Design Patterns\AbstractFactory\thundax.AbstractFactory.pas
+TBreakPoint.Activate:
+Activate ..\..\src\Design Patterns\AbstractFactory\thundax.AbstractFactory.pas line 122 BreakPoint at:00518FED
+Setting BreakPoint for module: thundax.AbstractFactory unit ..\..\src\Design Patterns\AbstractFactory\thundax.AbstractFactory.pas addr:2284
+Adding bkpt for thundax.AbstractFactory.TVehicleFactory.CreateCar in ..\..\src\Design Patterns\AbstractFactory\thundax.AbstractFactory.pas
+TBreakPoint.Activate:
+Activate ..\..\src\Design Patterns\AbstractFactory\thundax.AbstractFactory.pas line 125 BreakPoint at:00518FF4
+Setting BreakPoint for module: thundax.AbstractFactory unit ..\..\src\Design Patterns\AbstractFactory\thundax.AbstractFactory.pas addr:2285
+Adding bkpt for thundax.AbstractFactory.TVehicleFactory.CreateCar in ..\..\src\Design Patterns\AbstractFactory\thundax.AbstractFactory.pas
+TBreakPoint.Activate:
+Activate ..\..\src\Design Patterns\AbstractFactory\thundax.AbstractFactory.pas line 126 BreakPoint at:00519000
+Setting BreakPoint for module: thundax.AbstractFactory unit ..\..\src\Design Patterns\AbstractFactory\thundax.AbstractFactory.pas addr:2286
+Adding bkpt for thundax.AbstractFactory.TVehicleFactory.CreateCar in ..\..\src\Design Patterns\AbstractFactory\thundax.AbstractFactory.pas
+TBreakPoint.Activate:
+Activate ..\..\src\Design Patterns\AbstractFactory\thundax.AbstractFactory.pas line 127 BreakPoint at:0051901D
+Setting BreakPoint for module: thundax.AbstractFactory unit ..\..\src\Design Patterns\AbstractFactory\thundax.AbstractFactory.pas addr:2287
+Adding bkpt for thundax.AbstractFactory.TVehicleFactory.CreateTruck in ..\..\src\Design Patterns\AbstractFactory\thundax.AbstractFactory.pas
+TBreakPoint.Activate:
+Activate ..\..\src\Design Patterns\AbstractFactory\thundax.AbstractFactory.pas line 130 BreakPoint at:00519024
+Setting BreakPoint for module: thundax.AbstractFactory unit ..\..\src\Design Patterns\AbstractFactory\thundax.AbstractFactory.pas addr:2288
+Adding bkpt for thundax.AbstractFactory.TVehicleFactory.CreateTruck in ..\..\src\Design Patterns\AbstractFactory\thundax.AbstractFactory.pas
+TBreakPoint.Activate:
+Activate ..\..\src\Design Patterns\AbstractFactory\thundax.AbstractFactory.pas line 131 BreakPoint at:00519030
+Setting BreakPoint for module: thundax.AbstractFactory unit ..\..\src\Design Patterns\AbstractFactory\thundax.AbstractFactory.pas addr:2289
+Adding bkpt for thundax.AbstractFactory.TVehicleFactory.CreateTruck in ..\..\src\Design Patterns\AbstractFactory\thundax.AbstractFactory.pas
+TBreakPoint.Activate:
+Activate ..\..\src\Design Patterns\AbstractFactory\thundax.AbstractFactory.pas line 132 BreakPoint at:0051904D
+Setting BreakPoint for module: thundax.AbstractFactory unit ..\..\src\Design Patterns\AbstractFactory\thundax.AbstractFactory.pas addr:2290
+Adding bkpt for thundax.AbstractFactory.TVehicleFactory.CreateVan in ..\..\src\Design Patterns\AbstractFactory\thundax.AbstractFactory.pas
+TBreakPoint.Activate:
+Activate ..\..\src\Design Patterns\AbstractFactory\thundax.AbstractFactory.pas line 135 BreakPoint at:00519054
+Setting BreakPoint for module: thundax.AbstractFactory unit ..\..\src\Design Patterns\AbstractFactory\thundax.AbstractFactory.pas addr:2291
+Adding bkpt for thundax.AbstractFactory.TVehicleFactory.CreateVan in ..\..\src\Design Patterns\AbstractFactory\thundax.AbstractFactory.pas
+TBreakPoint.Activate:
+Activate ..\..\src\Design Patterns\AbstractFactory\thundax.AbstractFactory.pas line 136 BreakPoint at:00519060
+Setting BreakPoint for module: thundax.AbstractFactory unit ..\..\src\Design Patterns\AbstractFactory\thundax.AbstractFactory.pas addr:2292
+Adding bkpt for thundax.AbstractFactory.TVehicleFactory.CreateVan in ..\..\src\Design Patterns\AbstractFactory\thundax.AbstractFactory.pas
+TBreakPoint.Activate:
+Activate ..\..\src\Design Patterns\AbstractFactory\thundax.AbstractFactory.pas line 137 BreakPoint at:0051907D
+Setting BreakPoint for module: thundax.AbstractFactory unit ..\..\src\Design Patterns\AbstractFactory\thundax.AbstractFactory.pas addr:2293
+Adding bkpt for thundax.AbstractFactory.TVehicleFactory.Destroy in ..\..\src\Design Patterns\AbstractFactory\thundax.AbstractFactory.pas
+TBreakPoint.Activate:
+Activate ..\..\src\Design Patterns\AbstractFactory\thundax.AbstractFactory.pas line 140 BreakPoint at:00519084
+Setting BreakPoint for module: thundax.AbstractFactory unit ..\..\src\Design Patterns\AbstractFactory\thundax.AbstractFactory.pas addr:2294
+Adding bkpt for thundax.AbstractFactory.TVehicleFactory.Destroy in ..\..\src\Design Patterns\AbstractFactory\thundax.AbstractFactory.pas
+TBreakPoint.Activate:
+Activate ..\..\src\Design Patterns\AbstractFactory\thundax.AbstractFactory.pas line 142 BreakPoint at:00519095
+Setting BreakPoint for module: thundax.AbstractFactory unit ..\..\src\Design Patterns\AbstractFactory\thundax.AbstractFactory.pas addr:2295
+Adding bkpt for thundax.AbstractFactory.TVehicleFactory.Destroy in ..\..\src\Design Patterns\AbstractFactory\thundax.AbstractFactory.pas
+TBreakPoint.Activate:
+Activate ..\..\src\Design Patterns\AbstractFactory\thundax.AbstractFactory.pas line 143 BreakPoint at:005190A3
 Module name "thundax.AbstractFactory" did not match module from address name "Testthundax.DesignPatterns" at address:001180BC
-Setting BreakPoint for module: Testthundax.DesignPatterns unit Testthundax.DesignPatterns.pas addr:2297
-Adding bkpt for Testthundax.DesignPatterns.TestDesignPatterns.SetUp in Testthundax.DesignPatterns.pas
-TBreakPoint.Activate:
-Activate Testthundax.DesignPatterns.pas line 65 BreakPoint at:00519398
-Setting BreakPoint for module: Testthundax.DesignPatterns unit Testthundax.DesignPatterns.pas addr:2298
-Adding bkpt for Testthundax.DesignPatterns.TestDesignPatterns.SetUp in Testthundax.DesignPatterns.pas
-TBreakPoint.Activate:
-Activate Testthundax.DesignPatterns.pas line 66 BreakPoint at:0051939F
-Setting BreakPoint for module: Testthundax.DesignPatterns unit Testthundax.DesignPatterns.pas addr:2299
-Adding bkpt for Testthundax.DesignPatterns.TestDesignPatterns.SetUp in Testthundax.DesignPatterns.pas
-TBreakPoint.Activate:
-Activate Testthundax.DesignPatterns.pas line 67 BreakPoint at:005193B1
-Setting BreakPoint for module: Testthundax.DesignPatterns unit Testthundax.DesignPatterns.pas addr:2300
-Adding bkpt for Testthundax.DesignPatterns.TestDesignPatterns.SetUp in Testthundax.DesignPatterns.pas
-TBreakPoint.Activate:
-Activate Testthundax.DesignPatterns.pas line 68 BreakPoint at:005193C3
-Setting BreakPoint for module: Testthundax.DesignPatterns unit Testthundax.DesignPatterns.pas addr:2301
-Adding bkpt for Testthundax.DesignPatterns.TestDesignPatterns.TearDown in Testthundax.DesignPatterns.pas
-TBreakPoint.Activate:
-Activate Testthundax.DesignPatterns.pas line 71 BreakPoint at:005193C8
-Setting BreakPoint for module: Testthundax.DesignPatterns unit Testthundax.DesignPatterns.pas addr:2302
-Adding bkpt for Testthundax.DesignPatterns.TestDesignPatterns.TearDown in Testthundax.DesignPatterns.pas
-TBreakPoint.Activate:
-Activate Testthundax.DesignPatterns.pas line 72 BreakPoint at:005193D1
-Setting BreakPoint for module: Testthundax.DesignPatterns unit Testthundax.DesignPatterns.pas addr:2303
-Adding bkpt for Testthundax.DesignPatterns.TestDesignPatterns.TearDown in Testthundax.DesignPatterns.pas
-TBreakPoint.Activate:
-Activate Testthundax.DesignPatterns.pas line 73 BreakPoint at:005193F1
-Setting BreakPoint for module: Testthundax.DesignPatterns unit Testthundax.DesignPatterns.pas addr:2304
-Adding bkpt for Testthundax.DesignPatterns.TestDesignPatterns.TearDown in Testthundax.DesignPatterns.pas
-TBreakPoint.Activate:
-Activate Testthundax.DesignPatterns.pas line 74 BreakPoint at:00519411
-Setting BreakPoint for module: Testthundax.DesignPatterns unit Testthundax.DesignPatterns.pas addr:2305
-Adding bkpt for Testthundax.DesignPatterns.TestDesignPatterns.TestFactory in Testthundax.DesignPatterns.pas
-TBreakPoint.Activate:
-Activate Testthundax.DesignPatterns.pas line 79 BreakPoint at:00519418
-Setting BreakPoint for module: Testthundax.DesignPatterns unit Testthundax.DesignPatterns.pas addr:2306
-Adding bkpt for Testthundax.DesignPatterns.TestDesignPatterns.TestFactory in Testthundax.DesignPatterns.pas
-TBreakPoint.Activate:
-Activate Testthundax.DesignPatterns.pas line 80 BreakPoint at:00519435
-Setting BreakPoint for module: Testthundax.DesignPatterns unit Testthundax.DesignPatterns.pas addr:2307
-Adding bkpt for Testthundax.DesignPatterns.TestDesignPatterns.TestFactory in Testthundax.DesignPatterns.pas
-TBreakPoint.Activate:
-Activate Testthundax.DesignPatterns.pas line 81 BreakPoint at:00519442
-Setting BreakPoint for module: Testthundax.DesignPatterns unit Testthundax.DesignPatterns.pas addr:2308
-Adding bkpt for Testthundax.DesignPatterns.TestDesignPatterns.TestFactory in Testthundax.DesignPatterns.pas
-TBreakPoint.Activate:
-Activate Testthundax.DesignPatterns.pas line 82 BreakPoint at:0051946A
-Setting BreakPoint for module: Testthundax.DesignPatterns unit Testthundax.DesignPatterns.pas addr:2309
-Adding bkpt for Testthundax.DesignPatterns.TestDesignPatterns.TestFactory in Testthundax.DesignPatterns.pas
-TBreakPoint.Activate:
-Activate Testthundax.DesignPatterns.pas line 83 BreakPoint at:00519478
-Setting BreakPoint for module: Testthundax.DesignPatterns unit Testthundax.DesignPatterns.pas addr:2310
-Adding bkpt for Testthundax.DesignPatterns.TestDesignPatterns.TestFactory in Testthundax.DesignPatterns.pas
-TBreakPoint.Activate:
-Activate Testthundax.DesignPatterns.pas line 84 BreakPoint at:005194A0
-Setting BreakPoint for module: Testthundax.DesignPatterns unit Testthundax.DesignPatterns.pas addr:2311
-Adding bkpt for Testthundax.DesignPatterns.TestDesignPatterns.TestFactory in Testthundax.DesignPatterns.pas
-TBreakPoint.Activate:
-Activate Testthundax.DesignPatterns.pas line 85 BreakPoint at:005194AE
-Setting BreakPoint for module: Testthundax.DesignPatterns unit Testthundax.DesignPatterns.pas addr:2312
-Adding bkpt for Testthundax.DesignPatterns.TestDesignPatterns.TestFactory in Testthundax.DesignPatterns.pas
-TBreakPoint.Activate:
-Activate Testthundax.DesignPatterns.pas line 86 BreakPoint at:005194D6
-Setting BreakPoint for module: Testthundax.DesignPatterns unit Testthundax.DesignPatterns.pas addr:2313
-Adding bkpt for Testthundax.DesignPatterns.TestDesignPatterns.TestFactory in Testthundax.DesignPatterns.pas
-TBreakPoint.Activate:
-Activate Testthundax.DesignPatterns.pas line 87 BreakPoint at:005194E4
-Setting BreakPoint for module: Testthundax.DesignPatterns unit Testthundax.DesignPatterns.pas addr:2314
-Adding bkpt for Testthundax.DesignPatterns.TestDesignPatterns.TestFactory in Testthundax.DesignPatterns.pas
-TBreakPoint.Activate:
-Activate Testthundax.DesignPatterns.pas line 88 BreakPoint at:0051950C
-Setting BreakPoint for module: Testthundax.DesignPatterns unit Testthundax.DesignPatterns.pas addr:2315
-Adding bkpt for Testthundax.DesignPatterns.TestDesignPatterns.TestMakeObject in Testthundax.DesignPatterns.pas
-TBreakPoint.Activate:
-Activate Testthundax.DesignPatterns.pas line 94 BreakPoint at:005195CC
-Setting BreakPoint for module: Testthundax.DesignPatterns unit Testthundax.DesignPatterns.pas addr:2316
-Adding bkpt for Testthundax.DesignPatterns.TestDesignPatterns.TestMakeObject in Testthundax.DesignPatterns.pas
-TBreakPoint.Activate:
-Activate Testthundax.DesignPatterns.pas line 95 BreakPoint at:005195EA
-Setting BreakPoint for module: Testthundax.DesignPatterns unit Testthundax.DesignPatterns.pas addr:2317
-Adding bkpt for Testthundax.DesignPatterns.TestDesignPatterns.TestMakeObject in Testthundax.DesignPatterns.pas
-TBreakPoint.Activate:
-Activate Testthundax.DesignPatterns.pas line 96 BreakPoint at:005195F7
-Setting BreakPoint for module: Testthundax.DesignPatterns unit Testthundax.DesignPatterns.pas addr:2318
-Adding bkpt for Testthundax.DesignPatterns.TestDesignPatterns.TestMakeObject in Testthundax.DesignPatterns.pas
-TBreakPoint.Activate:
-Activate Testthundax.DesignPatterns.pas line 97 BreakPoint at:00519608
-Setting BreakPoint for module: Testthundax.DesignPatterns unit Testthundax.DesignPatterns.pas addr:2319
-Adding bkpt for Testthundax.DesignPatterns.TestDesignPatterns.TestMakeObject in Testthundax.DesignPatterns.pas
-TBreakPoint.Activate:
-Activate Testthundax.DesignPatterns.pas line 98 BreakPoint at:0051962E
-Setting BreakPoint for module: Testthundax.DesignPatterns unit Testthundax.DesignPatterns.pas addr:2320
-Adding bkpt for Testthundax.DesignPatterns.TestDesignPatterns.TestMakeObject in Testthundax.DesignPatterns.pas
-TBreakPoint.Activate:
-Activate Testthundax.DesignPatterns.pas line 99 BreakPoint at:0051963B
-Setting BreakPoint for module: Testthundax.DesignPatterns unit Testthundax.DesignPatterns.pas addr:2321
-Adding bkpt for Testthundax.DesignPatterns.TestDesignPatterns.TestMakeObject in Testthundax.DesignPatterns.pas
-TBreakPoint.Activate:
-Activate Testthundax.DesignPatterns.pas line 100 BreakPoint at:0051964C
-Setting BreakPoint for module: Testthundax.DesignPatterns unit Testthundax.DesignPatterns.pas addr:2322
-Adding bkpt for Testthundax.DesignPatterns.TestDesignPatterns.TestMakeObject in Testthundax.DesignPatterns.pas
-TBreakPoint.Activate:
-Activate Testthundax.DesignPatterns.pas line 101 BreakPoint at:00519672
-Setting BreakPoint for module: Testthundax.DesignPatterns unit Testthundax.DesignPatterns.pas addr:2323
-Adding bkpt for Testthundax.DesignPatterns.TestDesignPatterns.TestMakeObject in Testthundax.DesignPatterns.pas
-TBreakPoint.Activate:
-Activate Testthundax.DesignPatterns.pas line 102 BreakPoint at:0051967F
-Setting BreakPoint for module: Testthundax.DesignPatterns unit Testthundax.DesignPatterns.pas addr:2324
-Adding bkpt for Testthundax.DesignPatterns.TestDesignPatterns.TestMakeObject in Testthundax.DesignPatterns.pas
-TBreakPoint.Activate:
-Activate Testthundax.DesignPatterns.pas line 103 BreakPoint at:00519690
-Setting BreakPoint for module: Testthundax.DesignPatterns unit Testthundax.DesignPatterns.pas addr:2325
-Adding bkpt for Testthundax.DesignPatterns.TestDesignPatterns.TestMakeObject in Testthundax.DesignPatterns.pas
-TBreakPoint.Activate:
-Activate Testthundax.DesignPatterns.pas line 104 BreakPoint at:005196B6
-Setting BreakPoint for module: Testthundax.DesignPatterns unit Testthundax.DesignPatterns.pas addr:2326
-Adding bkpt for Testthundax.DesignPatterns.TestDesignPatterns.TestMakeObject in Testthundax.DesignPatterns.pas
-TBreakPoint.Activate:
-Activate Testthundax.DesignPatterns.pas line 105 BreakPoint at:005196C3
-Setting BreakPoint for module: Testthundax.DesignPatterns unit Testthundax.DesignPatterns.pas addr:2327
-Adding bkpt for Testthundax.DesignPatterns.TestDesignPatterns.TestMakeObject in Testthundax.DesignPatterns.pas
-TBreakPoint.Activate:
-Activate Testthundax.DesignPatterns.pas line 106 BreakPoint at:005196D4
-Setting BreakPoint for module: Testthundax.DesignPatterns unit Testthundax.DesignPatterns.pas addr:2328
-Adding bkpt for Testthundax.DesignPatterns.TestDesignPatterns.TestMakeObject in Testthundax.DesignPatterns.pas
-TBreakPoint.Activate:
-Activate Testthundax.DesignPatterns.pas line 107 BreakPoint at:005196FA
-Setting BreakPoint for module: Testthundax.DesignPatterns unit Testthundax.DesignPatterns.pas addr:2332
-Adding bkpt for Testthundax.DesignPatterns.Testthundax.DesignPatterns in Testthundax.DesignPatterns.pas
-TBreakPoint.Activate:
-Activate Testthundax.DesignPatterns.pas line 109 BreakPoint at:0051FCB0
-Setting BreakPoint for module: Testthundax.DesignPatterns unit Testthundax.DesignPatterns.pas addr:2333
-Adding bkpt for Testthundax.DesignPatterns.Testthundax.DesignPatterns in Testthundax.DesignPatterns.pas
-TBreakPoint.Activate:
-Activate Testthundax.DesignPatterns.pas line 111 BreakPoint at:0051FCCC
-Setting BreakPoint for module: Testthundax.DesignPatterns unit Testthundax.DesignPatterns.pas addr:2334
-Adding bkpt for Testthundax.DesignPatterns.Testthundax.DesignPatterns in Testthundax.DesignPatterns.pas
-TBreakPoint.Activate:
-Activate Testthundax.DesignPatterns.pas line 112 BreakPoint at:0051FCE1
-Module ..\..\src\Design Patterns\AbstractFactory\thundax.AbstractFactory skipped
-Module ..\..\src\Design Patterns\Prototype\thundax.Prototype skipped
 Module GUITestRunner skipped
 Module TestFramework skipped
+Module Testthundax.DesignPatterns skipped
 Module TextTestRunner skipped
 Module thundax.DesignPatternsTest skipped
 Done adding  BreakPoints 
@@ -213,131 +412,251 @@ Loading DLL at addr:68AE0000 (c:\PROGRA~2\mcafee\SITEAD~1\saHook.dll) size :5120
 Done adding  BreakPoints 
 Loading DLL at addr:72E20000 (C:\windows\SysWOW64\dwmapi.dll) size :41472
 Done adding  BreakPoints 
-Adding coverage:Testthundax.DesignPatterns.pas (Testthundax.DesignPatterns) 109
-Clearing BreakPoint at 0051FCB0
-De-Activate Testthundax.DesignPatterns.pas line 109 BreakPoint at:0051FCB0
-Adding coverage:Testthundax.DesignPatterns.pas (Testthundax.DesignPatterns) 111
-Clearing BreakPoint at 0051FCCC
-De-Activate Testthundax.DesignPatterns.pas line 111 BreakPoint at:0051FCCC
-Adding coverage:Testthundax.DesignPatterns.pas (Testthundax.DesignPatterns) 112
-Clearing BreakPoint at 0051FCE1
-De-Activate Testthundax.DesignPatterns.pas line 112 BreakPoint at:0051FCE1
 Loading DLL at addr:63180000 (C:\windows\SysWOW64\RICHED20.DLL) size :415744
 Done adding  BreakPoints 
-Loading DLL at addr:03840000 (C:\windows\SysWOW64\ole32.dll) size :1329664
+Loading DLL at addr:041B0000 (C:\windows\SysWOW64\ole32.dll) size :1329664
 Done adding  BreakPoints 
-UnLoading DLL:03840000
+UnLoading DLL:041B0000
 WARNING: The module C:\windows\SysWOW64\ole32.dll was already loaded. Skipping breakpoint generation and coverage for subsequent load.
-UnLoading DLL:03840000
+UnLoading DLL:041B0000
 Loading DLL at addr:75790000 (C:\windows\syswow64\CLBCatQ.DLL) size :487424
 Done adding  BreakPoints 
 Wait For Debug Event timed-out
-Adding coverage:Testthundax.DesignPatterns.pas (Testthundax.DesignPatterns) 65
-Clearing BreakPoint at 00519398
-De-Activate Testthundax.DesignPatterns.pas line 65 BreakPoint at:00519398
-Adding coverage:Testthundax.DesignPatterns.pas (Testthundax.DesignPatterns) 66
-Clearing BreakPoint at 0051939F
-De-Activate Testthundax.DesignPatterns.pas line 66 BreakPoint at:0051939F
-Adding coverage:Testthundax.DesignPatterns.pas (Testthundax.DesignPatterns) 67
-Clearing BreakPoint at 005193B1
-De-Activate Testthundax.DesignPatterns.pas line 67 BreakPoint at:005193B1
-Adding coverage:Testthundax.DesignPatterns.pas (Testthundax.DesignPatterns) 68
-Clearing BreakPoint at 005193C3
-De-Activate Testthundax.DesignPatterns.pas line 68 BreakPoint at:005193C3
-Adding coverage:Testthundax.DesignPatterns.pas (Testthundax.DesignPatterns) 94
-Clearing BreakPoint at 005195CC
-De-Activate Testthundax.DesignPatterns.pas line 94 BreakPoint at:005195CC
-Adding coverage:Testthundax.DesignPatterns.pas (Testthundax.DesignPatterns) 95
-Clearing BreakPoint at 005195EA
-De-Activate Testthundax.DesignPatterns.pas line 95 BreakPoint at:005195EA
-Adding coverage:Testthundax.DesignPatterns.pas (Testthundax.DesignPatterns) 96
-Clearing BreakPoint at 005195F7
-De-Activate Testthundax.DesignPatterns.pas line 96 BreakPoint at:005195F7
-Adding coverage:Testthundax.DesignPatterns.pas (Testthundax.DesignPatterns) 97
-Clearing BreakPoint at 00519608
-De-Activate Testthundax.DesignPatterns.pas line 97 BreakPoint at:00519608
-Adding coverage:Testthundax.DesignPatterns.pas (Testthundax.DesignPatterns) 98
-Clearing BreakPoint at 0051962E
-De-Activate Testthundax.DesignPatterns.pas line 98 BreakPoint at:0051962E
-Adding coverage:Testthundax.DesignPatterns.pas (Testthundax.DesignPatterns) 99
-Clearing BreakPoint at 0051963B
-De-Activate Testthundax.DesignPatterns.pas line 99 BreakPoint at:0051963B
-Adding coverage:Testthundax.DesignPatterns.pas (Testthundax.DesignPatterns) 100
-Clearing BreakPoint at 0051964C
-De-Activate Testthundax.DesignPatterns.pas line 100 BreakPoint at:0051964C
-Adding coverage:Testthundax.DesignPatterns.pas (Testthundax.DesignPatterns) 101
-Clearing BreakPoint at 00519672
-De-Activate Testthundax.DesignPatterns.pas line 101 BreakPoint at:00519672
-Adding coverage:Testthundax.DesignPatterns.pas (Testthundax.DesignPatterns) 102
-Clearing BreakPoint at 0051967F
-De-Activate Testthundax.DesignPatterns.pas line 102 BreakPoint at:0051967F
-Adding coverage:Testthundax.DesignPatterns.pas (Testthundax.DesignPatterns) 103
-Clearing BreakPoint at 00519690
-De-Activate Testthundax.DesignPatterns.pas line 103 BreakPoint at:00519690
-Adding coverage:Testthundax.DesignPatterns.pas (Testthundax.DesignPatterns) 104
-Clearing BreakPoint at 005196B6
-De-Activate Testthundax.DesignPatterns.pas line 104 BreakPoint at:005196B6
-Adding coverage:Testthundax.DesignPatterns.pas (Testthundax.DesignPatterns) 105
-Clearing BreakPoint at 005196C3
-De-Activate Testthundax.DesignPatterns.pas line 105 BreakPoint at:005196C3
-Adding coverage:Testthundax.DesignPatterns.pas (Testthundax.DesignPatterns) 106
-Clearing BreakPoint at 005196D4
-De-Activate Testthundax.DesignPatterns.pas line 106 BreakPoint at:005196D4
-Adding coverage:Testthundax.DesignPatterns.pas (Testthundax.DesignPatterns) 107
-Clearing BreakPoint at 005196FA
-De-Activate Testthundax.DesignPatterns.pas line 107 BreakPoint at:005196FA
-Adding coverage:Testthundax.DesignPatterns.pas (Testthundax.DesignPatterns) 71
-Clearing BreakPoint at 005193C8
-De-Activate Testthundax.DesignPatterns.pas line 71 BreakPoint at:005193C8
-Adding coverage:Testthundax.DesignPatterns.pas (Testthundax.DesignPatterns) 72
-Clearing BreakPoint at 005193D1
-De-Activate Testthundax.DesignPatterns.pas line 72 BreakPoint at:005193D1
-Adding coverage:Testthundax.DesignPatterns.pas (Testthundax.DesignPatterns) 73
-Clearing BreakPoint at 005193F1
-De-Activate Testthundax.DesignPatterns.pas line 73 BreakPoint at:005193F1
-Adding coverage:Testthundax.DesignPatterns.pas (Testthundax.DesignPatterns) 74
-Clearing BreakPoint at 00519411
-De-Activate Testthundax.DesignPatterns.pas line 74 BreakPoint at:00519411
-Adding coverage:Testthundax.DesignPatterns.pas (Testthundax.DesignPatterns) 79
-Clearing BreakPoint at 00519418
-De-Activate Testthundax.DesignPatterns.pas line 79 BreakPoint at:00519418
-Adding coverage:Testthundax.DesignPatterns.pas (Testthundax.DesignPatterns) 80
-Clearing BreakPoint at 00519435
-De-Activate Testthundax.DesignPatterns.pas line 80 BreakPoint at:00519435
-Adding coverage:Testthundax.DesignPatterns.pas (Testthundax.DesignPatterns) 81
-Clearing BreakPoint at 00519442
-De-Activate Testthundax.DesignPatterns.pas line 81 BreakPoint at:00519442
-Adding coverage:Testthundax.DesignPatterns.pas (Testthundax.DesignPatterns) 82
-Clearing BreakPoint at 0051946A
-De-Activate Testthundax.DesignPatterns.pas line 82 BreakPoint at:0051946A
-Adding coverage:Testthundax.DesignPatterns.pas (Testthundax.DesignPatterns) 83
-Clearing BreakPoint at 00519478
-De-Activate Testthundax.DesignPatterns.pas line 83 BreakPoint at:00519478
-Adding coverage:Testthundax.DesignPatterns.pas (Testthundax.DesignPatterns) 84
-Clearing BreakPoint at 005194A0
-De-Activate Testthundax.DesignPatterns.pas line 84 BreakPoint at:005194A0
-Adding coverage:Testthundax.DesignPatterns.pas (Testthundax.DesignPatterns) 85
-Clearing BreakPoint at 005194AE
-De-Activate Testthundax.DesignPatterns.pas line 85 BreakPoint at:005194AE
-Adding coverage:Testthundax.DesignPatterns.pas (Testthundax.DesignPatterns) 86
-Clearing BreakPoint at 005194D6
-De-Activate Testthundax.DesignPatterns.pas line 86 BreakPoint at:005194D6
-Adding coverage:Testthundax.DesignPatterns.pas (Testthundax.DesignPatterns) 87
-Clearing BreakPoint at 005194E4
-De-Activate Testthundax.DesignPatterns.pas line 87 BreakPoint at:005194E4
-Adding coverage:Testthundax.DesignPatterns.pas (Testthundax.DesignPatterns) 88
-Clearing BreakPoint at 0051950C
-De-Activate Testthundax.DesignPatterns.pas line 88 BreakPoint at:0051950C
-Wait For Debug Event timed-out
-UnLoading DLL:00000000
-Process 12408 exiting. Exit code :0
+Adding coverage:..\..\src\Design Patterns\Prototype\thundax.Prototype.pas (thundax.Prototype) 114
+Clearing BreakPoint at 0050F25C
+De-Activate ..\..\src\Design Patterns\Prototype\thundax.Prototype.pas line 114 BreakPoint at:0050F25C
+Adding coverage:..\..\src\Design Patterns\Prototype\thundax.Prototype.pas (thundax.Prototype) 115
+Clearing BreakPoint at 0050F274
+De-Activate ..\..\src\Design Patterns\Prototype\thundax.Prototype.pas line 115 BreakPoint at:0050F274
+Adding coverage:..\..\src\Design Patterns\Prototype\thundax.Prototype.pas (thundax.Prototype) 116
+Clearing BreakPoint at 0050F288
+De-Activate ..\..\src\Design Patterns\Prototype\thundax.Prototype.pas line 116 BreakPoint at:0050F288
+Adding coverage:..\..\src\Design Patterns\Prototype\thundax.Prototype.pas (thundax.Prototype) 117
+Clearing BreakPoint at 0050F2AD
+De-Activate ..\..\src\Design Patterns\Prototype\thundax.Prototype.pas line 117 BreakPoint at:0050F2AD
+Adding coverage:..\..\src\Design Patterns\Prototype\thundax.Prototype.pas (thundax.Prototype) 118
+Clearing BreakPoint at 0050F2D2
+De-Activate ..\..\src\Design Patterns\Prototype\thundax.Prototype.pas line 118 BreakPoint at:0050F2D2
+Adding coverage:..\..\src\Design Patterns\Prototype\thundax.Prototype.pas (thundax.Prototype) 119
+Clearing BreakPoint at 0050F2F7
+De-Activate ..\..\src\Design Patterns\Prototype\thundax.Prototype.pas line 119 BreakPoint at:0050F2F7
+Adding coverage:..\..\src\Design Patterns\Prototype\thundax.Prototype.pas (thundax.Prototype) 120
+Clearing BreakPoint at 0050F31C
+De-Activate ..\..\src\Design Patterns\Prototype\thundax.Prototype.pas line 120 BreakPoint at:0050F31C
+Adding coverage:..\..\src\Design Patterns\AbstractFactory\thundax.AbstractFactory.pas (thundax.AbstractFactory) 115
+Clearing BreakPoint at 00518F8C
+De-Activate ..\..\src\Design Patterns\AbstractFactory\thundax.AbstractFactory.pas line 115 BreakPoint at:00518F8C
+Adding coverage:..\..\src\Design Patterns\AbstractFactory\thundax.AbstractFactory.pas (thundax.AbstractFactory) 117
+Clearing BreakPoint at 00518FA4
+De-Activate ..\..\src\Design Patterns\AbstractFactory\thundax.AbstractFactory.pas line 117 BreakPoint at:00518FA4
+Adding coverage:..\..\src\Design Patterns\Prototype\thundax.Prototype.pas (thundax.Prototype) 131
+Clearing BreakPoint at 0050F3E4
+De-Activate ..\..\src\Design Patterns\Prototype\thundax.Prototype.pas line 131 BreakPoint at:0050F3E4
+Adding coverage:..\..\src\Design Patterns\Prototype\thundax.Prototype.pas (thundax.Prototype) 132
+Clearing BreakPoint at 0050F40F
+De-Activate ..\..\src\Design Patterns\Prototype\thundax.Prototype.pas line 132 BreakPoint at:0050F40F
+Adding coverage:..\..\src\Design Patterns\Prototype\thundax.Prototype.pas (thundax.Prototype) 133
+Clearing BreakPoint at 0050F427
+De-Activate ..\..\src\Design Patterns\Prototype\thundax.Prototype.pas line 133 BreakPoint at:0050F427
+Adding coverage:..\..\src\Design Patterns\Prototype\thundax.Prototype.pas (thundax.Prototype) 102
+Clearing BreakPoint at 0050F1F8
+De-Activate ..\..\src\Design Patterns\Prototype\thundax.Prototype.pas line 102 BreakPoint at:0050F1F8
+Adding coverage:..\..\src\Design Patterns\Prototype\thundax.Prototype.pas (thundax.Prototype) 103
+Clearing BreakPoint at 0050F204
+De-Activate ..\..\src\Design Patterns\Prototype\thundax.Prototype.pas line 103 BreakPoint at:0050F204
+Adding coverage:..\..\src\Design Patterns\Prototype\thundax.Prototype.pas (thundax.Prototype) 104
+Clearing BreakPoint at 0050F221
+De-Activate ..\..\src\Design Patterns\Prototype\thundax.Prototype.pas line 104 BreakPoint at:0050F221
+Adding coverage:..\..\src\Design Patterns\Prototype\thundax.Prototype.pas (thundax.Prototype) 134
+Clearing BreakPoint at 0050F432
+De-Activate ..\..\src\Design Patterns\Prototype\thundax.Prototype.pas line 134 BreakPoint at:0050F432
+Adding coverage:..\..\src\Design Patterns\Prototype\thundax.Prototype.pas (thundax.Prototype) 107
+Clearing BreakPoint at 0050F228
+De-Activate ..\..\src\Design Patterns\Prototype\thundax.Prototype.pas line 107 BreakPoint at:0050F228
+Adding coverage:..\..\src\Design Patterns\Prototype\thundax.Prototype.pas (thundax.Prototype) 108
+Clearing BreakPoint at 0050F234
+De-Activate ..\..\src\Design Patterns\Prototype\thundax.Prototype.pas line 108 BreakPoint at:0050F234
+Adding coverage:..\..\src\Design Patterns\Prototype\thundax.Prototype.pas (thundax.Prototype) 109
+Clearing BreakPoint at 0050F241
+De-Activate ..\..\src\Design Patterns\Prototype\thundax.Prototype.pas line 109 BreakPoint at:0050F241
+Adding coverage:..\..\src\Design Patterns\Prototype\thundax.Prototype.pas (thundax.Prototype) 90
+Clearing BreakPoint at 0050F190
+De-Activate ..\..\src\Design Patterns\Prototype\thundax.Prototype.pas line 90 BreakPoint at:0050F190
+Adding coverage:..\..\src\Design Patterns\Prototype\thundax.Prototype.pas (thundax.Prototype) 91
+Clearing BreakPoint at 0050F19C
+De-Activate ..\..\src\Design Patterns\Prototype\thundax.Prototype.pas line 91 BreakPoint at:0050F19C
+Adding coverage:..\..\src\Design Patterns\Prototype\thundax.Prototype.pas (thundax.Prototype) 92
+Clearing BreakPoint at 0050F1B9
+De-Activate ..\..\src\Design Patterns\Prototype\thundax.Prototype.pas line 92 BreakPoint at:0050F1B9
+Adding coverage:..\..\src\Design Patterns\Prototype\thundax.Prototype.pas (thundax.Prototype) 95
+Clearing BreakPoint at 0050F1C0
+De-Activate ..\..\src\Design Patterns\Prototype\thundax.Prototype.pas line 95 BreakPoint at:0050F1C0
+Adding coverage:..\..\src\Design Patterns\Prototype\thundax.Prototype.pas (thundax.Prototype) 96
+Clearing BreakPoint at 0050F1CC
+De-Activate ..\..\src\Design Patterns\Prototype\thundax.Prototype.pas line 96 BreakPoint at:0050F1CC
+Adding coverage:..\..\src\Design Patterns\Prototype\thundax.Prototype.pas (thundax.Prototype) 97
+Clearing BreakPoint at 0050F1D9
+De-Activate ..\..\src\Design Patterns\Prototype\thundax.Prototype.pas line 97 BreakPoint at:0050F1D9
+Adding coverage:..\..\src\Design Patterns\Prototype\thundax.Prototype.pas (thundax.Prototype) 78
+Clearing BreakPoint at 0050F12C
+De-Activate ..\..\src\Design Patterns\Prototype\thundax.Prototype.pas line 78 BreakPoint at:0050F12C
+Adding coverage:..\..\src\Design Patterns\Prototype\thundax.Prototype.pas (thundax.Prototype) 79
+Clearing BreakPoint at 0050F138
+De-Activate ..\..\src\Design Patterns\Prototype\thundax.Prototype.pas line 79 BreakPoint at:0050F138
+Adding coverage:..\..\src\Design Patterns\Prototype\thundax.Prototype.pas (thundax.Prototype) 80
+Clearing BreakPoint at 0050F155
+De-Activate ..\..\src\Design Patterns\Prototype\thundax.Prototype.pas line 80 BreakPoint at:0050F155
+Adding coverage:..\..\src\Design Patterns\Prototype\thundax.Prototype.pas (thundax.Prototype) 83
+Clearing BreakPoint at 0050F15C
+De-Activate ..\..\src\Design Patterns\Prototype\thundax.Prototype.pas line 83 BreakPoint at:0050F15C
+Adding coverage:..\..\src\Design Patterns\Prototype\thundax.Prototype.pas (thundax.Prototype) 84
+Clearing BreakPoint at 0050F168
+De-Activate ..\..\src\Design Patterns\Prototype\thundax.Prototype.pas line 84 BreakPoint at:0050F168
+Adding coverage:..\..\src\Design Patterns\Prototype\thundax.Prototype.pas (thundax.Prototype) 85
+Clearing BreakPoint at 0050F175
+De-Activate ..\..\src\Design Patterns\Prototype\thundax.Prototype.pas line 85 BreakPoint at:0050F175
+Adding coverage:..\..\src\Design Patterns\Prototype\thundax.Prototype.pas (thundax.Prototype) 139
+Clearing BreakPoint at 0050F45C
+De-Activate ..\..\src\Design Patterns\Prototype\thundax.Prototype.pas line 139 BreakPoint at:0050F45C
+Adding coverage:..\..\src\Design Patterns\Prototype\thundax.Prototype.pas (thundax.Prototype) 140
+Clearing BreakPoint at 0050F468
+De-Activate ..\..\src\Design Patterns\Prototype\thundax.Prototype.pas line 140 BreakPoint at:0050F468
+Adding coverage:..\..\src\Design Patterns\Prototype\thundax.Prototype.pas (thundax.Prototype) 141
+Clearing BreakPoint at 0050F485
+De-Activate ..\..\src\Design Patterns\Prototype\thundax.Prototype.pas line 141 BreakPoint at:0050F485
+Adding coverage:..\..\src\Design Patterns\Prototype\thundax.Prototype.pas (thundax.Prototype) 144
+Clearing BreakPoint at 0050F48C
+De-Activate ..\..\src\Design Patterns\Prototype\thundax.Prototype.pas line 144 BreakPoint at:0050F48C
+Adding coverage:..\..\src\Design Patterns\Prototype\thundax.Prototype.pas (thundax.Prototype) 145
+Clearing BreakPoint at 0050F498
+De-Activate ..\..\src\Design Patterns\Prototype\thundax.Prototype.pas line 145 BreakPoint at:0050F498
+Adding coverage:..\..\src\Design Patterns\Prototype\thundax.Prototype.pas (thundax.Prototype) 146
+Clearing BreakPoint at 0050F4A5
+De-Activate ..\..\src\Design Patterns\Prototype\thundax.Prototype.pas line 146 BreakPoint at:0050F4A5
+Adding coverage:..\..\src\Design Patterns\Prototype\thundax.Prototype.pas (thundax.Prototype) 123
+Clearing BreakPoint at 0050F390
+De-Activate ..\..\src\Design Patterns\Prototype\thundax.Prototype.pas line 123 BreakPoint at:0050F390
+Adding coverage:..\..\src\Design Patterns\Prototype\thundax.Prototype.pas (thundax.Prototype) 124
+Clearing BreakPoint at 0050F3A1
+De-Activate ..\..\src\Design Patterns\Prototype\thundax.Prototype.pas line 124 BreakPoint at:0050F3A1
+Adding coverage:..\..\src\Design Patterns\Prototype\thundax.Prototype.pas (thundax.Prototype) 125
+Clearing BreakPoint at 0050F3C1
+De-Activate ..\..\src\Design Patterns\Prototype\thundax.Prototype.pas line 125 BreakPoint at:0050F3C1
+Adding coverage:..\..\src\Design Patterns\Prototype\thundax.Prototype.pas (thundax.Prototype) 126
+Clearing BreakPoint at 0050F3CF
+De-Activate ..\..\src\Design Patterns\Prototype\thundax.Prototype.pas line 126 BreakPoint at:0050F3CF
+Adding coverage:..\..\src\Design Patterns\AbstractFactory\thundax.AbstractFactory.pas (thundax.AbstractFactory) 140
+Clearing BreakPoint at 00519084
+De-Activate ..\..\src\Design Patterns\AbstractFactory\thundax.AbstractFactory.pas line 140 BreakPoint at:00519084
+Adding coverage:..\..\src\Design Patterns\AbstractFactory\thundax.AbstractFactory.pas (thundax.AbstractFactory) 142
+Clearing BreakPoint at 00519095
+De-Activate ..\..\src\Design Patterns\AbstractFactory\thundax.AbstractFactory.pas line 142 BreakPoint at:00519095
+Adding coverage:..\..\src\Design Patterns\AbstractFactory\thundax.AbstractFactory.pas (thundax.AbstractFactory) 107
+Clearing BreakPoint at 00518F58
+De-Activate ..\..\src\Design Patterns\AbstractFactory\thundax.AbstractFactory.pas line 107 BreakPoint at:00518F58
+Adding coverage:..\..\src\Design Patterns\AbstractFactory\thundax.AbstractFactory.pas (thundax.AbstractFactory) 109
+Clearing BreakPoint at 00518F69
+De-Activate ..\..\src\Design Patterns\AbstractFactory\thundax.AbstractFactory.pas line 109 BreakPoint at:00518F69
+Adding coverage:..\..\src\Design Patterns\AbstractFactory\thundax.AbstractFactory.pas (thundax.AbstractFactory) 110
+Clearing BreakPoint at 00518F77
+De-Activate ..\..\src\Design Patterns\AbstractFactory\thundax.AbstractFactory.pas line 110 BreakPoint at:00518F77
+Adding coverage:..\..\src\Design Patterns\AbstractFactory\thundax.AbstractFactory.pas (thundax.AbstractFactory) 143
+Clearing BreakPoint at 005190A3
+De-Activate ..\..\src\Design Patterns\AbstractFactory\thundax.AbstractFactory.pas line 143 BreakPoint at:005190A3
+Adding coverage:..\..\src\Design Patterns\AbstractFactory\thundax.AbstractFactory.pas (thundax.AbstractFactory) 125
+Clearing BreakPoint at 00518FF4
+De-Activate ..\..\src\Design Patterns\AbstractFactory\thundax.AbstractFactory.pas line 125 BreakPoint at:00518FF4
+Adding coverage:..\..\src\Design Patterns\AbstractFactory\thundax.AbstractFactory.pas (thundax.AbstractFactory) 126
+Clearing BreakPoint at 00519000
+De-Activate ..\..\src\Design Patterns\AbstractFactory\thundax.AbstractFactory.pas line 126 BreakPoint at:00519000
+Adding coverage:..\..\src\Design Patterns\AbstractFactory\thundax.AbstractFactory.pas (thundax.AbstractFactory) 127
+Clearing BreakPoint at 0051901D
+De-Activate ..\..\src\Design Patterns\AbstractFactory\thundax.AbstractFactory.pas line 127 BreakPoint at:0051901D
+Adding coverage:..\..\src\Design Patterns\AbstractFactory\thundax.AbstractFactory.pas (thundax.AbstractFactory) 59
+Clearing BreakPoint at 00518E28
+De-Activate ..\..\src\Design Patterns\AbstractFactory\thundax.AbstractFactory.pas line 59 BreakPoint at:00518E28
+Adding coverage:..\..\src\Design Patterns\AbstractFactory\thundax.AbstractFactory.pas (thundax.AbstractFactory) 60
+Clearing BreakPoint at 00518E34
+De-Activate ..\..\src\Design Patterns\AbstractFactory\thundax.AbstractFactory.pas line 60 BreakPoint at:00518E34
+Adding coverage:..\..\src\Design Patterns\AbstractFactory\thundax.AbstractFactory.pas (thundax.AbstractFactory) 61
+Clearing BreakPoint at 00518E41
+De-Activate ..\..\src\Design Patterns\AbstractFactory\thundax.AbstractFactory.pas line 61 BreakPoint at:00518E41
+Adding coverage:..\..\src\Design Patterns\AbstractFactory\thundax.AbstractFactory.pas (thundax.AbstractFactory) 130
+Clearing BreakPoint at 00519024
+De-Activate ..\..\src\Design Patterns\AbstractFactory\thundax.AbstractFactory.pas line 130 BreakPoint at:00519024
+Adding coverage:..\..\src\Design Patterns\AbstractFactory\thundax.AbstractFactory.pas (thundax.AbstractFactory) 131
+Clearing BreakPoint at 00519030
+De-Activate ..\..\src\Design Patterns\AbstractFactory\thundax.AbstractFactory.pas line 131 BreakPoint at:00519030
+Adding coverage:..\..\src\Design Patterns\AbstractFactory\thundax.AbstractFactory.pas (thundax.AbstractFactory) 132
+Clearing BreakPoint at 0051904D
+De-Activate ..\..\src\Design Patterns\AbstractFactory\thundax.AbstractFactory.pas line 132 BreakPoint at:0051904D
+Adding coverage:..\..\src\Design Patterns\AbstractFactory\thundax.AbstractFactory.pas (thundax.AbstractFactory) 71
+Clearing BreakPoint at 00518E68
+De-Activate ..\..\src\Design Patterns\AbstractFactory\thundax.AbstractFactory.pas line 71 BreakPoint at:00518E68
+Adding coverage:..\..\src\Design Patterns\AbstractFactory\thundax.AbstractFactory.pas (thundax.AbstractFactory) 72
+Clearing BreakPoint at 00518E74
+De-Activate ..\..\src\Design Patterns\AbstractFactory\thundax.AbstractFactory.pas line 72 BreakPoint at:00518E74
+Adding coverage:..\..\src\Design Patterns\AbstractFactory\thundax.AbstractFactory.pas (thundax.AbstractFactory) 73
+Clearing BreakPoint at 00518E81
+De-Activate ..\..\src\Design Patterns\AbstractFactory\thundax.AbstractFactory.pas line 73 BreakPoint at:00518E81
+Adding coverage:..\..\src\Design Patterns\AbstractFactory\thundax.AbstractFactory.pas (thundax.AbstractFactory) 120
+Clearing BreakPoint at 00518FC4
+De-Activate ..\..\src\Design Patterns\AbstractFactory\thundax.AbstractFactory.pas line 120 BreakPoint at:00518FC4
+Adding coverage:..\..\src\Design Patterns\AbstractFactory\thundax.AbstractFactory.pas (thundax.AbstractFactory) 121
+Clearing BreakPoint at 00518FD0
+De-Activate ..\..\src\Design Patterns\AbstractFactory\thundax.AbstractFactory.pas line 121 BreakPoint at:00518FD0
+Adding coverage:..\..\src\Design Patterns\AbstractFactory\thundax.AbstractFactory.pas (thundax.AbstractFactory) 122
+Clearing BreakPoint at 00518FED
+De-Activate ..\..\src\Design Patterns\AbstractFactory\thundax.AbstractFactory.pas line 122 BreakPoint at:00518FED
+Adding coverage:..\..\src\Design Patterns\AbstractFactory\thundax.AbstractFactory.pas (thundax.AbstractFactory) 83
+Clearing BreakPoint at 00518EAC
+De-Activate ..\..\src\Design Patterns\AbstractFactory\thundax.AbstractFactory.pas line 83 BreakPoint at:00518EAC
+Adding coverage:..\..\src\Design Patterns\AbstractFactory\thundax.AbstractFactory.pas (thundax.AbstractFactory) 84
+Clearing BreakPoint at 00518EB8
+De-Activate ..\..\src\Design Patterns\AbstractFactory\thundax.AbstractFactory.pas line 84 BreakPoint at:00518EB8
+Adding coverage:..\..\src\Design Patterns\AbstractFactory\thundax.AbstractFactory.pas (thundax.AbstractFactory) 85
+Clearing BreakPoint at 00518EC5
+De-Activate ..\..\src\Design Patterns\AbstractFactory\thundax.AbstractFactory.pas line 85 BreakPoint at:00518EC5
+Adding coverage:..\..\src\Design Patterns\AbstractFactory\thundax.AbstractFactory.pas (thundax.AbstractFactory) 135
+Clearing BreakPoint at 00519054
+De-Activate ..\..\src\Design Patterns\AbstractFactory\thundax.AbstractFactory.pas line 135 BreakPoint at:00519054
+Adding coverage:..\..\src\Design Patterns\AbstractFactory\thundax.AbstractFactory.pas (thundax.AbstractFactory) 136
+Clearing BreakPoint at 00519060
+De-Activate ..\..\src\Design Patterns\AbstractFactory\thundax.AbstractFactory.pas line 136 BreakPoint at:00519060
+Adding coverage:..\..\src\Design Patterns\AbstractFactory\thundax.AbstractFactory.pas (thundax.AbstractFactory) 137
+Clearing BreakPoint at 0051907D
+De-Activate ..\..\src\Design Patterns\AbstractFactory\thundax.AbstractFactory.pas line 137 BreakPoint at:0051907D
+Adding coverage:..\..\src\Design Patterns\AbstractFactory\thundax.AbstractFactory.pas (thundax.AbstractFactory) 95
+Clearing BreakPoint at 00518EEC
+De-Activate ..\..\src\Design Patterns\AbstractFactory\thundax.AbstractFactory.pas line 95 BreakPoint at:00518EEC
+Adding coverage:..\..\src\Design Patterns\AbstractFactory\thundax.AbstractFactory.pas (thundax.AbstractFactory) 96
+Clearing BreakPoint at 00518EF8
+De-Activate ..\..\src\Design Patterns\AbstractFactory\thundax.AbstractFactory.pas line 96 BreakPoint at:00518EF8
+Adding coverage:..\..\src\Design Patterns\AbstractFactory\thundax.AbstractFactory.pas (thundax.AbstractFactory) 97
+Clearing BreakPoint at 00518F05
+De-Activate ..\..\src\Design Patterns\AbstractFactory\thundax.AbstractFactory.pas line 97 BreakPoint at:00518F05
+Create thread:7332
+Thread exit:7332
+UnLoading DLL:7EFDA000
+Process 8000 exiting. Exit code :0
 ProcedureReport
 Generating reports
 Generating coverage report
 Generating xml coverage report
 Generating EMMA file
-Generating EMMA data for module: ModuleInfo[ modulename=Testthundax.DesignPatterns,filename=Testthundax.DesignPatterns.pas]
-Generating EMMA data for class: DesignPatterns
-Generating EMMA data for method: TestDesignPatterns l:32 c:32
-Generating EMMA data for method: Testthundax l:3 c:3
+Generating EMMA data for module: ModuleInfo[ modulename=thundax.Prototype,filename=..\..\src\Design Patterns\Prototype\thundax.Prototype.pas]
+Generating EMMA data for class: Prototype
+Generating EMMA data for method: TBus l:6 c:6
+Generating EMMA data for method: TCar l:6 c:6
+Generating EMMA data for method: TPrototypeFactory l:15 c:15
+Generating EMMA data for method: TVan l:6 c:6
+Generating EMMA data for method: TTruck l:6 c:6
+Generating EMMA data for module: ModuleInfo[ modulename=thundax.AbstractFactory,filename=..\..\src\Design Patterns\AbstractFactory\thundax.AbstractFactory.pas]
+Generating EMMA data for class: AbstractFactory
+Generating EMMA data for method: TBus l:5 c:3
+Generating EMMA data for method: TVan l:5 c:3
+Generating EMMA data for method: TCar l:5 c:3
+Generating EMMA data for method: TVehicleFactory l:17 c:17
+Generating EMMA data for method: TAbstractFactory l:9 c:3
+Generating EMMA data for method: TTruck l:5 c:3
 Emma file generated

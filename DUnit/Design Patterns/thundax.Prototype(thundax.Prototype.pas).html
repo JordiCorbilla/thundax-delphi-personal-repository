@@ -1,0 +1,627 @@
+<HTML><HEAD><META CONTENT="text/html; charset=ISO-8859-1" HTTP-EQUIV="Content-Type" />
+<TITLE>Delphi CodeCoverage Coverage Report</TITLE>
+    <STYLE TYPE="text/css"> TABLE, TD, TH {border-style: solid;border-color: black;}
+TD, TH { background: white; margin: 0; line-height: 100%; padding-left: 0.5em; padding-right: 0.5em;}
+TD { border-width: 0 1px 0 0;} TH { border-width: 1px 1px 1px 0; }
+P, H1, H2, H3, TH { font-family: verdana,arial,sans-serif; font-size: 10pt;}
+TD { font-family: courier,monospace; font-size: 10pt;}
+TABLE.s TD {padding-left: 0.25em; padding-right: 0.25em; }
+TABLE.s TR.notcovered TD { background: #DDDDFF; }
+TABLE.s TR.nocodegen TD { background: #FFFFEE; }
+TABLE.s TR.covered TD { background: #CCFFCC; }
+TABLE.s {border-width: 1px 0 1px 1px; }
+    </STYLE></HEAD>
+<BODY>
+<P> Coverage report for <STRONG>thundax.Prototype (..\..\src\Design Patterns\Prototype\thundax.Prototype.pas)</STRONG>.</P>
+<P> Generated at 24/02/2013 11:24:36 by <a href="http://code.google.com/p/delphi-code-coverage/" title="Code Coverage for Delphi 5+" />DelphiCodeCoverage</a> - an open source tool for Delphi Code Coverage.</P>
+<P> Statistics for ..\..\src\Design Patterns\Prototype\thundax.Prototype.pas </P>
+<TABLE CLASS="s" CELLSPACING="0">
+  <TR>
+    <TD>Number of lines covered</TD>
+    <TD ALIGN="RIGHT">39</TD>
+  </TR>
+  <TR>
+    <TD>Number of lines with code gen</TD>
+    <TD ALIGN="RIGHT">39</TD>
+  </TR>
+  <TR>
+    <TD>Line coverage in <i>percent</i></TD>
+    <TD ALIGN="RIGHT">100%</TD>
+  </TR>
+</TABLE>
+<BR><BR>
+   <TABLE CLASS="s" WIDTH="100%" CELLSPACING="0">
+  <TR CLASS="nocodegen">
+    <TD ALIGN="RIGHT" CLASS="1">1</TD>
+    <TD><PRE STYLE="display: inline">// &nbsp;Copyright (c) 2012-2013, Jordi Corbilla</PRE></TD>
+  </TR>
+  <TR CLASS="nocodegen">
+    <TD ALIGN="RIGHT" CLASS="1">2</TD>
+    <TD><PRE STYLE="display: inline">// &nbsp;All rights reserved.</PRE></TD>
+  </TR>
+  <TR CLASS="nocodegen">
+    <TD ALIGN="RIGHT" CLASS="1">3</TD>
+    <TD><PRE STYLE="display: inline">//</PRE></TD>
+  </TR>
+  <TR CLASS="nocodegen">
+    <TD ALIGN="RIGHT" CLASS="1">4</TD>
+    <TD><PRE STYLE="display: inline">// &nbsp;Redistribution and use in source and binary forms, with or without</PRE></TD>
+  </TR>
+  <TR CLASS="nocodegen">
+    <TD ALIGN="RIGHT" CLASS="1">5</TD>
+    <TD><PRE STYLE="display: inline">// &nbsp;modification, are permitted provided that the following conditions are met:</PRE></TD>
+  </TR>
+  <TR CLASS="nocodegen">
+    <TD ALIGN="RIGHT" CLASS="1">6</TD>
+    <TD><PRE STYLE="display: inline">//</PRE></TD>
+  </TR>
+  <TR CLASS="nocodegen">
+    <TD ALIGN="RIGHT" CLASS="1">7</TD>
+    <TD><PRE STYLE="display: inline">// &nbsp;- Redistributions of source code must retain the above copyright notice,</PRE></TD>
+  </TR>
+  <TR CLASS="nocodegen">
+    <TD ALIGN="RIGHT" CLASS="1">8</TD>
+    <TD><PRE STYLE="display: inline">// &nbsp;&nbsp;&nbsp;this list of conditions and the following disclaimer.</PRE></TD>
+  </TR>
+  <TR CLASS="nocodegen">
+    <TD ALIGN="RIGHT" CLASS="1">9</TD>
+    <TD><PRE STYLE="display: inline">// &nbsp;- Redistributions in binary form must reproduce the above copyright notice,</PRE></TD>
+  </TR>
+  <TR CLASS="nocodegen">
+    <TD ALIGN="RIGHT" CLASS="1">10</TD>
+    <TD><PRE STYLE="display: inline">// &nbsp;&nbsp;&nbsp;this list of conditions and the following disclaimer in the documentation</PRE></TD>
+  </TR>
+  <TR CLASS="nocodegen">
+    <TD ALIGN="RIGHT" CLASS="1">11</TD>
+    <TD><PRE STYLE="display: inline">// &nbsp;&nbsp;&nbsp;and/or other materials provided with the distribution.</PRE></TD>
+  </TR>
+  <TR CLASS="nocodegen">
+    <TD ALIGN="RIGHT" CLASS="1">12</TD>
+    <TD><PRE STYLE="display: inline">// &nbsp;- Neither the name of this library nor the names of its contributors may be</PRE></TD>
+  </TR>
+  <TR CLASS="nocodegen">
+    <TD ALIGN="RIGHT" CLASS="1">13</TD>
+    <TD><PRE STYLE="display: inline">// &nbsp;&nbsp;&nbsp;used to endorse or promote products derived from this software without</PRE></TD>
+  </TR>
+  <TR CLASS="nocodegen">
+    <TD ALIGN="RIGHT" CLASS="1">14</TD>
+    <TD><PRE STYLE="display: inline">// &nbsp;&nbsp;&nbsp;specific prior written permission.</PRE></TD>
+  </TR>
+  <TR CLASS="nocodegen">
+    <TD ALIGN="RIGHT" CLASS="1">15</TD>
+    <TD><PRE STYLE="display: inline">//</PRE></TD>
+  </TR>
+  <TR CLASS="nocodegen">
+    <TD ALIGN="RIGHT" CLASS="1">16</TD>
+    <TD><PRE STYLE="display: inline">// &nbsp;THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS &quot;AS IS&quot;</PRE></TD>
+  </TR>
+  <TR CLASS="nocodegen">
+    <TD ALIGN="RIGHT" CLASS="1">17</TD>
+    <TD><PRE STYLE="display: inline">// &nbsp;AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE</PRE></TD>
+  </TR>
+  <TR CLASS="nocodegen">
+    <TD ALIGN="RIGHT" CLASS="1">18</TD>
+    <TD><PRE STYLE="display: inline">// &nbsp;IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE</PRE></TD>
+  </TR>
+  <TR CLASS="nocodegen">
+    <TD ALIGN="RIGHT" CLASS="1">19</TD>
+    <TD><PRE STYLE="display: inline">// &nbsp;ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE</PRE></TD>
+  </TR>
+  <TR CLASS="nocodegen">
+    <TD ALIGN="RIGHT" CLASS="1">20</TD>
+    <TD><PRE STYLE="display: inline">// &nbsp;LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR</PRE></TD>
+  </TR>
+  <TR CLASS="nocodegen">
+    <TD ALIGN="RIGHT" CLASS="1">21</TD>
+    <TD><PRE STYLE="display: inline">// &nbsp;CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF</PRE></TD>
+  </TR>
+  <TR CLASS="nocodegen">
+    <TD ALIGN="RIGHT" CLASS="1">22</TD>
+    <TD><PRE STYLE="display: inline">// &nbsp;SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS</PRE></TD>
+  </TR>
+  <TR CLASS="nocodegen">
+    <TD ALIGN="RIGHT" CLASS="1">23</TD>
+    <TD><PRE STYLE="display: inline">// &nbsp;INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN</PRE></TD>
+  </TR>
+  <TR CLASS="nocodegen">
+    <TD ALIGN="RIGHT" CLASS="1">24</TD>
+    <TD><PRE STYLE="display: inline">// &nbsp;CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)</PRE></TD>
+  </TR>
+  <TR CLASS="nocodegen">
+    <TD ALIGN="RIGHT" CLASS="1">25</TD>
+    <TD><PRE STYLE="display: inline">// &nbsp;ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE</PRE></TD>
+  </TR>
+  <TR CLASS="nocodegen">
+    <TD ALIGN="RIGHT" CLASS="1">26</TD>
+    <TD><PRE STYLE="display: inline">// &nbsp;POSSIBILITY OF SUCH DAMAGE.</PRE></TD>
+  </TR>
+  <TR CLASS="nocodegen">
+    <TD ALIGN="RIGHT" CLASS="1">27</TD>
+    <TD><PRE STYLE="display: inline"></PRE></TD>
+  </TR>
+  <TR CLASS="nocodegen">
+    <TD ALIGN="RIGHT" CLASS="1">28</TD>
+    <TD><PRE STYLE="display: inline">unit thundax.Prototype;</PRE></TD>
+  </TR>
+  <TR CLASS="nocodegen">
+    <TD ALIGN="RIGHT" CLASS="1">29</TD>
+    <TD><PRE STYLE="display: inline"></PRE></TD>
+  </TR>
+  <TR CLASS="nocodegen">
+    <TD ALIGN="RIGHT" CLASS="1">30</TD>
+    <TD><PRE STYLE="display: inline">interface</PRE></TD>
+  </TR>
+  <TR CLASS="nocodegen">
+    <TD ALIGN="RIGHT" CLASS="1">31</TD>
+    <TD><PRE STYLE="display: inline"></PRE></TD>
+  </TR>
+  <TR CLASS="nocodegen">
+    <TD ALIGN="RIGHT" CLASS="1">32</TD>
+    <TD><PRE STYLE="display: inline">uses</PRE></TD>
+  </TR>
+  <TR CLASS="nocodegen">
+    <TD ALIGN="RIGHT" CLASS="1">33</TD>
+    <TD><PRE STYLE="display: inline"> &nbsp;Generics.Collections, Contnrs;</PRE></TD>
+  </TR>
+  <TR CLASS="nocodegen">
+    <TD ALIGN="RIGHT" CLASS="1">34</TD>
+    <TD><PRE STYLE="display: inline"></PRE></TD>
+  </TR>
+  <TR CLASS="nocodegen">
+    <TD ALIGN="RIGHT" CLASS="1">35</TD>
+    <TD><PRE STYLE="display: inline">type</PRE></TD>
+  </TR>
+  <TR CLASS="nocodegen">
+    <TD ALIGN="RIGHT" CLASS="1">36</TD>
+    <TD><PRE STYLE="display: inline"> &nbsp;IVehicle = interface</PRE></TD>
+  </TR>
+  <TR CLASS="nocodegen">
+    <TD ALIGN="RIGHT" CLASS="1">37</TD>
+    <TD><PRE STYLE="display: inline"> &nbsp;&nbsp;&nbsp;function Clone() : IVehicle;</PRE></TD>
+  </TR>
+  <TR CLASS="nocodegen">
+    <TD ALIGN="RIGHT" CLASS="1">38</TD>
+    <TD><PRE STYLE="display: inline"> &nbsp;&nbsp;&nbsp;function ToString() : string;</PRE></TD>
+  </TR>
+  <TR CLASS="nocodegen">
+    <TD ALIGN="RIGHT" CLASS="1">39</TD>
+    <TD><PRE STYLE="display: inline"> &nbsp;end;</PRE></TD>
+  </TR>
+  <TR CLASS="nocodegen">
+    <TD ALIGN="RIGHT" CLASS="1">40</TD>
+    <TD><PRE STYLE="display: inline"></PRE></TD>
+  </TR>
+  <TR CLASS="nocodegen">
+    <TD ALIGN="RIGHT" CLASS="1">41</TD>
+    <TD><PRE STYLE="display: inline"> &nbsp;TCar = class(TInterfacedObject, IVehicle)</PRE></TD>
+  </TR>
+  <TR CLASS="nocodegen">
+    <TD ALIGN="RIGHT" CLASS="1">42</TD>
+    <TD><PRE STYLE="display: inline"> &nbsp;&nbsp;&nbsp;function Clone() : IVehicle;</PRE></TD>
+  </TR>
+  <TR CLASS="nocodegen">
+    <TD ALIGN="RIGHT" CLASS="1">43</TD>
+    <TD><PRE STYLE="display: inline"> &nbsp;&nbsp;&nbsp;function ToString() : string; override;</PRE></TD>
+  </TR>
+  <TR CLASS="nocodegen">
+    <TD ALIGN="RIGHT" CLASS="1">44</TD>
+    <TD><PRE STYLE="display: inline"> &nbsp;end;</PRE></TD>
+  </TR>
+  <TR CLASS="nocodegen">
+    <TD ALIGN="RIGHT" CLASS="1">45</TD>
+    <TD><PRE STYLE="display: inline"></PRE></TD>
+  </TR>
+  <TR CLASS="nocodegen">
+    <TD ALIGN="RIGHT" CLASS="1">46</TD>
+    <TD><PRE STYLE="display: inline"> &nbsp;TTruck = class(TInterfacedObject, IVehicle)</PRE></TD>
+  </TR>
+  <TR CLASS="nocodegen">
+    <TD ALIGN="RIGHT" CLASS="1">47</TD>
+    <TD><PRE STYLE="display: inline"> &nbsp;&nbsp;&nbsp;function Clone() : IVehicle;</PRE></TD>
+  </TR>
+  <TR CLASS="nocodegen">
+    <TD ALIGN="RIGHT" CLASS="1">48</TD>
+    <TD><PRE STYLE="display: inline"> &nbsp;&nbsp;&nbsp;function ToString() : string; override;</PRE></TD>
+  </TR>
+  <TR CLASS="nocodegen">
+    <TD ALIGN="RIGHT" CLASS="1">49</TD>
+    <TD><PRE STYLE="display: inline"> &nbsp;end;</PRE></TD>
+  </TR>
+  <TR CLASS="nocodegen">
+    <TD ALIGN="RIGHT" CLASS="1">50</TD>
+    <TD><PRE STYLE="display: inline"></PRE></TD>
+  </TR>
+  <TR CLASS="nocodegen">
+    <TD ALIGN="RIGHT" CLASS="1">51</TD>
+    <TD><PRE STYLE="display: inline"> &nbsp;TBus = class(TInterfacedObject, IVehicle)</PRE></TD>
+  </TR>
+  <TR CLASS="nocodegen">
+    <TD ALIGN="RIGHT" CLASS="1">52</TD>
+    <TD><PRE STYLE="display: inline"> &nbsp;&nbsp;&nbsp;function Clone() : IVehicle;</PRE></TD>
+  </TR>
+  <TR CLASS="nocodegen">
+    <TD ALIGN="RIGHT" CLASS="1">53</TD>
+    <TD><PRE STYLE="display: inline"> &nbsp;&nbsp;&nbsp;function ToString() : string; override;</PRE></TD>
+  </TR>
+  <TR CLASS="nocodegen">
+    <TD ALIGN="RIGHT" CLASS="1">54</TD>
+    <TD><PRE STYLE="display: inline"> &nbsp;end;</PRE></TD>
+  </TR>
+  <TR CLASS="nocodegen">
+    <TD ALIGN="RIGHT" CLASS="1">55</TD>
+    <TD><PRE STYLE="display: inline"></PRE></TD>
+  </TR>
+  <TR CLASS="nocodegen">
+    <TD ALIGN="RIGHT" CLASS="1">56</TD>
+    <TD><PRE STYLE="display: inline"> &nbsp;TVan = class(TInterfacedObject, IVehicle)</PRE></TD>
+  </TR>
+  <TR CLASS="nocodegen">
+    <TD ALIGN="RIGHT" CLASS="1">57</TD>
+    <TD><PRE STYLE="display: inline"> &nbsp;&nbsp;&nbsp;function Clone() : IVehicle;</PRE></TD>
+  </TR>
+  <TR CLASS="nocodegen">
+    <TD ALIGN="RIGHT" CLASS="1">58</TD>
+    <TD><PRE STYLE="display: inline"> &nbsp;&nbsp;&nbsp;function ToString() : string; override;</PRE></TD>
+  </TR>
+  <TR CLASS="nocodegen">
+    <TD ALIGN="RIGHT" CLASS="1">59</TD>
+    <TD><PRE STYLE="display: inline"> &nbsp;end;</PRE></TD>
+  </TR>
+  <TR CLASS="nocodegen">
+    <TD ALIGN="RIGHT" CLASS="1">60</TD>
+    <TD><PRE STYLE="display: inline"></PRE></TD>
+  </TR>
+  <TR CLASS="nocodegen">
+    <TD ALIGN="RIGHT" CLASS="1">61</TD>
+    <TD><PRE STYLE="display: inline"> &nbsp;TPrototypeFactory = class(TObject)</PRE></TD>
+  </TR>
+  <TR CLASS="nocodegen">
+    <TD ALIGN="RIGHT" CLASS="1">62</TD>
+    <TD><PRE STYLE="display: inline"> &nbsp;private</PRE></TD>
+  </TR>
+  <TR CLASS="nocodegen">
+    <TD ALIGN="RIGHT" CLASS="1">63</TD>
+    <TD><PRE STYLE="display: inline"> &nbsp;&nbsp;&nbsp;FVehicleDictionary : TDictionary&lt;string, IVehicle&gt;;</PRE></TD>
+  </TR>
+  <TR CLASS="nocodegen">
+    <TD ALIGN="RIGHT" CLASS="1">64</TD>
+    <TD><PRE STYLE="display: inline"> &nbsp;public</PRE></TD>
+  </TR>
+  <TR CLASS="nocodegen">
+    <TD ALIGN="RIGHT" CLASS="1">65</TD>
+    <TD><PRE STYLE="display: inline"> &nbsp;&nbsp;&nbsp;constructor Create();</PRE></TD>
+  </TR>
+  <TR CLASS="nocodegen">
+    <TD ALIGN="RIGHT" CLASS="1">66</TD>
+    <TD><PRE STYLE="display: inline"> &nbsp;&nbsp;&nbsp;destructor Destroy(); override;</PRE></TD>
+  </TR>
+  <TR CLASS="nocodegen">
+    <TD ALIGN="RIGHT" CLASS="1">67</TD>
+    <TD><PRE STYLE="display: inline"> &nbsp;&nbsp;&nbsp;function MakeObject(Vehicle : String) : IVehicle;</PRE></TD>
+  </TR>
+  <TR CLASS="nocodegen">
+    <TD ALIGN="RIGHT" CLASS="1">68</TD>
+    <TD><PRE STYLE="display: inline"> &nbsp;end;</PRE></TD>
+  </TR>
+  <TR CLASS="nocodegen">
+    <TD ALIGN="RIGHT" CLASS="1">69</TD>
+    <TD><PRE STYLE="display: inline"></PRE></TD>
+  </TR>
+  <TR CLASS="nocodegen">
+    <TD ALIGN="RIGHT" CLASS="1">70</TD>
+    <TD><PRE STYLE="display: inline">implementation</PRE></TD>
+  </TR>
+  <TR CLASS="nocodegen">
+    <TD ALIGN="RIGHT" CLASS="1">71</TD>
+    <TD><PRE STYLE="display: inline"></PRE></TD>
+  </TR>
+  <TR CLASS="nocodegen">
+    <TD ALIGN="RIGHT" CLASS="1">72</TD>
+    <TD><PRE STYLE="display: inline">uses</PRE></TD>
+  </TR>
+  <TR CLASS="nocodegen">
+    <TD ALIGN="RIGHT" CLASS="1">73</TD>
+    <TD><PRE STYLE="display: inline"> &nbsp;SysUtils;</PRE></TD>
+  </TR>
+  <TR CLASS="nocodegen">
+    <TD ALIGN="RIGHT" CLASS="1">74</TD>
+    <TD><PRE STYLE="display: inline"></PRE></TD>
+  </TR>
+  <TR CLASS="nocodegen">
+    <TD ALIGN="RIGHT" CLASS="1">75</TD>
+    <TD><PRE STYLE="display: inline">{ TBus }</PRE></TD>
+  </TR>
+  <TR CLASS="nocodegen">
+    <TD ALIGN="RIGHT" CLASS="1">76</TD>
+    <TD><PRE STYLE="display: inline"></PRE></TD>
+  </TR>
+  <TR CLASS="nocodegen">
+    <TD ALIGN="RIGHT" CLASS="1">77</TD>
+    <TD><PRE STYLE="display: inline">function TBus.Clone: IVehicle;</PRE></TD>
+  </TR>
+  <TR CLASS="covered">
+    <TD ALIGN="RIGHT" CLASS="1"><font color="green"><STRONG>78</STRONG></font></TD>
+    <TD><PRE STYLE="display: inline">begin</PRE></TD>
+  </TR>
+  <TR CLASS="covered">
+    <TD ALIGN="RIGHT" CLASS="1"><font color="green"><STRONG>79</STRONG></font></TD>
+    <TD><PRE STYLE="display: inline"> &nbsp;Result := TBus.Create;</PRE></TD>
+  </TR>
+  <TR CLASS="covered">
+    <TD ALIGN="RIGHT" CLASS="1"><font color="green"><STRONG>80</STRONG></font></TD>
+    <TD><PRE STYLE="display: inline">end;</PRE></TD>
+  </TR>
+  <TR CLASS="nocodegen">
+    <TD ALIGN="RIGHT" CLASS="1">81</TD>
+    <TD><PRE STYLE="display: inline"></PRE></TD>
+  </TR>
+  <TR CLASS="nocodegen">
+    <TD ALIGN="RIGHT" CLASS="1">82</TD>
+    <TD><PRE STYLE="display: inline">function TBus.ToString: string;</PRE></TD>
+  </TR>
+  <TR CLASS="covered">
+    <TD ALIGN="RIGHT" CLASS="1"><font color="green"><STRONG>83</STRONG></font></TD>
+    <TD><PRE STYLE="display: inline">begin</PRE></TD>
+  </TR>
+  <TR CLASS="covered">
+    <TD ALIGN="RIGHT" CLASS="1"><font color="green"><STRONG>84</STRONG></font></TD>
+    <TD><PRE STYLE="display: inline"> &nbsp;Result := &apos;Bus&apos;;</PRE></TD>
+  </TR>
+  <TR CLASS="covered">
+    <TD ALIGN="RIGHT" CLASS="1"><font color="green"><STRONG>85</STRONG></font></TD>
+    <TD><PRE STYLE="display: inline">end;</PRE></TD>
+  </TR>
+  <TR CLASS="nocodegen">
+    <TD ALIGN="RIGHT" CLASS="1">86</TD>
+    <TD><PRE STYLE="display: inline"></PRE></TD>
+  </TR>
+  <TR CLASS="nocodegen">
+    <TD ALIGN="RIGHT" CLASS="1">87</TD>
+    <TD><PRE STYLE="display: inline">{ TTruck }</PRE></TD>
+  </TR>
+  <TR CLASS="nocodegen">
+    <TD ALIGN="RIGHT" CLASS="1">88</TD>
+    <TD><PRE STYLE="display: inline"></PRE></TD>
+  </TR>
+  <TR CLASS="nocodegen">
+    <TD ALIGN="RIGHT" CLASS="1">89</TD>
+    <TD><PRE STYLE="display: inline">function TTruck.Clone: IVehicle;</PRE></TD>
+  </TR>
+  <TR CLASS="covered">
+    <TD ALIGN="RIGHT" CLASS="1"><font color="green"><STRONG>90</STRONG></font></TD>
+    <TD><PRE STYLE="display: inline">begin</PRE></TD>
+  </TR>
+  <TR CLASS="covered">
+    <TD ALIGN="RIGHT" CLASS="1"><font color="green"><STRONG>91</STRONG></font></TD>
+    <TD><PRE STYLE="display: inline"> &nbsp;Result := TTruck.Create;</PRE></TD>
+  </TR>
+  <TR CLASS="covered">
+    <TD ALIGN="RIGHT" CLASS="1"><font color="green"><STRONG>92</STRONG></font></TD>
+    <TD><PRE STYLE="display: inline">end;</PRE></TD>
+  </TR>
+  <TR CLASS="nocodegen">
+    <TD ALIGN="RIGHT" CLASS="1">93</TD>
+    <TD><PRE STYLE="display: inline"></PRE></TD>
+  </TR>
+  <TR CLASS="nocodegen">
+    <TD ALIGN="RIGHT" CLASS="1">94</TD>
+    <TD><PRE STYLE="display: inline">function TTruck.ToString: string;</PRE></TD>
+  </TR>
+  <TR CLASS="covered">
+    <TD ALIGN="RIGHT" CLASS="1"><font color="green"><STRONG>95</STRONG></font></TD>
+    <TD><PRE STYLE="display: inline">begin</PRE></TD>
+  </TR>
+  <TR CLASS="covered">
+    <TD ALIGN="RIGHT" CLASS="1"><font color="green"><STRONG>96</STRONG></font></TD>
+    <TD><PRE STYLE="display: inline"> &nbsp;Result := &apos;Truck&apos;;</PRE></TD>
+  </TR>
+  <TR CLASS="covered">
+    <TD ALIGN="RIGHT" CLASS="1"><font color="green"><STRONG>97</STRONG></font></TD>
+    <TD><PRE STYLE="display: inline">end;</PRE></TD>
+  </TR>
+  <TR CLASS="nocodegen">
+    <TD ALIGN="RIGHT" CLASS="1">98</TD>
+    <TD><PRE STYLE="display: inline"></PRE></TD>
+  </TR>
+  <TR CLASS="nocodegen">
+    <TD ALIGN="RIGHT" CLASS="1">99</TD>
+    <TD><PRE STYLE="display: inline">{ TCar }</PRE></TD>
+  </TR>
+  <TR CLASS="nocodegen">
+    <TD ALIGN="RIGHT" CLASS="1">100</TD>
+    <TD><PRE STYLE="display: inline"></PRE></TD>
+  </TR>
+  <TR CLASS="nocodegen">
+    <TD ALIGN="RIGHT" CLASS="1">101</TD>
+    <TD><PRE STYLE="display: inline">function TCar.Clone: IVehicle;</PRE></TD>
+  </TR>
+  <TR CLASS="covered">
+    <TD ALIGN="RIGHT" CLASS="1"><font color="green"><STRONG>102</STRONG></font></TD>
+    <TD><PRE STYLE="display: inline">begin</PRE></TD>
+  </TR>
+  <TR CLASS="covered">
+    <TD ALIGN="RIGHT" CLASS="1"><font color="green"><STRONG>103</STRONG></font></TD>
+    <TD><PRE STYLE="display: inline"> &nbsp;Result := TCar.Create;</PRE></TD>
+  </TR>
+  <TR CLASS="covered">
+    <TD ALIGN="RIGHT" CLASS="1"><font color="green"><STRONG>104</STRONG></font></TD>
+    <TD><PRE STYLE="display: inline">end;</PRE></TD>
+  </TR>
+  <TR CLASS="nocodegen">
+    <TD ALIGN="RIGHT" CLASS="1">105</TD>
+    <TD><PRE STYLE="display: inline"></PRE></TD>
+  </TR>
+  <TR CLASS="nocodegen">
+    <TD ALIGN="RIGHT" CLASS="1">106</TD>
+    <TD><PRE STYLE="display: inline">function TCar.ToString: string;</PRE></TD>
+  </TR>
+  <TR CLASS="covered">
+    <TD ALIGN="RIGHT" CLASS="1"><font color="green"><STRONG>107</STRONG></font></TD>
+    <TD><PRE STYLE="display: inline">begin</PRE></TD>
+  </TR>
+  <TR CLASS="covered">
+    <TD ALIGN="RIGHT" CLASS="1"><font color="green"><STRONG>108</STRONG></font></TD>
+    <TD><PRE STYLE="display: inline"> &nbsp;Result := &apos;Car&apos;;</PRE></TD>
+  </TR>
+  <TR CLASS="covered">
+    <TD ALIGN="RIGHT" CLASS="1"><font color="green"><STRONG>109</STRONG></font></TD>
+    <TD><PRE STYLE="display: inline">end;</PRE></TD>
+  </TR>
+  <TR CLASS="nocodegen">
+    <TD ALIGN="RIGHT" CLASS="1">110</TD>
+    <TD><PRE STYLE="display: inline"></PRE></TD>
+  </TR>
+  <TR CLASS="nocodegen">
+    <TD ALIGN="RIGHT" CLASS="1">111</TD>
+    <TD><PRE STYLE="display: inline">{ TPrototypeFactory }</PRE></TD>
+  </TR>
+  <TR CLASS="nocodegen">
+    <TD ALIGN="RIGHT" CLASS="1">112</TD>
+    <TD><PRE STYLE="display: inline"></PRE></TD>
+  </TR>
+  <TR CLASS="nocodegen">
+    <TD ALIGN="RIGHT" CLASS="1">113</TD>
+    <TD><PRE STYLE="display: inline">constructor TPrototypeFactory.Create;</PRE></TD>
+  </TR>
+  <TR CLASS="covered">
+    <TD ALIGN="RIGHT" CLASS="1"><font color="green"><STRONG>114</STRONG></font></TD>
+    <TD><PRE STYLE="display: inline">begin</PRE></TD>
+  </TR>
+  <TR CLASS="covered">
+    <TD ALIGN="RIGHT" CLASS="1"><font color="green"><STRONG>115</STRONG></font></TD>
+    <TD><PRE STYLE="display: inline"> &nbsp;FVehicleDictionary := TDictionary&lt;String,IVehicle&gt;.create;</PRE></TD>
+  </TR>
+  <TR CLASS="covered">
+    <TD ALIGN="RIGHT" CLASS="1"><font color="green"><STRONG>116</STRONG></font></TD>
+    <TD><PRE STYLE="display: inline"> &nbsp;FVehicleDictionary.Add(&apos;Car&apos;, TCar.Create);</PRE></TD>
+  </TR>
+  <TR CLASS="covered">
+    <TD ALIGN="RIGHT" CLASS="1"><font color="green"><STRONG>117</STRONG></font></TD>
+    <TD><PRE STYLE="display: inline"> &nbsp;FVehicleDictionary.Add(&apos;Truck&apos;, TTruck.Create);</PRE></TD>
+  </TR>
+  <TR CLASS="covered">
+    <TD ALIGN="RIGHT" CLASS="1"><font color="green"><STRONG>118</STRONG></font></TD>
+    <TD><PRE STYLE="display: inline"> &nbsp;FVehicleDictionary.Add(&apos;Bus&apos;, TBus.Create);</PRE></TD>
+  </TR>
+  <TR CLASS="covered">
+    <TD ALIGN="RIGHT" CLASS="1"><font color="green"><STRONG>119</STRONG></font></TD>
+    <TD><PRE STYLE="display: inline"> &nbsp;FVehicleDictionary.Add(&apos;Van&apos;, TVan.Create);</PRE></TD>
+  </TR>
+  <TR CLASS="covered">
+    <TD ALIGN="RIGHT" CLASS="1"><font color="green"><STRONG>120</STRONG></font></TD>
+    <TD><PRE STYLE="display: inline">end;</PRE></TD>
+  </TR>
+  <TR CLASS="nocodegen">
+    <TD ALIGN="RIGHT" CLASS="1">121</TD>
+    <TD><PRE STYLE="display: inline"></PRE></TD>
+  </TR>
+  <TR CLASS="nocodegen">
+    <TD ALIGN="RIGHT" CLASS="1">122</TD>
+    <TD><PRE STYLE="display: inline">destructor TPrototypeFactory.Destroy;</PRE></TD>
+  </TR>
+  <TR CLASS="covered">
+    <TD ALIGN="RIGHT" CLASS="1"><font color="green"><STRONG>123</STRONG></font></TD>
+    <TD><PRE STYLE="display: inline">begin</PRE></TD>
+  </TR>
+  <TR CLASS="covered">
+    <TD ALIGN="RIGHT" CLASS="1"><font color="green"><STRONG>124</STRONG></font></TD>
+    <TD><PRE STYLE="display: inline"> &nbsp;FreeAndNil(FVehicleDictionary);</PRE></TD>
+  </TR>
+  <TR CLASS="covered">
+    <TD ALIGN="RIGHT" CLASS="1"><font color="green"><STRONG>125</STRONG></font></TD>
+    <TD><PRE STYLE="display: inline"> &nbsp;inherited;</PRE></TD>
+  </TR>
+  <TR CLASS="covered">
+    <TD ALIGN="RIGHT" CLASS="1"><font color="green"><STRONG>126</STRONG></font></TD>
+    <TD><PRE STYLE="display: inline">end;</PRE></TD>
+  </TR>
+  <TR CLASS="nocodegen">
+    <TD ALIGN="RIGHT" CLASS="1">127</TD>
+    <TD><PRE STYLE="display: inline"></PRE></TD>
+  </TR>
+  <TR CLASS="nocodegen">
+    <TD ALIGN="RIGHT" CLASS="1">128</TD>
+    <TD><PRE STYLE="display: inline">function TPrototypeFactory.MakeObject(Vehicle: String): IVehicle;</PRE></TD>
+  </TR>
+  <TR CLASS="nocodegen">
+    <TD ALIGN="RIGHT" CLASS="1">129</TD>
+    <TD><PRE STYLE="display: inline">var</PRE></TD>
+  </TR>
+  <TR CLASS="nocodegen">
+    <TD ALIGN="RIGHT" CLASS="1">130</TD>
+    <TD><PRE STYLE="display: inline"> &nbsp;outVehicle : IVehicle;</PRE></TD>
+  </TR>
+  <TR CLASS="covered">
+    <TD ALIGN="RIGHT" CLASS="1"><font color="green"><STRONG>131</STRONG></font></TD>
+    <TD><PRE STYLE="display: inline">begin</PRE></TD>
+  </TR>
+  <TR CLASS="covered">
+    <TD ALIGN="RIGHT" CLASS="1"><font color="green"><STRONG>132</STRONG></font></TD>
+    <TD><PRE STYLE="display: inline"> &nbsp;FVehicleDictionary.TryGetValue(Vehicle, outVehicle);</PRE></TD>
+  </TR>
+  <TR CLASS="covered">
+    <TD ALIGN="RIGHT" CLASS="1"><font color="green"><STRONG>133</STRONG></font></TD>
+    <TD><PRE STYLE="display: inline"> &nbsp;result := outVehicle.Clone;</PRE></TD>
+  </TR>
+  <TR CLASS="covered">
+    <TD ALIGN="RIGHT" CLASS="1"><font color="green"><STRONG>134</STRONG></font></TD>
+    <TD><PRE STYLE="display: inline">end;</PRE></TD>
+  </TR>
+  <TR CLASS="nocodegen">
+    <TD ALIGN="RIGHT" CLASS="1">135</TD>
+    <TD><PRE STYLE="display: inline"></PRE></TD>
+  </TR>
+  <TR CLASS="nocodegen">
+    <TD ALIGN="RIGHT" CLASS="1">136</TD>
+    <TD><PRE STYLE="display: inline">{ TVan }</PRE></TD>
+  </TR>
+  <TR CLASS="nocodegen">
+    <TD ALIGN="RIGHT" CLASS="1">137</TD>
+    <TD><PRE STYLE="display: inline"></PRE></TD>
+  </TR>
+  <TR CLASS="nocodegen">
+    <TD ALIGN="RIGHT" CLASS="1">138</TD>
+    <TD><PRE STYLE="display: inline">function TVan.Clone: IVehicle;</PRE></TD>
+  </TR>
+  <TR CLASS="covered">
+    <TD ALIGN="RIGHT" CLASS="1"><font color="green"><STRONG>139</STRONG></font></TD>
+    <TD><PRE STYLE="display: inline">begin</PRE></TD>
+  </TR>
+  <TR CLASS="covered">
+    <TD ALIGN="RIGHT" CLASS="1"><font color="green"><STRONG>140</STRONG></font></TD>
+    <TD><PRE STYLE="display: inline"> &nbsp;Result := TVan.Create;</PRE></TD>
+  </TR>
+  <TR CLASS="covered">
+    <TD ALIGN="RIGHT" CLASS="1"><font color="green"><STRONG>141</STRONG></font></TD>
+    <TD><PRE STYLE="display: inline">end;</PRE></TD>
+  </TR>
+  <TR CLASS="nocodegen">
+    <TD ALIGN="RIGHT" CLASS="1">142</TD>
+    <TD><PRE STYLE="display: inline"></PRE></TD>
+  </TR>
+  <TR CLASS="nocodegen">
+    <TD ALIGN="RIGHT" CLASS="1">143</TD>
+    <TD><PRE STYLE="display: inline">function TVan.ToString: string;</PRE></TD>
+  </TR>
+  <TR CLASS="covered">
+    <TD ALIGN="RIGHT" CLASS="1"><font color="green"><STRONG>144</STRONG></font></TD>
+    <TD><PRE STYLE="display: inline">begin</PRE></TD>
+  </TR>
+  <TR CLASS="covered">
+    <TD ALIGN="RIGHT" CLASS="1"><font color="green"><STRONG>145</STRONG></font></TD>
+    <TD><PRE STYLE="display: inline"> &nbsp;Result := &apos;Van&apos;;</PRE></TD>
+  </TR>
+  <TR CLASS="covered">
+    <TD ALIGN="RIGHT" CLASS="1"><font color="green"><STRONG>146</STRONG></font></TD>
+    <TD><PRE STYLE="display: inline">end;</PRE></TD>
+  </TR>
+  <TR CLASS="nocodegen">
+    <TD ALIGN="RIGHT" CLASS="1">147</TD>
+    <TD><PRE STYLE="display: inline"></PRE></TD>
+  </TR>
+  <TR CLASS="nocodegen">
+    <TD ALIGN="RIGHT" CLASS="1">148</TD>
+    <TD><PRE STYLE="display: inline">end.</PRE></TD>
+  </TR>
+</TABLE>
+</BODY></HTML>
