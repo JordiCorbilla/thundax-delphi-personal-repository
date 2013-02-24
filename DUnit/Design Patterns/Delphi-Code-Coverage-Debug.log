@@ -1,0 +1,343 @@
+Trying to start thundax.DesignPatternsTest.exe with the Parameters :
+Create Process:12408 name:thundax.DesignPatternsTest.exe
+Adding breakpoints for module:thundax.DesignPatternsTest.exe
+Module name "GUITestRunner" did not match module from address name "TextTestRunner" at address:0010A480
+Module name "thundax.AbstractFactory" did not match module from address name "Testthundax.DesignPatterns" at address:001180BC
+Setting BreakPoint for module: Testthundax.DesignPatterns unit Testthundax.DesignPatterns.pas addr:2297
+Adding bkpt for Testthundax.DesignPatterns.TestDesignPatterns.SetUp in Testthundax.DesignPatterns.pas
+TBreakPoint.Activate:
+Activate Testthundax.DesignPatterns.pas line 65 BreakPoint at:00519398
+Setting BreakPoint for module: Testthundax.DesignPatterns unit Testthundax.DesignPatterns.pas addr:2298
+Adding bkpt for Testthundax.DesignPatterns.TestDesignPatterns.SetUp in Testthundax.DesignPatterns.pas
+TBreakPoint.Activate:
+Activate Testthundax.DesignPatterns.pas line 66 BreakPoint at:0051939F
+Setting BreakPoint for module: Testthundax.DesignPatterns unit Testthundax.DesignPatterns.pas addr:2299
+Adding bkpt for Testthundax.DesignPatterns.TestDesignPatterns.SetUp in Testthundax.DesignPatterns.pas
+TBreakPoint.Activate:
+Activate Testthundax.DesignPatterns.pas line 67 BreakPoint at:005193B1
+Setting BreakPoint for module: Testthundax.DesignPatterns unit Testthundax.DesignPatterns.pas addr:2300
+Adding bkpt for Testthundax.DesignPatterns.TestDesignPatterns.SetUp in Testthundax.DesignPatterns.pas
+TBreakPoint.Activate:
+Activate Testthundax.DesignPatterns.pas line 68 BreakPoint at:005193C3
+Setting BreakPoint for module: Testthundax.DesignPatterns unit Testthundax.DesignPatterns.pas addr:2301
+Adding bkpt for Testthundax.DesignPatterns.TestDesignPatterns.TearDown in Testthundax.DesignPatterns.pas
+TBreakPoint.Activate:
+Activate Testthundax.DesignPatterns.pas line 71 BreakPoint at:005193C8
+Setting BreakPoint for module: Testthundax.DesignPatterns unit Testthundax.DesignPatterns.pas addr:2302
+Adding bkpt for Testthundax.DesignPatterns.TestDesignPatterns.TearDown in Testthundax.DesignPatterns.pas
+TBreakPoint.Activate:
+Activate Testthundax.DesignPatterns.pas line 72 BreakPoint at:005193D1
+Setting BreakPoint for module: Testthundax.DesignPatterns unit Testthundax.DesignPatterns.pas addr:2303
+Adding bkpt for Testthundax.DesignPatterns.TestDesignPatterns.TearDown in Testthundax.DesignPatterns.pas
+TBreakPoint.Activate:
+Activate Testthundax.DesignPatterns.pas line 73 BreakPoint at:005193F1
+Setting BreakPoint for module: Testthundax.DesignPatterns unit Testthundax.DesignPatterns.pas addr:2304
+Adding bkpt for Testthundax.DesignPatterns.TestDesignPatterns.TearDown in Testthundax.DesignPatterns.pas
+TBreakPoint.Activate:
+Activate Testthundax.DesignPatterns.pas line 74 BreakPoint at:00519411
+Setting BreakPoint for module: Testthundax.DesignPatterns unit Testthundax.DesignPatterns.pas addr:2305
+Adding bkpt for Testthundax.DesignPatterns.TestDesignPatterns.TestFactory in Testthundax.DesignPatterns.pas
+TBreakPoint.Activate:
+Activate Testthundax.DesignPatterns.pas line 79 BreakPoint at:00519418
+Setting BreakPoint for module: Testthundax.DesignPatterns unit Testthundax.DesignPatterns.pas addr:2306
+Adding bkpt for Testthundax.DesignPatterns.TestDesignPatterns.TestFactory in Testthundax.DesignPatterns.pas
+TBreakPoint.Activate:
+Activate Testthundax.DesignPatterns.pas line 80 BreakPoint at:00519435
+Setting BreakPoint for module: Testthundax.DesignPatterns unit Testthundax.DesignPatterns.pas addr:2307
+Adding bkpt for Testthundax.DesignPatterns.TestDesignPatterns.TestFactory in Testthundax.DesignPatterns.pas
+TBreakPoint.Activate:
+Activate Testthundax.DesignPatterns.pas line 81 BreakPoint at:00519442
+Setting BreakPoint for module: Testthundax.DesignPatterns unit Testthundax.DesignPatterns.pas addr:2308
+Adding bkpt for Testthundax.DesignPatterns.TestDesignPatterns.TestFactory in Testthundax.DesignPatterns.pas
+TBreakPoint.Activate:
+Activate Testthundax.DesignPatterns.pas line 82 BreakPoint at:0051946A
+Setting BreakPoint for module: Testthundax.DesignPatterns unit Testthundax.DesignPatterns.pas addr:2309
+Adding bkpt for Testthundax.DesignPatterns.TestDesignPatterns.TestFactory in Testthundax.DesignPatterns.pas
+TBreakPoint.Activate:
+Activate Testthundax.DesignPatterns.pas line 83 BreakPoint at:00519478
+Setting BreakPoint for module: Testthundax.DesignPatterns unit Testthundax.DesignPatterns.pas addr:2310
+Adding bkpt for Testthundax.DesignPatterns.TestDesignPatterns.TestFactory in Testthundax.DesignPatterns.pas
+TBreakPoint.Activate:
+Activate Testthundax.DesignPatterns.pas line 84 BreakPoint at:005194A0
+Setting BreakPoint for module: Testthundax.DesignPatterns unit Testthundax.DesignPatterns.pas addr:2311
+Adding bkpt for Testthundax.DesignPatterns.TestDesignPatterns.TestFactory in Testthundax.DesignPatterns.pas
+TBreakPoint.Activate:
+Activate Testthundax.DesignPatterns.pas line 85 BreakPoint at:005194AE
+Setting BreakPoint for module: Testthundax.DesignPatterns unit Testthundax.DesignPatterns.pas addr:2312
+Adding bkpt for Testthundax.DesignPatterns.TestDesignPatterns.TestFactory in Testthundax.DesignPatterns.pas
+TBreakPoint.Activate:
+Activate Testthundax.DesignPatterns.pas line 86 BreakPoint at:005194D6
+Setting BreakPoint for module: Testthundax.DesignPatterns unit Testthundax.DesignPatterns.pas addr:2313
+Adding bkpt for Testthundax.DesignPatterns.TestDesignPatterns.TestFactory in Testthundax.DesignPatterns.pas
+TBreakPoint.Activate:
+Activate Testthundax.DesignPatterns.pas line 87 BreakPoint at:005194E4
+Setting BreakPoint for module: Testthundax.DesignPatterns unit Testthundax.DesignPatterns.pas addr:2314
+Adding bkpt for Testthundax.DesignPatterns.TestDesignPatterns.TestFactory in Testthundax.DesignPatterns.pas
+TBreakPoint.Activate:
+Activate Testthundax.DesignPatterns.pas line 88 BreakPoint at:0051950C
+Setting BreakPoint for module: Testthundax.DesignPatterns unit Testthundax.DesignPatterns.pas addr:2315
+Adding bkpt for Testthundax.DesignPatterns.TestDesignPatterns.TestMakeObject in Testthundax.DesignPatterns.pas
+TBreakPoint.Activate:
+Activate Testthundax.DesignPatterns.pas line 94 BreakPoint at:005195CC
+Setting BreakPoint for module: Testthundax.DesignPatterns unit Testthundax.DesignPatterns.pas addr:2316
+Adding bkpt for Testthundax.DesignPatterns.TestDesignPatterns.TestMakeObject in Testthundax.DesignPatterns.pas
+TBreakPoint.Activate:
+Activate Testthundax.DesignPatterns.pas line 95 BreakPoint at:005195EA
+Setting BreakPoint for module: Testthundax.DesignPatterns unit Testthundax.DesignPatterns.pas addr:2317
+Adding bkpt for Testthundax.DesignPatterns.TestDesignPatterns.TestMakeObject in Testthundax.DesignPatterns.pas
+TBreakPoint.Activate:
+Activate Testthundax.DesignPatterns.pas line 96 BreakPoint at:005195F7
+Setting BreakPoint for module: Testthundax.DesignPatterns unit Testthundax.DesignPatterns.pas addr:2318
+Adding bkpt for Testthundax.DesignPatterns.TestDesignPatterns.TestMakeObject in Testthundax.DesignPatterns.pas
+TBreakPoint.Activate:
+Activate Testthundax.DesignPatterns.pas line 97 BreakPoint at:00519608
+Setting BreakPoint for module: Testthundax.DesignPatterns unit Testthundax.DesignPatterns.pas addr:2319
+Adding bkpt for Testthundax.DesignPatterns.TestDesignPatterns.TestMakeObject in Testthundax.DesignPatterns.pas
+TBreakPoint.Activate:
+Activate Testthundax.DesignPatterns.pas line 98 BreakPoint at:0051962E
+Setting BreakPoint for module: Testthundax.DesignPatterns unit Testthundax.DesignPatterns.pas addr:2320
+Adding bkpt for Testthundax.DesignPatterns.TestDesignPatterns.TestMakeObject in Testthundax.DesignPatterns.pas
+TBreakPoint.Activate:
+Activate Testthundax.DesignPatterns.pas line 99 BreakPoint at:0051963B
+Setting BreakPoint for module: Testthundax.DesignPatterns unit Testthundax.DesignPatterns.pas addr:2321
+Adding bkpt for Testthundax.DesignPatterns.TestDesignPatterns.TestMakeObject in Testthundax.DesignPatterns.pas
+TBreakPoint.Activate:
+Activate Testthundax.DesignPatterns.pas line 100 BreakPoint at:0051964C
+Setting BreakPoint for module: Testthundax.DesignPatterns unit Testthundax.DesignPatterns.pas addr:2322
+Adding bkpt for Testthundax.DesignPatterns.TestDesignPatterns.TestMakeObject in Testthundax.DesignPatterns.pas
+TBreakPoint.Activate:
+Activate Testthundax.DesignPatterns.pas line 101 BreakPoint at:00519672
+Setting BreakPoint for module: Testthundax.DesignPatterns unit Testthundax.DesignPatterns.pas addr:2323
+Adding bkpt for Testthundax.DesignPatterns.TestDesignPatterns.TestMakeObject in Testthundax.DesignPatterns.pas
+TBreakPoint.Activate:
+Activate Testthundax.DesignPatterns.pas line 102 BreakPoint at:0051967F
+Setting BreakPoint for module: Testthundax.DesignPatterns unit Testthundax.DesignPatterns.pas addr:2324
+Adding bkpt for Testthundax.DesignPatterns.TestDesignPatterns.TestMakeObject in Testthundax.DesignPatterns.pas
+TBreakPoint.Activate:
+Activate Testthundax.DesignPatterns.pas line 103 BreakPoint at:00519690
+Setting BreakPoint for module: Testthundax.DesignPatterns unit Testthundax.DesignPatterns.pas addr:2325
+Adding bkpt for Testthundax.DesignPatterns.TestDesignPatterns.TestMakeObject in Testthundax.DesignPatterns.pas
+TBreakPoint.Activate:
+Activate Testthundax.DesignPatterns.pas line 104 BreakPoint at:005196B6
+Setting BreakPoint for module: Testthundax.DesignPatterns unit Testthundax.DesignPatterns.pas addr:2326
+Adding bkpt for Testthundax.DesignPatterns.TestDesignPatterns.TestMakeObject in Testthundax.DesignPatterns.pas
+TBreakPoint.Activate:
+Activate Testthundax.DesignPatterns.pas line 105 BreakPoint at:005196C3
+Setting BreakPoint for module: Testthundax.DesignPatterns unit Testthundax.DesignPatterns.pas addr:2327
+Adding bkpt for Testthundax.DesignPatterns.TestDesignPatterns.TestMakeObject in Testthundax.DesignPatterns.pas
+TBreakPoint.Activate:
+Activate Testthundax.DesignPatterns.pas line 106 BreakPoint at:005196D4
+Setting BreakPoint for module: Testthundax.DesignPatterns unit Testthundax.DesignPatterns.pas addr:2328
+Adding bkpt for Testthundax.DesignPatterns.TestDesignPatterns.TestMakeObject in Testthundax.DesignPatterns.pas
+TBreakPoint.Activate:
+Activate Testthundax.DesignPatterns.pas line 107 BreakPoint at:005196FA
+Setting BreakPoint for module: Testthundax.DesignPatterns unit Testthundax.DesignPatterns.pas addr:2332
+Adding bkpt for Testthundax.DesignPatterns.Testthundax.DesignPatterns in Testthundax.DesignPatterns.pas
+TBreakPoint.Activate:
+Activate Testthundax.DesignPatterns.pas line 109 BreakPoint at:0051FCB0
+Setting BreakPoint for module: Testthundax.DesignPatterns unit Testthundax.DesignPatterns.pas addr:2333
+Adding bkpt for Testthundax.DesignPatterns.Testthundax.DesignPatterns in Testthundax.DesignPatterns.pas
+TBreakPoint.Activate:
+Activate Testthundax.DesignPatterns.pas line 111 BreakPoint at:0051FCCC
+Setting BreakPoint for module: Testthundax.DesignPatterns unit Testthundax.DesignPatterns.pas addr:2334
+Adding bkpt for Testthundax.DesignPatterns.Testthundax.DesignPatterns in Testthundax.DesignPatterns.pas
+TBreakPoint.Activate:
+Activate Testthundax.DesignPatterns.pas line 112 BreakPoint at:0051FCE1
+Module ..\..\src\Design Patterns\AbstractFactory\thundax.AbstractFactory skipped
+Module ..\..\src\Design Patterns\Prototype\thundax.Prototype skipped
+Module GUITestRunner skipped
+Module TestFramework skipped
+Module TextTestRunner skipped
+Module thundax.DesignPatternsTest skipped
+Done adding  BreakPoints 
+Loading DLL at addr:77850000 (ntdll.dll) size :875520
+Done adding  BreakPoints 
+UnLoading DLL:77850000
+UnLoading DLL:77850000
+UnLoading DLL:77850000
+UnLoading DLL:77850000
+Loading DLL at addr:75650000 (C:\windows\syswow64\kernel32.dll) size :851968
+Done adding  BreakPoints 
+Loading DLL at addr:75600000 (C:\windows\syswow64\KERNELBASE.dll) size :260096
+Done adding  BreakPoints 
+Loading DLL at addr:76C60000 (C:\windows\syswow64\oleaut32.dll) size :540160
+Done adding  BreakPoints 
+Loading DLL at addr:76CF0000 (C:\windows\syswow64\ole32.dll) size :1329664
+Done adding  BreakPoints 
+Loading DLL at addr:75B20000 (C:\windows\syswow64\msvcrt.dll) size :648704
+Done adding  BreakPoints 
+Loading DLL at addr:75CA0000 (C:\windows\syswow64\GDI32.dll) size :299008
+Done adding  BreakPoints 
+Loading DLL at addr:751A0000 (C:\windows\syswow64\USER32.dll) size :445440
+Done adding  BreakPoints 
+Loading DLL at addr:76BC0000 (C:\windows\syswow64\ADVAPI32.dll) size :466432
+Done adding  BreakPoints 
+Loading DLL at addr:755E0000 (C:\windows\SysWOW64\sechost.dll) size :77312
+Done adding  BreakPoints 
+Loading DLL at addr:75940000 (C:\windows\syswow64\RPCRT4.dll) size :622080
+Done adding  BreakPoints 
+Loading DLL at addr:74F30000 (C:\windows\syswow64\SspiCli.dll) size :88576
+Done adding  BreakPoints 
+Loading DLL at addr:74F20000 (C:\windows\syswow64\CRYPTBASE.dll) size :31232
+Done adding  BreakPoints 
+Loading DLL at addr:75AD0000 (C:\windows\syswow64\LPK.dll) size :22016
+Done adding  BreakPoints 
+Loading DLL at addr:75420000 (C:\windows\syswow64\USP10.dll) size :370176
+Done adding  BreakPoints 
+Loading DLL at addr:72810000 (C:\windows\SysWOW64\msimg32.dll) size :1536
+Done adding  BreakPoints 
+Loading DLL at addr:73220000 (C:\windows\SysWOW64\version.dll) size :17408
+Done adding  BreakPoints 
+Loading DLL at addr:71900000 (C:\windows\WinSxS\x86_microsoft.windows.common-controls_6595b64144ccf1df_6.0.7601.17514_none_41e6975e2bd6f2b2\comctl32.dll) size :1352192
+Done adding  BreakPoints 
+Loading DLL at addr:76ED0000 (C:\windows\syswow64\SHLWAPI.dll) size :331264
+Done adding  BreakPoints 
+Loading DLL at addr:71260000 (C:\windows\SysWOW64\winspool.drv) size :215040
+Done adding  BreakPoints 
+Couldn't find BreakPoint for exception address:778F0FAB
+Loading DLL at addr:75EE0000 (C:\windows\SysWOW64\IMM32.DLL) size :93696
+Done adding  BreakPoints 
+Loading DLL at addr:75BD0000 (C:\windows\syswow64\MSCTF.dll) size :536576
+Done adding  BreakPoints 
+Loading DLL at addr:73230000 (c:\progra~3\browse~1\261123~1.78\{16cdf~1\browse~1.dll) size :1580032
+Done adding  BreakPoints 
+Loading DLL at addr:75F70000 (C:\windows\syswow64\SHELL32.dll) size :3968000
+Done adding  BreakPoints 
+Loading DLL at addr:753C0000 (C:\windows\syswow64\imagehlp.dll) size :147456
+Done adding  BreakPoints 
+Loading DLL at addr:75ED0000 (C:\windows\syswow64\PSAPI.DLL) size :3072
+Done adding  BreakPoints 
+Loading DLL at addr:72B10000 (C:\windows\SysWOW64\uxtheme.dll) size :226816
+Done adding  BreakPoints 
+Loading DLL at addr:68AE0000 (c:\PROGRA~2\mcafee\SITEAD~1\saHook.dll) size :5120
+Done adding  BreakPoints 
+Loading DLL at addr:72E20000 (C:\windows\SysWOW64\dwmapi.dll) size :41472
+Done adding  BreakPoints 
+Adding coverage:Testthundax.DesignPatterns.pas (Testthundax.DesignPatterns) 109
+Clearing BreakPoint at 0051FCB0
+De-Activate Testthundax.DesignPatterns.pas line 109 BreakPoint at:0051FCB0
+Adding coverage:Testthundax.DesignPatterns.pas (Testthundax.DesignPatterns) 111
+Clearing BreakPoint at 0051FCCC
+De-Activate Testthundax.DesignPatterns.pas line 111 BreakPoint at:0051FCCC
+Adding coverage:Testthundax.DesignPatterns.pas (Testthundax.DesignPatterns) 112
+Clearing BreakPoint at 0051FCE1
+De-Activate Testthundax.DesignPatterns.pas line 112 BreakPoint at:0051FCE1
+Loading DLL at addr:63180000 (C:\windows\SysWOW64\RICHED20.DLL) size :415744
+Done adding  BreakPoints 
+Loading DLL at addr:03840000 (C:\windows\SysWOW64\ole32.dll) size :1329664
+Done adding  BreakPoints 
+UnLoading DLL:03840000
+WARNING: The module C:\windows\SysWOW64\ole32.dll was already loaded. Skipping breakpoint generation and coverage for subsequent load.
+UnLoading DLL:03840000
+Loading DLL at addr:75790000 (C:\windows\syswow64\CLBCatQ.DLL) size :487424
+Done adding  BreakPoints 
+Wait For Debug Event timed-out
+Adding coverage:Testthundax.DesignPatterns.pas (Testthundax.DesignPatterns) 65
+Clearing BreakPoint at 00519398
+De-Activate Testthundax.DesignPatterns.pas line 65 BreakPoint at:00519398
+Adding coverage:Testthundax.DesignPatterns.pas (Testthundax.DesignPatterns) 66
+Clearing BreakPoint at 0051939F
+De-Activate Testthundax.DesignPatterns.pas line 66 BreakPoint at:0051939F
+Adding coverage:Testthundax.DesignPatterns.pas (Testthundax.DesignPatterns) 67
+Clearing BreakPoint at 005193B1
+De-Activate Testthundax.DesignPatterns.pas line 67 BreakPoint at:005193B1
+Adding coverage:Testthundax.DesignPatterns.pas (Testthundax.DesignPatterns) 68
+Clearing BreakPoint at 005193C3
+De-Activate Testthundax.DesignPatterns.pas line 68 BreakPoint at:005193C3
+Adding coverage:Testthundax.DesignPatterns.pas (Testthundax.DesignPatterns) 94
+Clearing BreakPoint at 005195CC
+De-Activate Testthundax.DesignPatterns.pas line 94 BreakPoint at:005195CC
+Adding coverage:Testthundax.DesignPatterns.pas (Testthundax.DesignPatterns) 95
+Clearing BreakPoint at 005195EA
+De-Activate Testthundax.DesignPatterns.pas line 95 BreakPoint at:005195EA
+Adding coverage:Testthundax.DesignPatterns.pas (Testthundax.DesignPatterns) 96
+Clearing BreakPoint at 005195F7
+De-Activate Testthundax.DesignPatterns.pas line 96 BreakPoint at:005195F7
+Adding coverage:Testthundax.DesignPatterns.pas (Testthundax.DesignPatterns) 97
+Clearing BreakPoint at 00519608
+De-Activate Testthundax.DesignPatterns.pas line 97 BreakPoint at:00519608
+Adding coverage:Testthundax.DesignPatterns.pas (Testthundax.DesignPatterns) 98
+Clearing BreakPoint at 0051962E
+De-Activate Testthundax.DesignPatterns.pas line 98 BreakPoint at:0051962E
+Adding coverage:Testthundax.DesignPatterns.pas (Testthundax.DesignPatterns) 99
+Clearing BreakPoint at 0051963B
+De-Activate Testthundax.DesignPatterns.pas line 99 BreakPoint at:0051963B
+Adding coverage:Testthundax.DesignPatterns.pas (Testthundax.DesignPatterns) 100
+Clearing BreakPoint at 0051964C
+De-Activate Testthundax.DesignPatterns.pas line 100 BreakPoint at:0051964C
+Adding coverage:Testthundax.DesignPatterns.pas (Testthundax.DesignPatterns) 101
+Clearing BreakPoint at 00519672
+De-Activate Testthundax.DesignPatterns.pas line 101 BreakPoint at:00519672
+Adding coverage:Testthundax.DesignPatterns.pas (Testthundax.DesignPatterns) 102
+Clearing BreakPoint at 0051967F
+De-Activate Testthundax.DesignPatterns.pas line 102 BreakPoint at:0051967F
+Adding coverage:Testthundax.DesignPatterns.pas (Testthundax.DesignPatterns) 103
+Clearing BreakPoint at 00519690
+De-Activate Testthundax.DesignPatterns.pas line 103 BreakPoint at:00519690
+Adding coverage:Testthundax.DesignPatterns.pas (Testthundax.DesignPatterns) 104
+Clearing BreakPoint at 005196B6
+De-Activate Testthundax.DesignPatterns.pas line 104 BreakPoint at:005196B6
+Adding coverage:Testthundax.DesignPatterns.pas (Testthundax.DesignPatterns) 105
+Clearing BreakPoint at 005196C3
+De-Activate Testthundax.DesignPatterns.pas line 105 BreakPoint at:005196C3
+Adding coverage:Testthundax.DesignPatterns.pas (Testthundax.DesignPatterns) 106
+Clearing BreakPoint at 005196D4
+De-Activate Testthundax.DesignPatterns.pas line 106 BreakPoint at:005196D4
+Adding coverage:Testthundax.DesignPatterns.pas (Testthundax.DesignPatterns) 107
+Clearing BreakPoint at 005196FA
+De-Activate Testthundax.DesignPatterns.pas line 107 BreakPoint at:005196FA
+Adding coverage:Testthundax.DesignPatterns.pas (Testthundax.DesignPatterns) 71
+Clearing BreakPoint at 005193C8
+De-Activate Testthundax.DesignPatterns.pas line 71 BreakPoint at:005193C8
+Adding coverage:Testthundax.DesignPatterns.pas (Testthundax.DesignPatterns) 72
+Clearing BreakPoint at 005193D1
+De-Activate Testthundax.DesignPatterns.pas line 72 BreakPoint at:005193D1
+Adding coverage:Testthundax.DesignPatterns.pas (Testthundax.DesignPatterns) 73
+Clearing BreakPoint at 005193F1
+De-Activate Testthundax.DesignPatterns.pas line 73 BreakPoint at:005193F1
+Adding coverage:Testthundax.DesignPatterns.pas (Testthundax.DesignPatterns) 74
+Clearing BreakPoint at 00519411
+De-Activate Testthundax.DesignPatterns.pas line 74 BreakPoint at:00519411
+Adding coverage:Testthundax.DesignPatterns.pas (Testthundax.DesignPatterns) 79
+Clearing BreakPoint at 00519418
+De-Activate Testthundax.DesignPatterns.pas line 79 BreakPoint at:00519418
+Adding coverage:Testthundax.DesignPatterns.pas (Testthundax.DesignPatterns) 80
+Clearing BreakPoint at 00519435
+De-Activate Testthundax.DesignPatterns.pas line 80 BreakPoint at:00519435
+Adding coverage:Testthundax.DesignPatterns.pas (Testthundax.DesignPatterns) 81
+Clearing BreakPoint at 00519442
+De-Activate Testthundax.DesignPatterns.pas line 81 BreakPoint at:00519442
+Adding coverage:Testthundax.DesignPatterns.pas (Testthundax.DesignPatterns) 82
+Clearing BreakPoint at 0051946A
+De-Activate Testthundax.DesignPatterns.pas line 82 BreakPoint at:0051946A
+Adding coverage:Testthundax.DesignPatterns.pas (Testthundax.DesignPatterns) 83
+Clearing BreakPoint at 00519478
+De-Activate Testthundax.DesignPatterns.pas line 83 BreakPoint at:00519478
+Adding coverage:Testthundax.DesignPatterns.pas (Testthundax.DesignPatterns) 84
+Clearing BreakPoint at 005194A0
+De-Activate Testthundax.DesignPatterns.pas line 84 BreakPoint at:005194A0
+Adding coverage:Testthundax.DesignPatterns.pas (Testthundax.DesignPatterns) 85
+Clearing BreakPoint at 005194AE
+De-Activate Testthundax.DesignPatterns.pas line 85 BreakPoint at:005194AE
+Adding coverage:Testthundax.DesignPatterns.pas (Testthundax.DesignPatterns) 86
+Clearing BreakPoint at 005194D6
+De-Activate Testthundax.DesignPatterns.pas line 86 BreakPoint at:005194D6
+Adding coverage:Testthundax.DesignPatterns.pas (Testthundax.DesignPatterns) 87
+Clearing BreakPoint at 005194E4
+De-Activate Testthundax.DesignPatterns.pas line 87 BreakPoint at:005194E4
+Adding coverage:Testthundax.DesignPatterns.pas (Testthundax.DesignPatterns) 88
+Clearing BreakPoint at 0051950C
+De-Activate Testthundax.DesignPatterns.pas line 88 BreakPoint at:0051950C
+Wait For Debug Event timed-out
+UnLoading DLL:00000000
+Process 12408 exiting. Exit code :0
+ProcedureReport
+Generating reports
+Generating coverage report
+Generating xml coverage report
+Generating EMMA file
+Generating EMMA data for module: ModuleInfo[ modulename=Testthundax.DesignPatterns,filename=Testthundax.DesignPatterns.pas]
+Generating EMMA data for class: DesignPatterns
+Generating EMMA data for method: TestDesignPatterns l:32 c:32
+Generating EMMA data for method: Testthundax l:3 c:3
+Emma file generated
