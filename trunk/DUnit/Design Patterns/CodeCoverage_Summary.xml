@@ -1,45 +1,108 @@
 <?xml version="1.0" encoding="Windows-1252" standalone="no"?>
 <report>
   <stats>
-    <packages value="1"/>
-    <classes value="1"/>
-    <methods value="2"/>
-    <srcfiles value="1"/>
-    <srclines value="35"/>
-    <totallines value="35"/>
-    <coveredlines value="35"/>
-    <coveredpercent value="100"/>
+    <packages value="2"/>
+    <classes value="2"/>
+    <methods value="11"/>
+    <srcfiles value="2"/>
+    <srclines value="85"/>
+    <totallines value="85"/>
+    <coveredlines value="71"/>
+    <coveredpercent value="83"/>
   </stats>
   <data>
     <all name="all classes">
-      <coverage type="class, %" value="100%   (1/1)"/>
-      <coverage type="method, %" value="100%   (2/2)"/>
-      <coverage type="block, %" value="100%   (35/35)"/>
-      <coverage type="line, %" value="100%   (35/35)"/>
-      <package name="Testthundax.DesignPatterns">
+      <coverage type="class, %" value="100%   (2/2)"/>
+      <coverage type="method, %" value="100%   (11/11)"/>
+      <coverage type="block, %" value="84%   (71/85)"/>
+      <coverage type="line, %" value="84%   (71/85)"/>
+      <package name="thundax.Prototype">
         <coverage type="class, %" value="100%   (1/1)"/>
-        <coverage type="method, %" value="100%   (2/2)"/>
-        <coverage type="block, %" value="100%   (35/35)"/>
-        <coverage type="line, %" value="100%   (35/35)"/>
-        <srcfile name="Testthundax.DesignPatterns.pas">
+        <coverage type="method, %" value="100%   (5/5)"/>
+        <coverage type="block, %" value="100%   (39/39)"/>
+        <coverage type="line, %" value="100%   (39/39)"/>
+        <srcfile name="..\..\src\Design Patterns\Prototype\thundax.Prototype.pas">
           <coverage type="class, %" value="100%   (1/1)"/>
-          <coverage type="method, %" value="100%   (2/2)"/>
-          <coverage type="block, %" value="100%   (35/35)"/>
-          <coverage type="line, %" value="100%   (35/35)"/>
-          <class name="DesignPatterns">
+          <coverage type="method, %" value="100%   (5/5)"/>
+          <coverage type="block, %" value="100%   (39/39)"/>
+          <coverage type="line, %" value="100%   (39/39)"/>
+          <class name="Prototype">
             <coverage type="class, %" value="100%   (1/1)"/>
-            <coverage type="method, %" value="100%   (2/2)"/>
-            <coverage type="block, %" value="100%   (35/35)"/>
-            <coverage type="line, %" value="100%   (35/35)"/>
-            <method name="TestDesignPatterns">
+            <coverage type="method, %" value="100%   (5/5)"/>
+            <coverage type="block, %" value="100%   (39/39)"/>
+            <coverage type="line, %" value="100%   (39/39)"/>
+            <method name="TBus">
               <coverage type="method, %" value="100%   (1/1)"/>
-              <coverage type="block, %" value="100%   (32/32)"/>
-              <coverage type="line, %" value="100%   (32/32)"/>
+              <coverage type="block, %" value="100%   (6/6)"/>
+              <coverage type="line, %" value="100%   (6/6)"/>
             </method>
-            <method name="Testthundax">
+            <method name="TCar">
               <coverage type="method, %" value="100%   (1/1)"/>
-              <coverage type="block, %" value="100%   (3/3)"/>
-              <coverage type="line, %" value="100%   (3/3)"/>
+              <coverage type="block, %" value="100%   (6/6)"/>
+              <coverage type="line, %" value="100%   (6/6)"/>
+            </method>
+            <method name="TPrototypeFactory">
+              <coverage type="method, %" value="100%   (1/1)"/>
+              <coverage type="block, %" value="100%   (15/15)"/>
+              <coverage type="line, %" value="100%   (15/15)"/>
+            </method>
+            <method name="TVan">
+              <coverage type="method, %" value="100%   (1/1)"/>
+              <coverage type="block, %" value="100%   (6/6)"/>
+              <coverage type="line, %" value="100%   (6/6)"/>
+            </method>
+            <method name="TTruck">
+              <coverage type="method, %" value="100%   (1/1)"/>
+              <coverage type="block, %" value="100%   (6/6)"/>
+              <coverage type="line, %" value="100%   (6/6)"/>
+            </method>
+          </class>
+        </srcfile>
+      </package>
+      <package name="thundax.AbstractFactory">
+        <coverage type="class, %" value="100%   (1/1)"/>
+        <coverage type="method, %" value="100%   (6/6)"/>
+        <coverage type="block, %" value="70%   (32/46)"/>
+        <coverage type="line, %" value="70%   (32/46)"/>
+        <srcfile name="..\..\src\Design Patterns\AbstractFactory\thundax.AbstractFactory.pas">
+          <coverage type="class, %" value="100%   (1/1)"/>
+          <coverage type="method, %" value="100%   (6/6)"/>
+          <coverage type="block, %" value="70%   (32/46)"/>
+          <coverage type="line, %" value="70%   (32/46)"/>
+          <class name="AbstractFactory">
+            <coverage type="class, %" value="100%   (1/1)"/>
+            <coverage type="method, %" value="100%   (6/6)"/>
+            <coverage type="block, %" value="70%   (32/46)"/>
+            <coverage type="line, %" value="70%   (32/46)"/>
+            <method name="TBus">
+              <coverage type="method, %" value="100%   (1/1)"/>
+              <coverage type="block, %" value="60%   (3/5)"/>
+              <coverage type="line, %" value="60%   (3/5)"/>
+            </method>
+            <method name="TVan">
+              <coverage type="method, %" value="100%   (1/1)"/>
+              <coverage type="block, %" value="60%   (3/5)"/>
+              <coverage type="line, %" value="60%   (3/5)"/>
+            </method>
+            <method name="TCar">
+              <coverage type="method, %" value="100%   (1/1)"/>
+              <coverage type="block, %" value="60%   (3/5)"/>
+              <coverage type="line, %" value="60%   (3/5)"/>
+            </method>
+            <method name="TVehicleFactory">
+              <coverage type="method, %" value="100%   (1/1)"/>
+              <coverage type="block, %" value="100%   (17/17)"/>
+              <coverage type="line, %" value="100%   (17/17)"/>
+            </method>
+            <method name="TAbstractFactory">
+              <coverage type="method, %" value="100%   (1/1)"/>
+              <coverage type="block, %" value="33%   (3/9)"/>
+              <coverage type="line, %" value="33%   (3/9)"/>
+            </method>
+            <method name="TTruck">
+              <coverage type="method, %" value="100%   (1/1)"/>
+              <coverage type="block, %" value="60%   (3/5)"/>
+              <coverage type="line, %" value="60%   (3/5)"/>
             </method>
           </class>
         </srcfile>
