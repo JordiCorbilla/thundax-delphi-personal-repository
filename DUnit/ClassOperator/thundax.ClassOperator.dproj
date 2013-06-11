@@ -1,62 +1,69 @@
 ﻿	<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
 		<PropertyGroup>
-			<ProjectGuid>{75856F16-DC27-40BD-9EA5-BFF93B23094E}</ProjectGuid>
+			<ProjectGuid>{DD8A67DF-446E-463B-A09D-E33BE7680B0F}</ProjectGuid>
+			<MainSource>thundax.ClassOperator.dpr</MainSource>
 			<ProjectVersion>12.2</ProjectVersion>
-			<Config Condition="'$(Config)'==''">Debug</Config>
-			<DCC_DCCCompiler>DCC32</DCC_DCCCompiler>
-			<MainSource>thundax.MockTest.dpr</MainSource>
 			<Base>True</Base>
+			<Config Condition="'$(Config)'==''">Debug</Config>
 			<Platform>Win32</Platform>
 			<AppType>Application</AppType>
 			<FrameworkType>VCL</FrameworkType>
+			<DCC_DCCCompiler>DCC32</DCC_DCCCompiler>
 		</PropertyGroup>
 		<PropertyGroup Condition="'$(Config)'=='Base' or '$(Base)'!=''">
 			<Base>true</Base>
 		</PropertyGroup>
-		<PropertyGroup Condition="'$(Config)'=='Release' or '$(Cfg_1)'!=''">
+		<PropertyGroup Condition="'$(Config)'=='Debug' or '$(Cfg_1)'!=''">
 			<Cfg_1>true</Cfg_1>
 			<CfgParent>Base</CfgParent>
 			<Base>true</Base>
 		</PropertyGroup>
-		<PropertyGroup Condition="'$(Config)'=='Debug' or '$(Cfg_2)'!=''">
+		<PropertyGroup Condition="'$(Config)'=='Release' or '$(Cfg_2)'!=''">
 			<Cfg_2>true</Cfg_2>
 			<CfgParent>Base</CfgParent>
 			<Base>true</Base>
 		</PropertyGroup>
 		<PropertyGroup Condition="'$(Base)'!=''">
 			<DCC_UnitSearchPath>$(BDS)\Source\DUnit\src;$(DCC_UnitSearchPath)</DCC_UnitSearchPath>
-			<DCC_Define>_CONSOLE_TESTRUNNER;$(DCC_Define)</DCC_Define>
-			<DCC_UnitAlias>WinTypes=Windows;WinProcs=Windows;DbiTypes=BDE;DbiProcs=BDE;DbiErrs=BDE;$(DCC_UnitAlias)</DCC_UnitAlias>
-			<DCC_DcuOutput>dcu\</DCC_DcuOutput>
-			<DCC_DependencyCheckOutputName>thundax.MockTest.exe</DCC_DependencyCheckOutputName>
 			<DCC_ImageBase>00400000</DCC_ImageBase>
-			<DCC_Platform>x86</DCC_Platform>
+			<DCC_ExeOutput>.\$(Config)\$(Platform)</DCC_ExeOutput>
+			<DCC_UnitAlias>WinTypes=Windows;WinProcs=Windows;DbiTypes=BDE;DbiProcs=BDE;$(DCC_UnitAlias)</DCC_UnitAlias>
+			<DCC_Define>_CONSOLE_TESTRUNNER;$(DCC_Define)</DCC_Define>
+			<DCC_DcuOutput>.</DCC_DcuOutput>
+			<DCC_N>false</DCC_N>
+			<DCC_S>false</DCC_S>
+			<DCC_K>false</DCC_K>
+			<DCC_E>false</DCC_E>
+			<DCC_F>false</DCC_F>
 		</PropertyGroup>
 		<PropertyGroup Condition="'$(Cfg_1)'!=''">
+			<DCC_Optimize>false</DCC_Optimize>
+			<DCC_Define>DEBUG;$(DCC_Define)</DCC_Define>
+			<DCC_ExeOutput>.</DCC_ExeOutput>
+			<DCC_DcuOutput>dcu\</DCC_DcuOutput>
+			<DCC_GenerateStackFrames>true</DCC_GenerateStackFrames>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Cfg_2)'!=''">
 			<DCC_LocalDebugSymbols>false</DCC_LocalDebugSymbols>
 			<DCC_Define>RELEASE;$(DCC_Define)</DCC_Define>
 			<DCC_SymbolReferenceInfo>0</DCC_SymbolReferenceInfo>
 			<DCC_DebugInformation>false</DCC_DebugInformation>
 		</PropertyGroup>
-		<PropertyGroup Condition="'$(Cfg_2)'!=''">
-			<DCC_MapFile>3</DCC_MapFile>
-			<DCC_Define>DEBUG;$(DCC_Define)</DCC_Define>
-		</PropertyGroup>
 		<ItemGroup>
-			<DelphiCompile Include="thundax.MockTest.dpr">
+			<DelphiCompile Include="thundax.ClassOperator.dpr">
 				<MainSource>MainSource</MainSource>
 			</DelphiCompile>
-			<DCCReference Include="..\..\src\Mock\thundax.mock.pas"/>
-			<DCCReference Include="..\..\src\Mock\thundax.mock.example.pas"/>
-			<DCCReference Include="TestThundax.mock.pas"/>
-			<BuildConfiguration Include="Debug">
+			<DCCReference Include="..\..\src\ClassOperator\thundax.classOperator.example.pas"/>
+			<DCCReference Include="Testthundax.ClassOperator.pas"/>
+			<DCCReference Include="..\..\src\Logging\thundax.logging.pas"/>
+			<BuildConfiguration Include="Release">
 				<Key>Cfg_2</Key>
 				<CfgParent>Base</CfgParent>
 			</BuildConfiguration>
 			<BuildConfiguration Include="Base">
 				<Key>Base</Key>
 			</BuildConfiguration>
-			<BuildConfiguration Include="Release">
+			<BuildConfiguration Include="Debug">
 				<Key>Cfg_1</Key>
 				<CfgParent>Base</CfgParent>
 			</BuildConfiguration>
@@ -68,7 +75,6 @@
 			<Borland.ProjectType/>
 			<BorlandProject>
 				<Delphi.Personality>
-					<Parameters/>
 					<VersionInfo>
 						<VersionInfo Name="IncludeVerInfo">False</VersionInfo>
 						<VersionInfo Name="AutoIncBuild">False</VersionInfo>
@@ -81,7 +87,7 @@
 						<VersionInfo Name="Special">False</VersionInfo>
 						<VersionInfo Name="Private">False</VersionInfo>
 						<VersionInfo Name="DLL">False</VersionInfo>
-						<VersionInfo Name="Locale">3082</VersionInfo>
+						<VersionInfo Name="Locale">2057</VersionInfo>
 						<VersionInfo Name="CodePage">1252</VersionInfo>
 					</VersionInfo>
 					<VersionInfoKeys>
@@ -97,18 +103,17 @@
 						<VersionInfoKeys Name="Comments"/>
 					</VersionInfoKeys>
 					<Source>
-						<Source Name="MainSource">thundax.MockTest.dpr</Source>
+						<Source Name="MainSource">thundax.ClassOperator.dpr</Source>
 					</Source>
 				</Delphi.Personality>
-				<UnitTesting>
-					<TestFramework>DUnit / Delphi Win32</TestFramework>
-					<TestRunner>GUI</TestRunner>
-					<TestProjectName>C:\Desk\OpenSource Projects\ThundaxDelphiRepository\thundax-delphi-personal-repository\DUnit\ClassOperator\thundax.dproj</TestProjectName>
-					<SourceProjectName/>
-				</UnitTesting>
 				<Platforms>
 					<Platform value="Win32">True</Platform>
 				</Platforms>
+				<UnitTesting>
+					<SourceProjectName>C:\Desk\OpenSource Projects\ThundaxDelphiRepository\thundax-delphi-personal-repository\DUnit\Mock\thundax.MockTest.dproj</SourceProjectName>
+					<TestFramework>DUnit / Delphi Win32</TestFramework>
+					<TestRunner>GUI</TestRunner>
+				</UnitTesting>
 			</BorlandProject>
 			<ProjectFileVersion>12</ProjectFileVersion>
 		</ProjectExtensions>
