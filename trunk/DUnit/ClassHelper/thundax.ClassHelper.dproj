@@ -1,7 +1,7 @@
 ﻿	<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
 		<PropertyGroup>
-			<ProjectGuid>{0618A352-476D-4BC8-8FF2-B979917792B3}</ProjectGuid>
-			<MainSource>thundax.UMLDiagramsTest.dpr</MainSource>
+			<ProjectGuid>{97FE56D7-F750-4617-9C11-B19C1162CB54}</ProjectGuid>
+			<MainSource>thundax.ClassHelper.dpr</MainSource>
 			<ProjectVersion>12.2</ProjectVersion>
 			<Base>True</Base>
 			<Config Condition="'$(Config)'==''">Debug</Config>
@@ -37,11 +37,10 @@
 			<DCC_F>false</DCC_F>
 		</PropertyGroup>
 		<PropertyGroup Condition="'$(Cfg_1)'!=''">
-			<DCC_UnitSearchPath>C:\Desk\OpenSource Projects\ThundaxDelphiRepository\thundax-delphi-personal-repository\src\Logging;$(DCC_UnitSearchPath)</DCC_UnitSearchPath>
+			<DCC_Optimize>false</DCC_Optimize>
+			<DCC_Define>DEBUG;$(DCC_Define)</DCC_Define>
 			<DCC_ExeOutput>.</DCC_ExeOutput>
 			<DCC_DcuOutput>dcu\</DCC_DcuOutput>
-			<DCC_Define>DEBUG;$(DCC_Define)</DCC_Define>
-			<DCC_Optimize>false</DCC_Optimize>
 			<DCC_GenerateStackFrames>true</DCC_GenerateStackFrames>
 		</PropertyGroup>
 		<PropertyGroup Condition="'$(Cfg_2)'!=''">
@@ -51,13 +50,11 @@
 			<DCC_DebugInformation>false</DCC_DebugInformation>
 		</PropertyGroup>
 		<ItemGroup>
-			<DelphiCompile Include="thundax.UMLDiagramsTest.dpr">
+			<DelphiCompile Include="thundax.ClassHelper.dpr">
 				<MainSource>MainSource</MainSource>
 			</DelphiCompile>
-			<DCCReference Include="..\..\src\UML\thundax.UML.pas"/>
-			<DCCReference Include="Testthundax.UMLDiagrams.pas"/>
-			<DCCReference Include="..\ClassHelper\Testthundax.classHelper.pas"/>
 			<DCCReference Include="..\..\src\ClassHelper\thundax.classHelper.example.pas"/>
+			<DCCReference Include="Testthundax.classHelper.pas"/>
 			<BuildConfiguration Include="Release">
 				<Key>Cfg_2</Key>
 				<CfgParent>Base</CfgParent>
@@ -105,18 +102,12 @@
 						<VersionInfoKeys Name="Comments"/>
 					</VersionInfoKeys>
 					<Source>
-						<Source Name="MainSource">thundax.UMLDiagramsTest.dpr</Source>
+						<Source Name="MainSource">thundax.ClassHelper.dpr</Source>
 					</Source>
 				</Delphi.Personality>
 				<Platforms>
 					<Platform value="Win32">True</Platform>
 				</Platforms>
-				<UnitTesting>
-					<SourceProjectName>C:\Desk\OpenSource Projects\ThundaxDelphiRepository\thundax-delphi-personal-repository\DUnit\Mock\thundax.MockTest.dproj</SourceProjectName>
-					<TestFramework>DUnit / Delphi Win32</TestFramework>
-					<TestRunner>GUI</TestRunner>
-					<TestProjectName/>
-				</UnitTesting>
 			</BorlandProject>
 			<ProjectFileVersion>12</ProjectFileVersion>
 		</ProjectExtensions>

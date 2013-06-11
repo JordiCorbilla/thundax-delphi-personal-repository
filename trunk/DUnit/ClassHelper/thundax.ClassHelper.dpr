@@ -25,7 +25,7 @@
 //  ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
 //  POSSIBILITY OF SUCH DAMAGE.
 
-program thundax.UMLDiagramsTest;
+program thundax.ClassHelper;
 {
 
   Delphi DUnit Test Project
@@ -46,16 +46,13 @@ uses
   TestFramework,
   GUITestRunner,
   TextTestRunner,
-  thundax.UML in '..\..\src\UML\thundax.UML.pas',
-  Testthundax.UMLDiagrams in 'Testthundax.UMLDiagrams.pas',
-  Testthundax.classHelper in '..\ClassHelper\Testthundax.classHelper.pas',
-  thundax.classHelper.example in '..\..\src\ClassHelper\thundax.classHelper.example.pas';
+  thundax.classHelper.example in '..\..\src\ClassHelper\thundax.classHelper.example.pas',
+  Testthundax.classHelper in 'Testthundax.classHelper.pas';
 
 {$R *.RES}
 
 begin
   Application.Initialize;
-  ReportMemoryLeaksOnShutdown := True;
   if IsConsole then
     with TextTestRunner.RunRegisteredTests do
       Free
