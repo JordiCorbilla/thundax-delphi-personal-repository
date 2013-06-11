@@ -1,0 +1,1 @@
+java -cp emma.jar emma report -r html -in coverage.em,coverage.ec
