@@ -1,5 +1,5 @@
 Trying to start thundax.DesignPatternsTest.exe with the Parameters :
-Create Process:8000 name:thundax.DesignPatternsTest.exe
+Create Process:4580 name:thundax.DesignPatternsTest.exe
 Adding breakpoints for module:thundax.DesignPatternsTest.exe
 Module name "GUITestRunner" did not match module from address name "TextTestRunner" at address:0010A480
 Setting BreakPoint for module: thundax.Prototype unit ..\..\src\Design Patterns\Prototype\thundax.Prototype.pas addr:2211
@@ -349,79 +349,85 @@ Module Testthundax.DesignPatterns skipped
 Module TextTestRunner skipped
 Module thundax.DesignPatternsTest skipped
 Done adding  BreakPoints 
-Loading DLL at addr:77850000 (ntdll.dll) size :875520
+Loading DLL at addr:77A30000 (ntdll.dll) size :875520
 Done adding  BreakPoints 
-UnLoading DLL:77850000
-UnLoading DLL:77850000
-UnLoading DLL:77850000
-UnLoading DLL:77850000
-Loading DLL at addr:75650000 (C:\windows\syswow64\kernel32.dll) size :851968
+UnLoading DLL:77A30000
+UnLoading DLL:77A30000
+UnLoading DLL:77A30000
+UnLoading DLL:77A30000
+Loading DLL at addr:753E0000 (C:\windows\syswow64\kernel32.dll) size :851968
 Done adding  BreakPoints 
-Loading DLL at addr:75600000 (C:\windows\syswow64\KERNELBASE.dll) size :260096
+Loading DLL at addr:76B60000 (C:\windows\syswow64\KERNELBASE.dll) size :260096
 Done adding  BreakPoints 
-Loading DLL at addr:76C60000 (C:\windows\syswow64\oleaut32.dll) size :540160
+Loading DLL at addr:76AD0000 (C:\windows\syswow64\oleaut32.dll) size :540160
 Done adding  BreakPoints 
-Loading DLL at addr:76CF0000 (C:\windows\syswow64\ole32.dll) size :1329664
+Loading DLL at addr:75590000 (C:\windows\syswow64\ole32.dll) size :1329664
 Done adding  BreakPoints 
-Loading DLL at addr:75B20000 (C:\windows\syswow64\msvcrt.dll) size :648704
+Loading DLL at addr:76A20000 (C:\windows\syswow64\msvcrt.dll) size :648704
 Done adding  BreakPoints 
-Loading DLL at addr:75CA0000 (C:\windows\syswow64\GDI32.dll) size :299008
+Loading DLL at addr:76EA0000 (C:\windows\syswow64\GDI32.dll) size :299008
 Done adding  BreakPoints 
-Loading DLL at addr:751A0000 (C:\windows\syswow64\USER32.dll) size :445440
+Loading DLL at addr:77070000 (C:\windows\syswow64\USER32.dll) size :445440
 Done adding  BreakPoints 
-Loading DLL at addr:76BC0000 (C:\windows\syswow64\ADVAPI32.dll) size :466432
+Loading DLL at addr:765F0000 (C:\windows\syswow64\ADVAPI32.dll) size :466432
 Done adding  BreakPoints 
-Loading DLL at addr:755E0000 (C:\windows\SysWOW64\sechost.dll) size :77312
+Loading DLL at addr:77050000 (C:\windows\SysWOW64\sechost.dll) size :77312
 Done adding  BreakPoints 
-Loading DLL at addr:75940000 (C:\windows\syswow64\RPCRT4.dll) size :622080
+Loading DLL at addr:751A0000 (C:\windows\syswow64\RPCRT4.dll) size :622080
 Done adding  BreakPoints 
-Loading DLL at addr:74F30000 (C:\windows\syswow64\SspiCli.dll) size :88576
+Loading DLL at addr:75110000 (C:\windows\syswow64\SspiCli.dll) size :88576
 Done adding  BreakPoints 
-Loading DLL at addr:74F20000 (C:\windows\syswow64\CRYPTBASE.dll) size :31232
+Loading DLL at addr:75100000 (C:\windows\syswow64\CRYPTBASE.dll) size :31232
 Done adding  BreakPoints 
-Loading DLL at addr:75AD0000 (C:\windows\syswow64\LPK.dll) size :22016
+Loading DLL at addr:75580000 () size :0
 Done adding  BreakPoints 
-Loading DLL at addr:75420000 (C:\windows\syswow64\USP10.dll) size :370176
+Loading DLL at addr:76690000 (C:\windows\syswow64\USP10.dll) size :370176
 Done adding  BreakPoints 
-Loading DLL at addr:72810000 (C:\windows\SysWOW64\msimg32.dll) size :1536
+Loading DLL at addr:70680000 (C:\windows\SysWOW64\msimg32.dll) size :1536
 Done adding  BreakPoints 
-Loading DLL at addr:73220000 (C:\windows\SysWOW64\version.dll) size :17408
+Loading DLL at addr:733D0000 (C:\windows\SysWOW64\version.dll) size :17408
 Done adding  BreakPoints 
-Loading DLL at addr:71900000 (C:\windows\WinSxS\x86_microsoft.windows.common-controls_6595b64144ccf1df_6.0.7601.17514_none_41e6975e2bd6f2b2\comctl32.dll) size :1352192
+Loading DLL at addr:67DB0000 (C:\windows\WinSxS\x86_microsoft.windows.common-controls_6595b64144ccf1df_6.0.7601.17514_none_41e6975e2bd6f2b2\comctl32.dll) size :1352192
 Done adding  BreakPoints 
-Loading DLL at addr:76ED0000 (C:\windows\syswow64\SHLWAPI.dll) size :331264
+WARNING: The module  was already loaded. Skipping breakpoint generation and coverage for subsequent load.
+Loading DLL at addr:71460000 (C:\windows\SysWOW64\winspool.drv) size :215040
 Done adding  BreakPoints 
-Loading DLL at addr:71260000 (C:\windows\SysWOW64\winspool.drv) size :215040
+Couldn't find BreakPoint for exception address:77AD0FAB
+Loading DLL at addr:76960000 (C:\windows\SysWOW64\IMM32.DLL) size :93696
 Done adding  BreakPoints 
-Couldn't find BreakPoint for exception address:778F0FAB
-Loading DLL at addr:75EE0000 (C:\windows\SysWOW64\IMM32.DLL) size :93696
+Loading DLL at addr:76D80000 (C:\windows\syswow64\MSCTF.dll) size :536576
 Done adding  BreakPoints 
-Loading DLL at addr:75BD0000 (C:\windows\syswow64\MSCTF.dll) size :536576
+Loading DLL at addr:733E0000 (c:\progra~3\browse~1\261339~1.144\{16cdf~1\browse~1.dll) size :1789440
 Done adding  BreakPoints 
-Loading DLL at addr:73230000 (c:\progra~3\browse~1\261123~1.78\{16cdf~1\browse~1.dll) size :1580032
+Loading DLL at addr:757E0000 (C:\windows\syswow64\SHELL32.dll) size :3968000
 Done adding  BreakPoints 
-Loading DLL at addr:75F70000 (C:\windows\syswow64\SHELL32.dll) size :3968000
+Loading DLL at addr:76C30000 (C:\windows\syswow64\imagehlp.dll) size :147456
 Done adding  BreakPoints 
-Loading DLL at addr:753C0000 (C:\windows\syswow64\imagehlp.dll) size :147456
+Loading DLL at addr:77A00000 (C:\windows\syswow64\PSAPI.DLL) size :3072
 Done adding  BreakPoints 
-Loading DLL at addr:75ED0000 (C:\windows\syswow64\PSAPI.DLL) size :3072
+Loading DLL at addr:73370000 (C:\windows\SysWOW64\WINHTTP.dll) size :314368
 Done adding  BreakPoints 
-Loading DLL at addr:72B10000 (C:\windows\SysWOW64\uxtheme.dll) size :226816
+Loading DLL at addr:73320000 (C:\windows\SysWOW64\webio.dll) size :204800
 Done adding  BreakPoints 
-Loading DLL at addr:68AE0000 (c:\PROGRA~2\mcafee\SITEAD~1\saHook.dll) size :5120
+Loading DLL at addr:72BD0000 (C:\windows\SysWOW64\uxtheme.dll) size :226816
 Done adding  BreakPoints 
-Loading DLL at addr:72E20000 (C:\windows\SysWOW64\dwmapi.dll) size :41472
+Loading DLL at addr:70710000 (c:\PROGRA~2\mcafee\SITEAD~1\saHook.dll) size :5120
 Done adding  BreakPoints 
-Loading DLL at addr:63180000 (C:\windows\SysWOW64\RICHED20.DLL) size :415744
+Loading DLL at addr:706D0000 (C:\windows\SysWOW64\dwmapi.dll) size :41472
 Done adding  BreakPoints 
-Loading DLL at addr:041B0000 (C:\windows\SysWOW64\ole32.dll) size :1329664
+Loading DLL at addr:64F80000 (C:\windows\SysWOW64\RICHED20.DLL) size :415744
 Done adding  BreakPoints 
-UnLoading DLL:041B0000
+Loading DLL at addr:042D0000 (C:\windows\SysWOW64\ole32.dll) size :1329664
+Done adding  BreakPoints 
+UnLoading DLL:042D0000
 WARNING: The module C:\windows\SysWOW64\ole32.dll was already loaded. Skipping breakpoint generation and coverage for subsequent load.
-UnLoading DLL:041B0000
-Loading DLL at addr:75790000 (C:\windows\syswow64\CLBCatQ.DLL) size :487424
+UnLoading DLL:04690000
+Loading DLL at addr:75750000 (C:\windows\syswow64\CLBCatQ.DLL) size :487424
 Done adding  BreakPoints 
 Wait For Debug Event timed-out
+Wait For Debug Event timed-out
+Create thread:276
+Thread exit:276
 Adding coverage:..\..\src\Design Patterns\Prototype\thundax.Prototype.pas (thundax.Prototype) 114
 Clearing BreakPoint at 0050F25C
 De-Activate ..\..\src\Design Patterns\Prototype\thundax.Prototype.pas line 114 BreakPoint at:0050F25C
@@ -635,10 +641,21 @@ De-Activate ..\..\src\Design Patterns\AbstractFactory\thundax.AbstractFactory.pa
 Adding coverage:..\..\src\Design Patterns\AbstractFactory\thundax.AbstractFactory.pas (thundax.AbstractFactory) 97
 Clearing BreakPoint at 00518F05
 De-Activate ..\..\src\Design Patterns\AbstractFactory\thundax.AbstractFactory.pas line 97 BreakPoint at:00518F05
-Create thread:7332
-Thread exit:7332
+Create thread:6080
+Wait For Debug Event timed-out
+Wait For Debug Event timed-out
+Wait For Debug Event timed-out
+Wait For Debug Event timed-out
+Wait For Debug Event timed-out
+Wait For Debug Event timed-out
+Wait For Debug Event timed-out
+Wait For Debug Event timed-out
+Wait For Debug Event timed-out
+Wait For Debug Event timed-out
+Thread exit:6080
+Wait For Debug Event timed-out
 UnLoading DLL:7EFDA000
-Process 8000 exiting. Exit code :0
+Process 4580 exiting. Exit code :0
 ProcedureReport
 Generating reports
 Generating coverage report
