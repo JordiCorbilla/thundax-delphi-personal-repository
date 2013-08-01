@@ -1,0 +1,10 @@
+Application:TApplication
+MainThread:TThread
+thread1:TThread
+thread2:TThread
+thread3:TThread
+
+Application:MainThread.Start()
+MainThread:DONE(385ms)=thread1.CreateAnonymousThread(37)
+MainThread:DONE(799ms)=thread2.CreateAnonymousThread(79)
+MainThread:DONE(2923ms)=thread3.CreateAnonymousThread(288)

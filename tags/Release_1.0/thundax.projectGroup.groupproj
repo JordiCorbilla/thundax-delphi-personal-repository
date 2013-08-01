@@ -1,0 +1,192 @@
+﻿	<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+		<PropertyGroup>
+			<ProjectGuid>{0B88DC7B-E5C9-4CE1-972D-CFF4C1FB7E98}</ProjectGuid>
+		</PropertyGroup>
+		<ItemGroup>
+			<Projects Include="DUnit\Mock\thundax.MockTest.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="DUnit\Custom Attributes\thundax.CustomAttributesTest.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="DUnit\Fluent Interfaces\thundax.FluentInterfacesTest.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="DUnit\UML\thundax.UMLDiagramsTest.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="DUnit\Logging\thundax.LoggingTest.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="DUnit\Regular Expressions\thundax.RegularExpressionsTest.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="DUnit\Design Patterns\thundax.DesignPatternsTest.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="DUnit\Multi-Threading\thundax.MultiThreadingTest.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="DUnit\Charts\thundax.ChartTest.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="DUnit\Profiler\thundax.ProfilerTest.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="src\COM\thundax.COMLib.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="DUnit\COM\thundax.COMTest.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="DUnit\ClassOperator\thundax.ClassOperator.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="DUnit\ClassHelper\thundax.ClassHelper.dproj">
+				<Dependencies/>
+			</Projects>
+		</ItemGroup>
+		<ProjectExtensions>
+			<Borland.Personality>Default.Personality.12</Borland.Personality>
+			<Borland.ProjectType/>
+			<BorlandProject>
+				<Default.Personality/>
+			</BorlandProject>
+		</ProjectExtensions>
+		<Target Name="thundax_MockTest">
+			<MSBuild Projects="DUnit\Mock\thundax.MockTest.dproj"/>
+		</Target>
+		<Target Name="thundax_MockTest:Clean">
+			<MSBuild Projects="DUnit\Mock\thundax.MockTest.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="thundax_MockTest:Make">
+			<MSBuild Projects="DUnit\Mock\thundax.MockTest.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="thundax_CustomAttributesTest">
+			<MSBuild Projects="DUnit\Custom Attributes\thundax.CustomAttributesTest.dproj"/>
+		</Target>
+		<Target Name="thundax_CustomAttributesTest:Clean">
+			<MSBuild Projects="DUnit\Custom Attributes\thundax.CustomAttributesTest.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="thundax_CustomAttributesTest:Make">
+			<MSBuild Projects="DUnit\Custom Attributes\thundax.CustomAttributesTest.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="thundax_FluentInterfacesTest">
+			<MSBuild Projects="DUnit\Fluent Interfaces\thundax.FluentInterfacesTest.dproj"/>
+		</Target>
+		<Target Name="thundax_FluentInterfacesTest:Clean">
+			<MSBuild Projects="DUnit\Fluent Interfaces\thundax.FluentInterfacesTest.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="thundax_FluentInterfacesTest:Make">
+			<MSBuild Projects="DUnit\Fluent Interfaces\thundax.FluentInterfacesTest.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="thundax_UMLDiagramsTest">
+			<MSBuild Projects="DUnit\UML\thundax.UMLDiagramsTest.dproj"/>
+		</Target>
+		<Target Name="thundax_UMLDiagramsTest:Clean">
+			<MSBuild Projects="DUnit\UML\thundax.UMLDiagramsTest.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="thundax_UMLDiagramsTest:Make">
+			<MSBuild Projects="DUnit\UML\thundax.UMLDiagramsTest.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="thundax_LoggingTest">
+			<MSBuild Projects="DUnit\Logging\thundax.LoggingTest.dproj"/>
+		</Target>
+		<Target Name="thundax_LoggingTest:Clean">
+			<MSBuild Projects="DUnit\Logging\thundax.LoggingTest.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="thundax_LoggingTest:Make">
+			<MSBuild Projects="DUnit\Logging\thundax.LoggingTest.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="thundax_RegularExpressionsTest">
+			<MSBuild Projects="DUnit\Regular Expressions\thundax.RegularExpressionsTest.dproj"/>
+		</Target>
+		<Target Name="thundax_RegularExpressionsTest:Clean">
+			<MSBuild Projects="DUnit\Regular Expressions\thundax.RegularExpressionsTest.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="thundax_RegularExpressionsTest:Make">
+			<MSBuild Projects="DUnit\Regular Expressions\thundax.RegularExpressionsTest.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="thundax_DesignPatternsTest">
+			<MSBuild Projects="DUnit\Design Patterns\thundax.DesignPatternsTest.dproj"/>
+		</Target>
+		<Target Name="thundax_DesignPatternsTest:Clean">
+			<MSBuild Projects="DUnit\Design Patterns\thundax.DesignPatternsTest.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="thundax_DesignPatternsTest:Make">
+			<MSBuild Projects="DUnit\Design Patterns\thundax.DesignPatternsTest.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="thundax_MultiThreadingTest">
+			<MSBuild Projects="DUnit\Multi-Threading\thundax.MultiThreadingTest.dproj"/>
+		</Target>
+		<Target Name="thundax_MultiThreadingTest:Clean">
+			<MSBuild Projects="DUnit\Multi-Threading\thundax.MultiThreadingTest.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="thundax_MultiThreadingTest:Make">
+			<MSBuild Projects="DUnit\Multi-Threading\thundax.MultiThreadingTest.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="thundax_ChartTest">
+			<MSBuild Projects="DUnit\Charts\thundax.ChartTest.dproj"/>
+		</Target>
+		<Target Name="thundax_ChartTest:Clean">
+			<MSBuild Projects="DUnit\Charts\thundax.ChartTest.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="thundax_ChartTest:Make">
+			<MSBuild Projects="DUnit\Charts\thundax.ChartTest.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="thundax_ProfilerTest">
+			<MSBuild Projects="DUnit\Profiler\thundax.ProfilerTest.dproj"/>
+		</Target>
+		<Target Name="thundax_ProfilerTest:Clean">
+			<MSBuild Projects="DUnit\Profiler\thundax.ProfilerTest.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="thundax_ProfilerTest:Make">
+			<MSBuild Projects="DUnit\Profiler\thundax.ProfilerTest.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="thundax_COMLib">
+			<MSBuild Projects="src\COM\thundax.COMLib.dproj"/>
+		</Target>
+		<Target Name="thundax_COMLib:Clean">
+			<MSBuild Projects="src\COM\thundax.COMLib.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="thundax_COMLib:Make">
+			<MSBuild Projects="src\COM\thundax.COMLib.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="thundax_COMTest">
+			<MSBuild Projects="DUnit\COM\thundax.COMTest.dproj"/>
+		</Target>
+		<Target Name="thundax_COMTest:Clean">
+			<MSBuild Projects="DUnit\COM\thundax.COMTest.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="thundax_COMTest:Make">
+			<MSBuild Projects="DUnit\COM\thundax.COMTest.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="thundax_ClassOperator">
+			<MSBuild Projects="DUnit\ClassOperator\thundax.ClassOperator.dproj"/>
+		</Target>
+		<Target Name="thundax_ClassOperator:Clean">
+			<MSBuild Projects="DUnit\ClassOperator\thundax.ClassOperator.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="thundax_ClassOperator:Make">
+			<MSBuild Projects="DUnit\ClassOperator\thundax.ClassOperator.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="thundax_ClassHelper">
+			<MSBuild Projects="DUnit\ClassHelper\thundax.ClassHelper.dproj"/>
+		</Target>
+		<Target Name="thundax_ClassHelper:Clean">
+			<MSBuild Projects="DUnit\ClassHelper\thundax.ClassHelper.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="thundax_ClassHelper:Make">
+			<MSBuild Projects="DUnit\ClassHelper\thundax.ClassHelper.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="Build">
+			<CallTarget Targets="thundax_MockTest;thundax_CustomAttributesTest;thundax_FluentInterfacesTest;thundax_UMLDiagramsTest;thundax_LoggingTest;thundax_RegularExpressionsTest;thundax_DesignPatternsTest;thundax_MultiThreadingTest;thundax_ChartTest;thundax_ProfilerTest;thundax_COMLib;thundax_COMTest;thundax_ClassOperator;thundax_ClassHelper"/>
+		</Target>
+		<Target Name="Clean">
+			<CallTarget Targets="thundax_MockTest:Clean;thundax_CustomAttributesTest:Clean;thundax_FluentInterfacesTest:Clean;thundax_UMLDiagramsTest:Clean;thundax_LoggingTest:Clean;thundax_RegularExpressionsTest:Clean;thundax_DesignPatternsTest:Clean;thundax_MultiThreadingTest:Clean;thundax_ChartTest:Clean;thundax_ProfilerTest:Clean;thundax_COMLib:Clean;thundax_COMTest:Clean;thundax_ClassOperator:Clean;thundax_ClassHelper:Clean"/>
+		</Target>
+		<Target Name="Make">
+			<CallTarget Targets="thundax_MockTest:Make;thundax_CustomAttributesTest:Make;thundax_FluentInterfacesTest:Make;thundax_UMLDiagramsTest:Make;thundax_LoggingTest:Make;thundax_RegularExpressionsTest:Make;thundax_DesignPatternsTest:Make;thundax_MultiThreadingTest:Make;thundax_ChartTest:Make;thundax_ProfilerTest:Make;thundax_COMLib:Make;thundax_COMTest:Make;thundax_ClassOperator:Make;thundax_ClassHelper:Make"/>
+		</Target>
+		<Import Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')" Project="$(BDS)\Bin\CodeGear.Group.Targets"/>
+	</Project>
