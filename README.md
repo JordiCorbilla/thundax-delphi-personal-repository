@@ -72,10 +72,10 @@ end;
 ```
 
 **Example DUnit:**
-  -![](http://1.bp.blogspot.com/-mb1KplJPRiw/T34MqyCpSeI/AAAAAAAAC8A/yHV49FyXM50/s1600/dunit.png)
+  - ![](http://1.bp.blogspot.com/-mb1KplJPRiw/T34MqyCpSeI/AAAAAAAAC8A/yHV49FyXM50/s1600/dunit.png)
 
 **Example using Fluent Interfaces:**
-  -![](http://1.bp.blogspot.com/-84yLJgLe274/T8n9K_orp1I/AAAAAAAAC9A/vSBdhs9upgw/s1600/dunit.png)
+  - ![](http://1.bp.blogspot.com/-84yLJgLe274/T8n9K_orp1I/AAAAAAAAC9A/vSBdhs9upgw/s1600/dunit.png)
 
 **Example using Quick Sequence Diagram Editor (sdedit):**
-  -![](http://4.bp.blogspot.com/-CSdelCTJM2o/UPRixFPjUwI/AAAAAAAADuU/WgYv2FabNV0/s1600/TestDiagramUML.jpg)
+  - ![](http://4.bp.blogspot.com/-CSdelCTJM2o/UPRixFPjUwI/AAAAAAAADuU/WgYv2FabNV0/s1600/TestDiagramUML.jpg)
