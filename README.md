@@ -1,3 +1,5 @@
+bits and pieces from everyday coding
+==============
 **Thundax repository contains Delphi examples on:**
   - Mock Objects
   - Custom Attributes
