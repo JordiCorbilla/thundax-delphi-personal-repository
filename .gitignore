@@ -8,3 +8,16 @@
 /DUnit/COM/__history
 *.exe
 /src/Multi-Threading/__history
+/DUnit/Charts/__history
+/DUnit/ClassHelper/__history
+/DUnit/ClassOperator/__history
+/DUnit/Custom Attributes/__history
+/DUnit/Design Patterns/__history
+/DUnit/Fluent Interfaces/__history
+/DUnit/Logging/__history
+/DUnit/Mock/__history
+/DUnit/Multi-Threading/__history
+/DUnit/Profiler/__history
+/DUnit/Regular Expressions/__history
+/src/COM/__history
+/DUnit/UML/__history
