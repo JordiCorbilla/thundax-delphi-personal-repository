@@ -26,6 +26,7 @@ uses
 
 begin
   Application.Initialize;
+  ReportMemoryLeaksOnShutdown := true;
   if IsConsole then
     with TextTestRunner.RunRegisteredTests do
       Free

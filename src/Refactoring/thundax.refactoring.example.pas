@@ -35,11 +35,18 @@ uses
   IdSSL, IdSSLOpenSSL, MSHTML, generics.collections;
 
 type
+  TOperator<T> = reference to function(value : T): TList<T>;
+
   TMyQuery = class(TObject)
     function Results(url : string) : TList<string>;
     function ResultsImperativeRefactoring(url : string) : TList<string>;
     function ParseHTML(response : string) : TList<string>;
+    function ResultsInlineRefactoring(url : string) : TList<string>;
+    function DownloadContent(url : string; operation : TOperator<string>) : TList<string>;
+    function GetContent(url : string) : string;
   end;
+
+
 
 implementation
 
@@ -50,7 +57,6 @@ var
   document: OleVariant;
   i : integer;
   element: OleVariant;
-  value : string;
   urlList : TList<string>;
 begin
   document := coHTMLDocument.Create as IHTMLDocument2;
@@ -74,7 +80,6 @@ var
   document: OleVariant;
   i : integer;
   element: OleVariant;
-  value : string;
   urlList : TList<string>;
 begin
   CoInitialize(nil);
@@ -122,6 +127,39 @@ begin
       IdHTTP.IOHandler := IdIOHandler;
       response := IdHTTP.Get(url);
       result := ParseHTML(response);
+    finally
+      IdIOHandler.Free;
+      IdHTTP.Free;
+    end;
+  finally
+    CoUninitialize;
+  end;
+end;
+
+function TMyQuery.ResultsInlineRefactoring(url: string): TList<string>;
+begin
+  result := DownloadContent(url, ParseHTML);
+end;
+
+function TMyQuery.DownloadContent(url : string; operation : TOperator<string>): TList<string>;
+begin
+  result := operation(GetContent(url));
+end;
+
+function TMyQuery.GetContent(url: string) : string;
+var
+  IdHTTP: TIdHTTP;
+  IdIOHandler: TIdSSLIOHandlerSocketOpenSSL;
+begin
+  CoInitialize(nil);
+  try
+    IdIOHandler := TIdSSLIOHandlerSocketOpenSSL.Create(nil);
+    IdIOHandler.ReadTimeout := IdTimeoutInfinite;
+    IdIOHandler.ConnectTimeout := IdTimeoutInfinite;
+    IdHTTP := TIdHTTP.Create(nil);
+    try
+      IdHTTP.IOHandler := IdIOHandler;
+      result := IdHTTP.Get(url);
     finally
       IdIOHandler.Free;
       IdHTTP.Free;

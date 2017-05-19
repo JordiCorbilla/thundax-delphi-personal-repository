@@ -39,7 +39,7 @@ unit Testthundax.refactoring;
 interface
 
 uses
-  TestFramework, thundax.refactoring.example;
+  TestFramework, thundax.refactoring.example, generics.collections;
 
 type
   // Test methods for class TSQL
@@ -49,7 +49,9 @@ type
     procedure SetUp; override;
     procedure TearDown; override;
   published
-    procedure TestgetQuery;
+    procedure TestGetQuery;
+    procedure TestGetQueryImperativeRefactoring;
+    procedure TestGetQueryInlineRefactoring;
   end;
 
 implementation
@@ -67,9 +69,46 @@ end;
 procedure TestTSQL.TestgetQuery;
 var
   myQuery : TMyQuery;
+  urlList : TList<String>;
 begin
   myQuery := TMyQuery.create();
-  checkTrue(myQuery.Results('https://www.google.co.uk').Count > 0, 'Error list should not be empty');
+  try
+    urlList := myQuery.Results('https://www.google.co.uk');
+    checkTrue(urlList.Count > 0, 'Error list should not be empty');
+    urlList.Free;
+  finally
+    myQuery.Free;
+  end;
+end;
+
+procedure TestTSQL.TestGetQueryImperativeRefactoring;
+var
+  myQuery : TMyQuery;
+  urlList : TList<String>;
+begin
+  myQuery := TMyQuery.create();
+  try
+    urlList := myQuery.ResultsImperativeRefactoring('https://www.google.co.uk');
+    checkTrue(urlList.Count > 0, 'Error list should not be empty');
+    urlList.Free;
+  finally
+    myQuery.Free;
+  end;
+end;
+
+procedure TestTSQL.TestGetQueryInlineRefactoring;
+var
+  myQuery : TMyQuery;
+  urlList : TList<String>;
+begin
+  myQuery := TMyQuery.create();
+  try
+    urlList := myQuery.ResultsInlineRefactoring('https://www.google.co.uk');
+    checkTrue(urlList.Count > 0, 'Error list should not be empty');
+    urlList.Free;
+  finally
+    myQuery.Free;
+  end;
 end;
 
 initialization
