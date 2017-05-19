@@ -36,6 +36,7 @@ uses
 
 type
   TOperator<T> = reference to function(value : T): TList<T>;
+  TFactory<T> = reference to function(value : T) : T;
 
   TMyQuery = class(TObject)
     function Results(url : string) : TList<string>;
@@ -44,9 +45,12 @@ type
     function ResultsInlineRefactoring(url : string) : TList<string>;
     function DownloadContent(url : string; operation : TOperator<string>) : TList<string>;
     function GetContent(url : string) : string;
+    function ResultsFuncInlineRefactoring(url : string) : TList<string>;
   end;
 
-
+  TRequest<T> = class(TObject)
+    function ResultsInlineRefactoring(value : T; factory : TFactory<T>; operation : TOperator<T>) : TList<T>;
+  end;
 
 implementation
 
@@ -111,6 +115,20 @@ begin
   end;
 end;
 
+function TMyQuery.ResultsFuncInlineRefactoring(url: string): TList<string>;
+var
+  request : TRequest<String>;
+  return : TList<string>;
+begin
+  request := TRequest<String>.create();
+  try
+    return := request.ResultsInlineRefactoring(url, GetContent, ParseHTML);
+  finally
+    request.Free;
+  end;
+  result := return;
+end;
+
 function TMyQuery.ResultsImperativeRefactoring(url: string): TList<string>;
 var
   response: string;
@@ -167,6 +185,13 @@ begin
   finally
     CoUninitialize;
   end;
+end;
+
+{ TTest<T> }
+
+function TRequest<T>.ResultsInlineRefactoring(value : T; factory: TFactory<T>; operation: TOperator<T>): TList<T>;
+begin
+  result := operation(factory(value));
 end;
 
 end.
