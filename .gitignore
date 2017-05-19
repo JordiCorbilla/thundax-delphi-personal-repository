@@ -3,3 +3,8 @@
 ################################################################################
 
 /DUnit/Charts/dcu
+/DUnit/ClassHelper/dcu
+*.dcu
+/DUnit/COM/__history
+*.exe
+/src/Multi-Threading/__history

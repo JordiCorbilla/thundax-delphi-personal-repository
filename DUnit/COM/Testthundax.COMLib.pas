@@ -60,7 +60,7 @@ type
 implementation
 
 uses
-  SysUtils, Classes, Forms, ShellAPI;
+  SysUtils, Classes, vcl.Forms, ShellAPI;
 
 function TestTCOMLib.ExecuteProcess(const ExecuteFile, ParamString: string): boolean;
 var

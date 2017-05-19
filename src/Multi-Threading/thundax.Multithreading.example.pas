@@ -62,7 +62,8 @@ const
 implementation
 
 uses
-  IdHashMessageDigest, SysUtils, Windows, AnsiStrings, thundax.stringHelper;
+  IdHashMessageDigest, SysUtils, Windows, AnsiStrings, thundax.stringHelper,
+  IdGlobal;
 
 { TBruteForceThreading }
 
@@ -188,7 +189,7 @@ var
 begin
   try
     md5 := TIdHashMessageDigest5.Create;
-    Result := LowerCase(md5.HashStringAsHex(text, TEncoding.Default));
+    Result := LowerCase(md5.HashStringAsHex(text, IndyTextEncoding_OSDefault()));
     md5.Free;
   except
   end;
