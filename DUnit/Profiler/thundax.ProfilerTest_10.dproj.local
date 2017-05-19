@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <BorlandProject>
-  <Transactions>
-    <Transaction>2017/05/19 19:12:47.115,C:\Users\thund\Source\Repos\thundax-delphi-personal-repository\DUnit\Profiler\thundax.ProfilerTest_10.dproj=C:\Users\thund\Source\Repos\thundax-delphi-personal-repository\DUnit\Profiler\thundax.ProfilerTest.dproj</Transaction>
+	<Transactions>
+    <Transaction>2017/05/19 19:12:47.000.115,C:\Users\thund\Source\Repos\thundax-delphi-personal-repository\DUnit\Profiler\thundax.ProfilerTest.dproj=C:\Users\thund\Source\Repos\thundax-delphi-personal-repository\DUnit\Profiler\thundax.ProfilerTest_10.dproj</Transaction>
   </Transactions>
 </BorlandProject>

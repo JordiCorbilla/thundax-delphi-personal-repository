@@ -2,5 +2,8 @@
 <BorlandProject>
   <Transactions>
     <Transaction>2017/05/19 19:16:33.895,C:\Users\thund\Source\Repos\thundax-delphi-personal-repository\DUnit\Refactoring\thundax.Refactoring_10.dproj=C:\Users\thund\Source\Repos\thundax-delphi-personal-repository\DUnit\Refactoring\thundax.dproj</Transaction>
+    <Transaction>2017/05/19 19:54:45.371,=C:\Users\thund\Source\Repos\thundax-delphi-personal-repository\src\Refactoring\thundax.refactoring.example.pas</Transaction>
+    <Transaction>2017/05/19 19:55:58.803,=C:\Users\thund\Source\Repos\thundax-delphi-personal-repository\DUnit\Refactoring\Unit1.pas</Transaction>
+    <Transaction>2017/05/19 19:56:20.648,C:\Users\thund\Source\Repos\thundax-delphi-personal-repository\DUnit\Refactoring\Testthundax.refactoring.pas=C:\Users\thund\Source\Repos\thundax-delphi-personal-repository\DUnit\Refactoring\Unit1.pas</Transaction>
   </Transactions>
 </BorlandProject>

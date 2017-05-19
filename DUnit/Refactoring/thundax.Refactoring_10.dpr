@@ -15,11 +15,21 @@ program thundax.Refactoring_10;
 {$ENDIF}
 
 uses
-  DUnitTestRunner;
+  Forms,
+  TestFramework,
+  GUITestRunner,
+  TextTestRunner,
+  thundax.refactoring.example in '..\..\src\Refactoring\thundax.refactoring.example.pas',
+  Testthundax.refactoring in 'Testthundax.refactoring.pas';
 
 {$R *.RES}
 
 begin
-  DUnitTestRunner.RunRegisteredTests;
+  Application.Initialize;
+  if IsConsole then
+    with TextTestRunner.RunRegisteredTests do
+      Free
+  else
+    GUITestRunner.RunRegisteredTests;
 end.
 

@@ -1,6 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <BorlandProject>
 	<Default.Personality>
-		<Projects ActiveProject="C:\Users\thund\Source\Repos\thundax-delphi-personal-repository\src\COM\thundax.COMLib_10.dproj"/>
-	</Default.Personality>  <Transactions> </Transactions>
+		<Projects ActiveProject="C:\Users\thund\Source\Repos\thundax-delphi-personal-repository\DUnit\Refactoring\thundax.Refactoring_10.dproj"/>
+	</Default.Personality>
+	<Transactions>
+	</Transactions>
 </BorlandProject>

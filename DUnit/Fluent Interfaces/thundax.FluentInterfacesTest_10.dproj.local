@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <BorlandProject>
-  <Transactions>
-    <Transaction>2017/05/19 19:12:43.499,C:\Users\thund\Source\Repos\thundax-delphi-personal-repository\DUnit\Fluent Interfaces\thundax.FluentInterfacesTest_10.dproj=C:\Users\thund\Source\Repos\thundax-delphi-personal-repository\DUnit\Fluent Interfaces\thundax.FluentInterfacesTest.dproj</Transaction>
+	<Transactions>
+    <Transaction>2017/05/19 19:12:43.000.499,C:\Users\thund\Source\Repos\thundax-delphi-personal-repository\DUnit\Fluent Interfaces\thundax.FluentInterfacesTest.dproj=C:\Users\thund\Source\Repos\thundax-delphi-personal-repository\DUnit\Fluent Interfaces\thundax.FluentInterfacesTest_10.dproj</Transaction>
   </Transactions>
 </BorlandProject>
