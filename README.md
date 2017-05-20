@@ -17,6 +17,7 @@ bits and pieces from everyday coding
   - Profiling
   - Debugging
   - Plotting
+  - Refactoring
 
 Feel free to use them to improve your applications.
 
