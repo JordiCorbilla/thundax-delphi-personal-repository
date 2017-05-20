@@ -35,7 +35,7 @@ uses
   IdSSL, IdSSLOpenSSL, MSHTML, generics.collections;
 
 type
-  TOperator<T> = reference to function(value : T): TList<T>;
+  TOperator<T, U> = reference to function(value : T): U;
   TFactory<T> = reference to function(value : T) : T;
 
   TMyQuery = class(TObject)
@@ -43,13 +43,13 @@ type
     function ResultsImperativeRefactoring(url : string) : TList<string>;
     function ParseHTML(response : string) : TList<string>;
     function ResultsInlineRefactoring(url : string) : TList<string>;
-    function DownloadContent(url : string; operation : TOperator<string>) : TList<string>;
+    function DownloadContent(url : string; operation : TOperator<string, TList<string>>) : TList<string>;
     function GetContent(url : string) : string;
     function ResultsFuncInlineRefactoring(url : string) : TList<string>;
   end;
 
-  TRequest<T> = class(TObject)
-    function ResultsInlineRefactoring(value : T; factory : TFactory<T>; operation : TOperator<T>) : TList<T>;
+  TRequest<T, U> = class(TObject)
+    function ResultsInlineRefactoring(value : T; factory : TFactory<T>; operation : TOperator<T, U>) : U;
   end;
 
 implementation
@@ -117,10 +117,10 @@ end;
 
 function TMyQuery.ResultsFuncInlineRefactoring(url: string): TList<string>;
 var
-  request : TRequest<String>;
+  request : TRequest<String, TList<string>>;
   return : TList<string>;
 begin
-  request := TRequest<String>.create();
+  request := TRequest<String, TList<string>>.create();
   try
     return := request.ResultsInlineRefactoring(url, GetContent, ParseHTML);
   finally
@@ -159,7 +159,7 @@ begin
   result := DownloadContent(url, ParseHTML);
 end;
 
-function TMyQuery.DownloadContent(url : string; operation : TOperator<string>): TList<string>;
+function TMyQuery.DownloadContent(url : string; operation : TOperator<string, TList<string>>): TList<string>;
 begin
   result := operation(GetContent(url));
 end;
@@ -187,9 +187,9 @@ begin
   end;
 end;
 
-{ TTest<T> }
+{ TRequest<T, U> }
 
-function TRequest<T>.ResultsInlineRefactoring(value : T; factory: TFactory<T>; operation: TOperator<T>): TList<T>;
+function TRequest<T, U>.ResultsInlineRefactoring(value : T; factory : TFactory<T>; operation : TOperator<T, U>) : U;
 begin
   result := operation(factory(value));
 end;
